@@ -16,3 +16,26 @@
   background-color: #eeeeee;
   
 }
+
+.intro {
+  > div {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+  .thumbnail {
+    padding: 0;
+    img {
+      width: 100%;
+    }
+    .caption {
+      height: 200px;
+      padding-left: 30px;
+      padding-right: 30px;
+      .intro-title {
+        padding-bottom: 8px;
+        border-bottom: 3px solid #1a5393;
+      }
+    }
+  }
+
+}
