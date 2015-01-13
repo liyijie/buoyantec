@@ -16,9 +16,10 @@
 }
 .report {
 	.more {
-		text-align: center;
 		height: 40px;
 		line-height: 30px;
+		text-align: right;
+		padding-right: 15px;
 		a {
 			background: $color-blue;
 			padding: 5px 10px;
@@ -31,9 +32,11 @@
 		}
 		.report-list {
 			height: 356px;
-			background: $color-gray-f3;
 			margin-bottom: 10px;
+			padding-left: 0;
 			.list-group {
+				padding-left: 15px;
+				background: $color-gray-f3;
 				margin-bottom: 0;
 				.list-group-item {
 					background: transparent;
