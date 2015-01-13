@@ -18,12 +18,3 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "bootstrap.extend";
-
-
-.h-line {
-	border-bottom: 1px solid $color-gray;
-	span {
-		clear: both;
-		text-align: center;
-	}
-}
