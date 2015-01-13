@@ -1,3 +1,31 @@
 
 $color-blue: #1a5393;
 $color-gray: #c1c1c1;
+$color-gray-f3: #f3f3f3;
+
+$navbar-height: 80px;
+$navbar-margin-bottom: 0;
+$navbar-default-link-active-bg: $color-blue;
+$navbar-default-link-hover-bg: $color-blue;
+$navbar-default-link-active-color: #fff;
+$navbar-default-link-hover-color: #fff;
+
+// breadcrumb
+$breadcrumb-bg: transparent;
+$breadcrumb-separator: ">";
+$breadcrumb-padding-vertical: 0;
+$breadcrumb-padding-horizontal: 0;
+
+$carousel-control-width: 5%;
+$carousel-indicator-active-bg: #ff9c49;
+
+// fonts
+$font-size-base: 13px;
+$font-family-sans-serif: "microsoft yahei", Helvetica, Arial, sans-serif;
+
+$border-radius-base: 0;
+$border-radius-large: 0;
+$border-radius-small: 0;
+
+
+
