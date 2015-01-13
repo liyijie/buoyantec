@@ -10,8 +10,8 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
  *= require_self
+ *= require_tree .
  */
 
 @import "variables";
@@ -19,3 +19,11 @@
 @import "bootstrap";
 @import "bootstrap.extend";
 
+
+.h-line {
+	border-bottom: 1px solid $color-gray;
+	span {
+		clear: both;
+		text-align: center;
+	}
+}
