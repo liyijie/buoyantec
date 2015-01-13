@@ -15,3 +15,12 @@
 /log/*
 !/log/.keep
 /tmp
+
+# Ignore for this project
+/public/system
+/public/assets
+/public/ckeditor_assets
+/solr
+/coverage/
+/spec/tmp
+/config/database.yml
