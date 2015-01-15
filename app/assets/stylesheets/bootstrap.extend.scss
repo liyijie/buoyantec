@@ -1,6 +1,10 @@
 
 @import "variables";
 
+.blue {
+	color: $color-blue !important;
+}
+
 .navbar {
 	.navbar-brand {
 		padding-top: 0;
