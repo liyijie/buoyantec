@@ -27,6 +27,12 @@ GIT
       railties (>= 3.2, < 5)
       responders
 
+GIT
+  remote: git://github.com/liyijie/active_skin.git
+  revision: ff903a5350ead12543f2790bd36965d2c2d7a0c7
+  specs:
+    active_skin (0.0.8)
+
 GEM
   remote: https://ruby.taobao.org/
   specs:
@@ -227,6 +233,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  active_skin!
   activeadmin!
   bootstrap-sass (~> 3.3.1)
   byebug
