@@ -7,7 +7,7 @@
   </div>
   <div class="row report-row">
     <div class="col-md-6 report-image">
-      <%= image_tag(@active_report.image.photo(:product)) %>
+      <%= image_tag(@active_report.image.photo(:product)) if @active_report.image %>
     </div>
     <div class="col-md-6 report-list">
       <div class="list-group">
