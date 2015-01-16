@@ -7,48 +7,23 @@
   </div>
   <div class="row report-row">
     <div class="col-md-6 report-image">
-       <%= image_tag "index-reports1.jpg", width: "100%", height: "auto" %>
+      <%= image_tag(@active_report.image.photo(:product)) %>
     </div>
     <div class="col-md-6 report-list">
       <div class="list-group">
-        <a href="#" class="list-group-item hover">
-          <h4 class="list-group-item-heading blue">大唐电信集团荣获"中国企业文化建设典范十强"奖 <small>[2014-12-15]</small></h4>
-          <p class="list-group-item-text">1<br/>2<br/>3</p>
-        </a>
-        <a href="#" class="list-group-item">
-          <h5 class="list-group-item-heading">大唐电信集团荣获"中国企业文化建设典范十强"奖 <small>[2014-12-15]</small></h5>
-          <p class="list-group-item-text"></p>
-        </a>
-        <a href="#" class="list-group-item">
-          <h5 class="list-group-item-heading">大唐电信集团荣获"中国企业文化建设典范十强"奖 <small>[2014-12-15]</small></h5>
-          <p class="list-group-item-text"></p>
-        </a>
-        <a href="#" class="list-group-item">
-          <h5 class="list-group-item-heading">大唐电信集团荣获"中国企业文化建设典范十强"奖 <small>[2014-12-15]</small></h5>
-          <p class="list-group-item-text"></p>
-        </a>
-        <a href="#" class="list-group-item">
-          <h5 class="list-group-item-heading">大唐电信集团荣获"中国企业文化建设典范十强"奖 <small>[2014-12-15]</small></h5>
-          <p class="list-group-item-text"></p>
-        </a>
-        <a href="#" class="list-group-item">
-          <h5 class="list-group-item-heading">大唐电信集团荣获"中国企业文化建设典范十强"奖 <small>[2014-12-15]</small></h5>
-          <p class="list-group-item-text"></p>
-        </a>
-        <a href="#" class="list-group-item">
-          <h5 class="list-group-item-heading">大唐电信集团荣获"中国企业文化建设典范十强"奖 <small>[2014-12-15]</small></h5>
-          <p class="list-group-item-text"></p>
-        </a>
-        <a href="#" class="list-group-item">
-          <h5 class="list-group-item-heading">大唐电信集团荣获"中国企业文化建设典范十强"奖 <small>[2014-12-15]</small></h5>
-          <p class="list-group-item-text"></p>
-        </a>
+        <%= link_to(raw(active_head_content(@active_report)), @active_report, class: "list-group-item hover") %>
+        <small class="text-muted">
+          <%= truncate_html raw(@active_report.content), length: 150, word_boundary: false %>
+        </small>
+        <% @reports.each do |report| %>
+          <%= link_to(raw(head_content(report)), report, class: "list-group-item") %>
+        <% end %>
       </div>
     </div>
   </div>
   <div class="row">
     <div class="rol-md-12 more">
-      <a href="#">更多新闻</a>
+      <%= link_to("更多新闻", reports_path) %>
     </div>
   </div>
 </div>
