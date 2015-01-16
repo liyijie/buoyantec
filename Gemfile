@@ -6,6 +6,7 @@ source 'https://ruby.taobao.org'
 gem 'rails', '4.2.0'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
+gem 'mysql2'
 
 # Use SCSS for stylesheets
 gem 'bootstrap-sass', '~> 3.3.1'
