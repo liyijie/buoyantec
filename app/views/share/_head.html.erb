@@ -15,8 +15,8 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">首页</a></li>
-        <li><a href="#">培训</a></li>
+        <li class=<%= "active" if params[:controller] == "home" %>><%= link_to("首页", root_path) %></li>
+        <li class=<%= "active" if params[:controller] == "trains" %>><%= link_to("培训", trains_path) %></li>
         <li><a href="#">DTCE认证</a></li>
         <li><a href="#">校企合作</a></li>
         <li><a href="#">在线教育</a></li>
