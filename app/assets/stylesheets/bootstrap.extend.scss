@@ -1,5 +1,6 @@
 
 @import "variables";
+@import "bootstrap";
 
 .blue {
 	color: $color-blue !important;
@@ -17,4 +18,29 @@
 			height: $navbar-height;
 		}
 	}
+}
+
+.row.mt10 {
+	margin-top: 10px;
+}
+.row.mt20 {
+	margin-top: 20px;
+}
+
+.p-title {
+	padding: 20px 0 20px 0;
+	text-align: center;
+	.title {
+		font-size: $font-size-h4;
+		font-weight: bold;
+		border-bottom: 3px solid $color-blue-dark;
+		padding-top: 7px;
+		padding-bottom: 5px;
+	}	
+}
+
+.gray-panel {
+	margin-top: 20px;
+	background: $color-gray-bg;
+	padding-bottom: 15px;
 }
