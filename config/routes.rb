@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'enterprise/index'
+
   get 'dtce/index'
 
   mount Ckeditor::Engine => '/ckeditor'
