@@ -65,75 +65,15 @@
       <span class="title">就业渠道</span>
     </div>
   </div>
-  <div class="row dtce_logos">
-  	<div class="col-md-6">
-  		<div class="item">
-  			<%= image_tag "logo_group.gif" %>
-  			<span>大唐电信科技股份有限公司</span>
-  		</div>
-  	</div>
-  	<div class="col-md-6">
-  		<div class="item">
-  			<%= image_tag "logo_dt.gif" %>
-  			<span>大唐移动通信设备有限公司</span>
-  		</div>
-  	</div>
-  </div>
-  <div class="row dtce_logos">
-  	<div class="col-md-6">
-  		<div class="item">
-  			<%= image_tag "logo_lx.png" %>
-  			<span>联芯科技有限公司</span>
-  		</div>
-  	</div>
-  	<div class="col-md-6">
-  		<div class="item">
-  			<%= image_tag "logo_gh.png" %>
-  			<span class="non-inte">大唐高鸿数据网络技术股份有限公司</span>
-  		</div>
-  	</div>
-  </div>
-  <div class="row dtce_logos">
-  	<div class="col-md-6">
-  		<div class="item">
-  			<%= image_tag "logo_yb.png" %>
-  			<span>电信科学技术仪表研究所</span>
-  		</div>
-  	</div>
-  	<div class="col-md-6">
-  		<div class="item">
-  			<%= image_tag "logo_cdxl.png" %>
-  			<span>成都大唐线缆有限公司</span>
-  		</div>
-  	</div>
-  </div>
-  <div class="row dtce_logos">
-  	<div class="col-md-6">
-  		<div class="item">
-  			<%= image_tag "logo_ctd.png" %>
-  			<span>北京畅通达通信技术有限公司</span>
-  		</div>
-  	</div>
-  	<div class="col-md-6">
-  		<div class="item">
-  			<%= image_tag "logo_sim.png" %>
-  			<span>晨讯科技集团</span>
-  		</div>
-  	</div>
-  </div>
-  <div class="row dtce_logos">
-  	<div class="col-md-6">
-  		<div class="item">
-  			<%= image_tag "logo_lq.png" %>
-  			<span>龙旗控股有限公司</span>
-  		</div>
-  	</div>
-  	<div class="col-md-6">
-  		<div class="item">
-  			<%= image_tag "logo_tx.png" %>
-  			<span>腾讯创业基地（杭州）</span>
-  		</div>
-  	</div>
+  <div class="row">
+    <% (0..9) .each do |channel_index|%>
+    <div class="col-md-4 col-sm-6 channel-col ">
+      <div class="channel-item make-center">
+        <%= image_tag @channel_logo["#{channel_index}"] %>
+        <h4 style="margin-left:15px;"><%= @channel_name["#{channel_index}"] %></h4>
+      </div>
+    </div>
+    <% end %>
   </div>
 </div>
 <div class="container-fluid gray-panel">
