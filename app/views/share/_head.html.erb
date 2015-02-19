@@ -19,7 +19,7 @@
         <li class=<%= "active" if params[:controller] == "trains" %>><%= link_to("培训", trains_path) %></li>
         <li class=<%= "active" if params[:controller] == "dtce" %>><%= link_to("DTCE认证", dtce_index_path) %></li>
         <li class=<%= "active" if params[:controller] == "enterprise" %>><%= link_to("校企合作", enterprise_index_path) %></li>
-        <li><a href="#">在线教育</a></li>
+        <li class=<%= "active" if params[:controller] == "education" %>><%= link_to("在线教育", education_index_path) %></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

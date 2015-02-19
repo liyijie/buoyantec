@@ -1,0 +1,76 @@
+// Place all the styles related to the education controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "variables";
+@import "bootstrap";
+.education{
+	.nav>li{
+		height: 56px;
+		text-align: center;
+	}
+	.nav>li>a{
+		border-style: none;
+		padding: 16px 0px;
+		font-size: 16px;
+		color: $color-black;
+	}
+	.nav > li > a:hover, .nav > li > a:focus, .nav-tabs > li.active > a,.nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+		 border-style: none;
+		 border-radius: 0px;
+		 color: $color-blue;
+		 background-color: $color-white;
+	}
+	.edu-left{
+		background-color: $color-white;
+		.hr-l{
+			margin: 0px 15px;
+		}
+		.nav-tabs > li.active > a,.nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+			border-left: 3px solid $color-blue;
+			border-right: 3px solid transparent;
+		}
+	}
+	.edu-right{
+		background-color: $color-white;
+		padding:0px 22.5px 22.5px 22.5px;
+		.nav>li>a{
+			color: $color-gray-border;
+			margin-left: 10px;
+		}
+		.nav>li>a:hover{
+			color: $color-black;
+		}
+		.nav-tabs > li.active > a,.nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+			border-bottom:  3px solid $color-blue;
+			color: $color-black;
+		}
+		.top-title{
+			margin-top:10px;
+			color:$color-gray-border;
+			font-size:20px;
+		}
+		.hr-r{
+			margin: 0;
+			margin-top: 1px;
+		}
+		.img{
+			width: 100%;
+		}
+		.video-info{
+			height:82px;
+			padding: 10px;
+			background-color: $color-green-light;  
+			.video-title{
+				height: 47px;
+				overflow: hidden;				
+			}
+			.video-status{
+				font-size: 12px;
+				color: $color-gray;
+				.status-right{
+					float: right;
+				}
+			}
+		}
+	}	
+}

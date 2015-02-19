@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'enterprise/index'
+  get 'education/index'
 
   get 'dtce/index'
 

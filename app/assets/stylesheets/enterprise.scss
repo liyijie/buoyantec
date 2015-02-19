@@ -11,3 +11,29 @@
 		background: $table-bg-accent;
 	}
 }
+//career channel
+.my-col{
+	margin-top: 15px;
+	padding-left: 7.5px !important;
+	padding-right: 7.5px !important;
+	.channel-item{
+		height: 108px;
+		border: 1px solid $color-gray;
+		text-align: center;
+		.channel-logo{			
+			line-height: 108px;
+			padding-right: 0;
+		}
+		.channel-name{
+			font-size: 18px;
+			padding-top: 40px;
+		}
+	}
+}
+//laboratory construction
+.lab{
+	padding: 0 !important;
+	.img{
+		width: 100%;
+	}
+}
