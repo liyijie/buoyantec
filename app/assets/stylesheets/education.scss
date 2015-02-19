@@ -22,7 +22,6 @@
 	}
 	.edu-left{
 		background-color: $color-white;
-		height: auto;
 		.hr-l{
 			margin: 0px 15px;
 		}
@@ -35,8 +34,8 @@
 		background-color: $color-white;
 		padding:0px 22.5px 22.5px 22.5px;
 		.nav>li>a{
-			color: #777;
-			margin-left: 20px;
+			color: $color-gray-border;
+			margin-left: 10px;
 		}
 		.nav>li>a:hover{
 			color: $color-black;
@@ -44,6 +43,11 @@
 		.nav-tabs > li.active > a,.nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
 			border-bottom:  3px solid $color-blue;
 			color: $color-black;
+		}
+		.top-title{
+			margin-top:10px;
+			color:$color-gray-border;
+			font-size:20px;
 		}
 		.hr-r{
 			margin: 0;
@@ -58,16 +62,7 @@
 			background-color: $color-green-light;  
 			.video-title{
 				height: 47px;
-				overflow: hidden;
-				p{
-					text-align: justify;
-					margin-bottom: 0;
-				}
-				h5{
-					font-size: 16px;
-					margin: 0px;
-					text-align: center;
-				}
+				overflow: hidden;				
 			}
 			.video-status{
 				font-size: 12px;
