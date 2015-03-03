@@ -66,16 +66,18 @@
 		</div>
 	</div>
 	<div class="row">
-		<% (0..9) .each do |channel_index|%>
+		<% @channel_infos.each do |channel_info|%>
 		<div class="col-md-4 col-sm-6 my-col ">
-			<div class="channel-item">
-				<div class="col-xs-5 channel-logo">
-					<%= image_tag @channel_logo["#{channel_index}"] %>					
+			<%= link_to channel_info[:url] do %>
+				<div class="channel-item">
+					<div class="col-xs-5 channel-logo">
+						<%= image_tag channel_info[:logo] %>					
+					</div>
+					<div class="col-xs-7 channel-name">
+						<span><%= channel_info[:name] %></span>
+					</div>
 				</div>
-				<div class="col-xs-7 channel-name">
-					<span><%= @channel_name["#{channel_index}"] %></span>
-				</div>
-			</div>
+			<% end %>
 		</div>
 		<% end %>
 	</div>
