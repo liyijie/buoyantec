@@ -21,6 +21,9 @@
         <li class=<%= "active" if params[:controller] == "enterprise" %>><%= link_to("校企合作", enterprise_index_path) %></li>
         <li class=<%= "active" if params[:controller] == "education" %>><%= link_to("在线教育", education_index_path) %></li>
       </ul>
+      <%= link_to "http://www.datanggroup.cn/" do %>
+        <%= image_tag "datanggroup.png", class: "pull-right datanggroup"  %>
+      <% end %>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
