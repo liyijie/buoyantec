@@ -17,9 +17,14 @@
 </head>
 <body>
 
+<%= render partial: "share/head" %>
 <%= yield %>
 
 <%= yield :scripts %>
+
+<div id="footer">
+  <%= render partial: "share/footer" %>  
+</div>
 
 </body>
 </html>

@@ -3,4 +3,8 @@ class HomeController < ApplicationController
     @active_report = Report.order('created_at DESC').first
     @reports = Report.order('created_at DESC').offset(1).first(6)
   end
+
+  def about
+ 
+  end
 end

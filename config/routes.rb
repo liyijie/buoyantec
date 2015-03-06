@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'home/about'
+
   get 'enterprise/index'
   get 'education/index'
 
