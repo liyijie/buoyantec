@@ -1,17 +1,17 @@
 Rails.application.routes.draw do
   get 'home/error'
 
-  # get 'home/about'
+   get 'home/about'
 
-  # get 'enterprise/index'
-  # get 'education/index'
+   get 'enterprise/index'
+   get 'education/index'
 
-  # get 'dtce/index'
+   get 'dtce/index'
 
   mount Ckeditor::Engine => '/ckeditor'
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
-  # get 'home/index'
+   get 'home/index'
 
   resources :reports
   resources :trains

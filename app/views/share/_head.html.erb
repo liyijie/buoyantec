@@ -16,10 +16,12 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class=<%= "active" if params[:controller] == "home" && params[:action] == "index" %>><%= link_to("首页", root_path) %></li>
-        <li class=<%= "active" if params[:controller] == "trains" %>><%= link_to("培训", trains_path) %></li>
-        <li class=<%= "active" if params[:controller] == "dtce" %>><%= link_to("DTCE认证", dtce_index_path) %></li>
-        <li class=<%= "active" if params[:controller] == "enterprise" %>><%= link_to("校企合作", enterprise_index_path) %></li>
+        <li class=<%= "active" if params[:controller] == "trains" %>><%= link_to("新闻中心", trains_path) %></li>
         <li class=<%= "active" if params[:controller] == "education" %>><%= link_to("在线教育", education_index_path) %></li>
+        <li class=<%= "active" if params[:controller] == "" %>><%= link_to("解决方案", ) %></li>
+        <li class=<%= "active" if params[:controller] == "dtce" %>><%= link_to("大唐信息学院", dtce_index_path) %></li>
+        <li class=<%= "active" if params[:controller] == "enterprise" %>><%= link_to("校企合作", enterprise_index_path) %></li>
+        <li class=<%= "active" if params[:controller] == "" %>><%= link_to("成功案例", ) %></li>
         <li class=<%= "active" if params[:controller] == "home" && params[:action] == "about" %>><%= link_to("关于我们", home_about_path) %></li>
       </ul>
       <%= link_to "http://www.datanggroup.cn/" do %>
