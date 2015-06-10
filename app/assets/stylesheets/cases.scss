@@ -1,0 +1,33 @@
+@import "variables";
+@import "bootstrap";
+.cases_pg {
+  padding:3px 0 10px 0;
+  text-align:center;
+}
+.nav_list {
+  .cases_left_nav {
+    text-align:center;
+  }
+  li {
+    a{
+      text-decoration:none;
+      color:gray;
+      padding-left:20px;
+    }
+    :hover {
+      color:$color-blue;
+    }
+  }
+}
+.cases_show_t {
+  img {
+    padding:0 10px 5px 0;
+  }
+}
+.cases_show_a {
+  border-radius:5px!important;
+  text-align:center;
+  img {
+    padding-top:8px;
+  }
+}

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   get 'solution/ict'
 
   get 'solution/comminu'
@@ -13,18 +14,23 @@ Rails.application.routes.draw do
 
   get 'home/error'
 
-   get 'home/about'
+  get 'home/about'
+  get 'colleges/index'
+  get 'cases/index'
+  get 'enterprise/index'
+  get 'education/index'
+  get 'trains/index'
+  get 'dtce/index'
 
-   get 'enterprise/index'
-   get 'education/index'
+   add solution controller and modify ICT.html.erb
 
-   get 'dtce/index'
- 
 
   mount Ckeditor::Engine => '/ckeditor'
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
-   get 'home/index'
+
+  get 'home/index'
+
 
   resources :reports
   resources :trains
