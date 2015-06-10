@@ -1,7 +1,7 @@
 // Place all the styles related to the solution controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
+@import "variables";
 
 // solution/ict.scss
 .top-bg img{
@@ -9,12 +9,12 @@ width: 100%;
 }
 .gray-bg{
 	background: rgba(0,0,0,0.03);
-	padding: 50px 0;
+	padding: 30px 0;
 	img{
 		padding-bottom: 10px;
 	}
 	font-weight: bold;
-		font-size: 14px;
+	font-size: 14px;
 	a{
 		color: #383e4c;
 		.scheme{
@@ -48,10 +48,33 @@ width: 100%;
 		margin-bottom:30px;
 	}
 }
-// solution/commu.scss
 
+// solution/commu.scss
+.solution_title{
+	padding: 30px 0;
+}
+.solution_engineer{
+	padding-bottom: 20px;
+	.solution_train{
+		font-weight: bold;
+		line-height: 3;
+		font-size: 16px;
+	}
+}
 .system_bg{
 	background: url(/assets/solution_commu_courses.png) no-repeat;
+	background-size: 90% 90%;
+}
+.advanges{
+	background: url(/assets/solution_commu_scheme_blue.png) no-repeat;
 	background-size: 100% 100%;
-	height: 200px;
+}
+.solution_line{
+	padding-bottom: 30px;
+	margin-right: -40px;
+}
+.solution_case{
+	font-weight: bold;
+	color: $color-blue-dark;
+	font-size: 20px;
 }
