@@ -1,0 +1,12 @@
+zh_CN:
+  activerecord:
+    models:
+      report: 热点新闻
+    attributes:
+      report:
+        title: 新闻标题
+        content: 新闻描述
+        image: 新闻主图
+        category: 新闻类别
+        created_at: 创建时间
+        updated_at: 更新时间

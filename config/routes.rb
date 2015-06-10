@@ -1,17 +1,35 @@
 Rails.application.routes.draw do
+
+  get 'solution/ict'
+
+  get 'solution/comminu'
+
+  get 'solution/internet'
+
+  get 'solution/webthing'
+
+  get 'solution/futclass'
+
+  get 'solution/dtce'
+
   get 'home/error'
 
-   get 'home/about'
+  get 'home/about'
+  get 'colleges/index'
+  get 'cases/index'
+  get 'enterprise/index'
+  get 'education/index'
+  get 'trains/index'
+  get 'dtce/index'
 
-   get 'enterprise/index'
-   get 'education/index'
 
-   get 'dtce/index'
 
   mount Ckeditor::Engine => '/ckeditor'
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
-   get 'home/index'
+
+  get 'home/index'
+
 
   resources :reports
   resources :trains
@@ -20,7 +38,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'home#error'
+  root 'home#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

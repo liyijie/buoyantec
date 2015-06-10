@@ -13,7 +13,7 @@ ActiveAdmin.register Report do
   #   permitted << :other if resource.something?
   #   permitted
   # end
-  permit_params :title, :content,
+  permit_params :title, :content, :category,
     image_attributes: [:id, :desc, :photo, :_destroy]
 
   action_item :new, only: :show do
@@ -25,6 +25,10 @@ ActiveAdmin.register Report do
     column :image do |report|
       link_to(image_tag(report.image.photo.url(:mini)), report.image.photo.url) if report.image
     end
+    column :category do |report|
+      Report::ReportCategory[report.category.to_sym] rescue ''
+    end
+    column :created_at
 
     actions
   end
@@ -38,6 +42,7 @@ ActiveAdmin.register Report do
           ? cf.template.content_tag(:span, "还未选择图片文件")
           : cf.template.link_to(image_tag(image.photo.url(:medium)), image.photo.url, target: "_blank")
       end
+      f.input :category, as: :radio, collection: Report::ReportCategory.invert
     end
 
     f.input :content, as: :ckeditor
@@ -48,6 +53,9 @@ ActiveAdmin.register Report do
   show do |report|
     attributes_table do
       row :title
+      row  :category do |report|
+        Report::ReportCategory[report.category.to_sym] rescue ''
+      end
       row :content do
         report.content.html_safe if report.content
       end
@@ -59,6 +67,11 @@ ActiveAdmin.register Report do
 
     end
   end
+
+  filter :title
+  filter :content
+  filter :category, as: :select, collection: [['公司新闻',1],['行业动态',2]]
+  filter :created_at
 
 
 
