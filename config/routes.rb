@@ -22,7 +22,6 @@ Rails.application.routes.draw do
   get 'trains/index'
   get 'dtce/index'
 
-   add solution controller and modify ICT.html.erb
 
 
   mount Ckeditor::Engine => '/ckeditor'

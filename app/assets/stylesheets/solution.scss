@@ -2,6 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+// solution/ict.scss
 .top-bg img{
 width: 100%;
 }
@@ -46,4 +48,10 @@ width: 100%;
 		margin-bottom:30px;
 	}
 }
+// solution/commu.scss
 
+.system_bg{
+	background: url(/assets/solution_commu_courses.png) no-repeat;
+	background-size: 100% 100%;
+	height: 200px;
+}
