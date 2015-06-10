@@ -7,19 +7,30 @@
 .nav_list {
   .cases_left_nav {
     text-align:center;
+    font-size:18px;
   }
   li {
+    .glyphicon-align-left {
+      color:#fff;
+    }
+    span {
+      padding-right:22px;
+    }
     a{
+      display:block;
       text-decoration:none;
-      color:gray;
+      color:#777;
       padding-left:20px;
     }
     :hover {
-      color:$color-blue;
+      color:blue
     }
   }
 }
 .cases_show_t {
+  span {
+    color:#777;
+  }
   img {
     padding:0 10px 5px 0;
   }
@@ -28,6 +39,6 @@
   border-radius:5px!important;
   text-align:center;
   img {
-    padding-top:8px;
+    padding:8px 5px 0 5px;
   }
 }
