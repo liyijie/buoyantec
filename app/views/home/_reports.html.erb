@@ -1,25 +1,33 @@
-<div class="container-fluid text-center">
+<div class="container reports">
 	<br>
 	<h4>新闻资讯</h4>
 	<hr>
-	<div class="container reports">
-		<table class="table table-striped ">			
-			<tbody>
+	<table class="table table-hover">			
+		<tbody>
+			<% (0..2).each do |row|%>
 				<tr>
-					<td>
-						<div class="report-time">26</div>
+					<td class="report-time">
+						<div class="report-day">26</div>
 						<span>2015-05</span>
 					</td>
-					<td class="text-left">
+					<td class="report-img text-left">
 						<%= image_tag "index-reports1.jpg"%>
 					</td>
 					<td class="text-left">
-						<h4>大唐电信集团荣获“中国企业文化建设典范十强”奖</h4>
-						<p>nihao</p>
+						<h4><%= link_to "大唐电信集团荣获“中国企业文化建设典范十强”奖", "#"%></h4>
+						<p>“2014中国企业文化管理年会暨全国企业文化合作组织	公益平台启动仪式” 于12月13日在京隆重召开，作为中央企业企业文化的优秀推动者和社会主义核心价值观的优秀践行者，大唐电信集团在此次大会上荣获“中国企业文化建设典范十强奖”……</p>
 					</td>
 				</tr>
-			</tbody>
-		</table>
+			<% end %>
+		</tbody>
+	</table>
+	<div class="bgc-gray text-center">
+		<%= link_to "#" do %>
+			<h5 class="report-more">查看更多<span>>>></span></h5>
+		<% end %>
+	</div>
+	<div class="home-ad">
+		<%= image_tag "home_ad.png", width:"100%"%>
 	</div>
 </div>
 

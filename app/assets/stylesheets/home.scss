@@ -6,32 +6,41 @@
 //index
 .reports{
 	font-size: 13px;
-	.table > tbody > tr{
-		height: 105px;
-		> td{
-			vertical-align: middle;
-		}
-		img{
-			width: 130px;
+	text-align: center;
+	.table {
+		border-bottom: 3px solid $color-gray-bg;
+		> tbody > tr{
+			height: 120px;
+			> td{
+				vertical-align: middle;
+				border-top: 3px solid $color-gray-f3;
+				img{
+					width: 130px;
+				}
+				a{
+					color: $color-black;
+					&:hover{
+						color:$color-blue-dark;
+						text-decoration: none;
+					}
+				}
+			}
+			.report-time{
+				width: 180px;
+				.report-day{
+					font-size: 40px;
+					width: 45px;
+					margin: 0 auto;
+					border-bottom: 1px solid $color-gray-border;
+					line-height: 1;
+				}
+			}
+			.report-img{
+				width: 170px;
+			}
 		}
 	}
-	.report-time{
-		font-size: 40px;
-		width: 45px;
-		margin: 0 auto;
-		border-bottom: 1px solid $color-gray-border;
-		line-height: 1;
-	}
-}
-//about
-.about {
-	.about-img {
-		width: 100%;
-	}
-	.about-content {
-		p {
-			font-size: 14px;
-			line-height: 24px;
-		}
+	.report-more{
+		 padding: 5px 0;
 	}
 }
