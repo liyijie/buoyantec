@@ -2,18 +2,18 @@
 @import "bootstrap";
 
 .footer{
-  padding: 20px 0;
-  ul > li{
-    height: 120px;
-    padding: 0 15px;
-    margin-bottom: 5px;
-    border-left: 1px solid $color-gray;
-    > a{
-      color: $color-black;
-    }
-  }
-  img{
-    width: 100px;
-    margin: 10px 0;
-  }
+	padding: 20px 0;
+	ul > li{
+		height: 120px;
+		padding: 0 15px;
+		margin-bottom: 5px;
+		border-left: 1px solid $color-gray;
+	}
+	a{
+		color: #333;
+	}
+	img{
+		width: 100px;
+		margin: 10px 0;
+	}
 }
