@@ -1,0 +1,49 @@
+// Place all the styles related to the solution controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.top-bg img{
+width: 100%;
+}
+.gray-bg{
+	background: rgba(0,0,0,0.03);
+	padding: 50px 0;
+	img{
+		padding-bottom: 10px;
+	}
+	font-weight: bold;
+		font-size: 14px;
+	a{
+		color: #383e4c;
+		.scheme{
+			color: #7b7b7b;
+			border-top:3px solid #383e4c;
+		}
+	}
+	a:hover{
+		color: #ff010d;
+		text-decoration: none;
+		}
+}
+.darkgray-bg{
+	background: rgba(0,0,0,0.06);
+	.row{
+		margin: 20px 0 40px 0;
+	}
+	.ICT_line{
+		padding: 0 0;
+	}
+	.divided{
+		border:3px solid #1e7bcb;
+	}
+	.ICT_show{
+		padding-top: 5px;
+		font-size: 20px !important;
+		font-weight: bold;
+	}
+	.ICT_pic{
+		margin-top: 20px ;
+		margin-bottom:30px;
+	}
+}
+
