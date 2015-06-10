@@ -17,6 +17,7 @@
 	padding-right: 7.5px !important;
 	.channel-item{
 		height: 108px;
+		background-color:#fff;
 		border: 1px solid $color-gray;
 		text-align: center;
 		.channel-logo{			
@@ -29,10 +30,43 @@
 		}
 	}
 }
+.channel_content {
+	padding-bottom:20px;
+}
+.text-center {
+	img {
+		width:80%;
+	}
+}
 //laboratory construction
 .lab{
 	padding: 0 !important;
+	padding-bottom:20px !important;
 	.img{
 		width: 100%;
+	}
+	.coop_text1 {
+		line-height:26px;
+		position:absolute;
+		left:5%;
+		top:12%;
+	}
+	.coop_text2 {
+		line-height:26px;
+		position:absolute;
+		right:5%;
+		top:12%;
+	}
+	.coop_text3 {
+		line-height:26px;
+		position:absolute;
+		left:5%;
+		bottom:17%;
+	}
+	.coop_text4 {
+		line-height:26px;
+		position:absolute;
+		right:5%;
+		bottom:17%;
 	}
 }
