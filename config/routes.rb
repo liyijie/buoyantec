@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'solution/ICT'
+  get 'solution/ict'
 
   get 'solution/comminu'
 
@@ -9,7 +9,7 @@ Rails.application.routes.draw do
 
   get 'solution/futclass'
 
-  get 'solution/DTCE'
+  get 'solution/dtce'
 
   get 'home/error'
 
@@ -19,7 +19,7 @@ Rails.application.routes.draw do
    get 'education/index'
 
    get 'dtce/index'
-   add solution controller and modify ICT.html.erb
+ 
 
   mount Ckeditor::Engine => '/ckeditor'
   devise_for :admin_users, ActiveAdmin::Devise.config
