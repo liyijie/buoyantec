@@ -1,26 +1,14 @@
 <div class="container-fluid cases_pg">
   <%= image_tag "cases_bj.png", width: "82%" %>
 </div>
-
 <div class="container-fluid gray-panel">
   <div class="container cases_content">
-
-    <div class="col-md-3 nav_list">
-      <div class="col-md-12">
-        <ul class="list-group">
-          <li class="list-group-item cases_left_nav active"><strong>成功案例</strong></li>
-          <li class="list-group-item list_item"><a href="#"><span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>教育合作案例</a></li>
-          <li class="list-group-item list_item"><a href="#"><span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>培训案例</a></li>
-          <li class="list-group-item list_item"><a href="#"><span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>行业信息化案例</a></li>
-        </ul>
-      </div>
-    </div>
-
+    <%= render partial: "left_nav" %>
     <div class="col-md-9">
       <div class="col-md-12">
         <div class="panel panel-default">
           <div class="panel-heading cases_show_t">
-            <h3 class="panel-title"><%= image_tag "news_nav_icon.png"%><span>当前位置/首页/成功案例</span></h3>
+            <h3 class="panel-title"><%= image_tag "news_nav_icon.png"%><span>当前位置：首页/成功案例/教育合作案例</span></h3>
           </div>
           <div class="panel-body">
             <div class="row">
@@ -37,6 +25,5 @@
         </div>
       </div>
     </div>
-
   </div>
 </div> 

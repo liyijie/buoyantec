@@ -14,9 +14,13 @@ Rails.application.routes.draw do
 
   get 'home/error'
 
-  get 'home/about'
+  get 'abouts/company'
+  get 'abouts/dtby'
+  get 'abouts/team'
+  get 'abouts/job'
   get 'colleges/index'
-  get 'cases/index'
+  get 'cases/train_cases'
+  get 'cases/edu_cases'
   get 'enterprise/index'
   get 'education/index'
   get 'trains/index'
