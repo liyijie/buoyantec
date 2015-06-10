@@ -3,9 +3,9 @@ Rails.application.routes.draw do
 
   get 'solution/comminu'
 
-  get 'solution/Internet'
+  get 'solution/internet'
 
-  get 'solution/Webthing'
+  get 'solution/webthing'
 
   get 'solution/futclass'
 

@@ -1,19 +1,19 @@
 class SolutionController < ApplicationController
-  def ICT
+  def ict
   end
 
   def comminu
   end
 
-  def Internet
+  def internet
   end
 
-  def Webthing
+  def webthing
   end
 
   def futclass
   end
 
-  def DTCE
+  def dtce
   end
 end
