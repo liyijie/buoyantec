@@ -1,27 +1,21 @@
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-    </ol>
+  <!-- Indicators -->
+  <ol class="carousel-indicators buoyan-tec-carousel">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <%= image_tag "home_banner.png", width: "100%" %>
-        <div class="carousel-caption">
-        </div>
-      </div>
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <%= image_tag "home-1.jpg", style: "width: 100%", class: "img-responsive carousel-image", alt: "上海工商职业技术学院"%>
     </div>
-
-    <!-- Controls -->
-<!--     <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">上一张</span>
-    </a>
-    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">下一张</span>
-    </a> -->
+    <div class="item">
+      <%= image_tag "home-2.jpg", style: "width: 100%", class: "img-responsive carousel-image", alt: "上海工商职业技术学院"%>
+    </div>
+    <div class="item">
+      <%= image_tag "home-3.jpg", style: "width: 100%", class: "img-responsive carousel-image", alt: "上海工商职业技术学院"%>
+    </div>
   </div>
+</div>
