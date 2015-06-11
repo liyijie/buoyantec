@@ -24,8 +24,11 @@
 						text-decoration: none;
 					}
 				}
-				p{
+				.report-info{
 					color: $color-gray-a3;
+					height: 35px;
+					overflow: hidden;
+					text-overflow:ellipsis;
 				}
 			}
 			.report-time{
@@ -35,7 +38,7 @@
 					width: 45px;
 					margin: 0 auto;
 					border-bottom: 1px solid $color-gray-border;
-					line-height: 1;
+					line-height: 1.1;
 				}
 			}
 			.report-img{
