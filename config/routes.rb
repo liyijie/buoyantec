@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   get 'solution/dtce'
 
   get 'home/error'
-
+  
   resource :abouts do
     collection do 
       get :company
