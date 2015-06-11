@@ -22,7 +22,7 @@
         <li class=<%= "active" if params[:controller] == "dtce" %>><%= link_to("大唐信息学院", dtce_index_path) %></li>
         <li class=<%= "active" if params[:controller] == "enterprise" %>><%= link_to("校企合作", enterprise_index_path) %></li>
         <li class=<%= "active" if params[:controller] == "" %>><%= link_to("成功案例", cases_edu_cases_path) %></li>
-        <li class=<%= "active" if params[:controller] == "home" && params[:action] == "about" %>><%= link_to("关于我们", abouts_path) %></li>
+        <li class=<%= "active" if params[:controller] == "home" && params[:action] == "about" %>><%= link_to("关于我们", company_abouts_path) %></li>
       </ul>
       <%= link_to "http://www.datanggroup.cn/" do %>
         <%= image_tag "datanggroup.png", class: "pull-right datanggroup"  %>
