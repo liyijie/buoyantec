@@ -35,9 +35,6 @@ width: 100%;
 	.ict_line{
 		padding: 0 0;
 	}
-	.divided{
-		border:3px solid #1e7bcb;
-	}
 	.ict_show{
 		padding-top: 5px;
 		font-size: 20px !important;
@@ -55,19 +52,41 @@ width: 100%;
 }
 .solution_engineer{
 	padding-bottom: 20px;
+	font-weight: bold;
+	font-size: 16px;
+	.system_course{
+ 		color: #fff;
+ 		font-size: 20px;
+		.divided{
+			background: #fff;
+			margin: 0 !important;
+		}
+ 	}
 	.solution_train{
-		font-weight: bold;
 		line-height: 3;
-		font-size: 16px;
+	}
+	.caption{
+		padding: 0 10px !important;
+		p{
+			text-align: justify;
+		}
+	}
+	.thumbnail{
+		padding-top: 10px;
 	}
 }
 .system_bg{
 	background: url(/assets/solution_commu_courses.png) no-repeat;
-	background-size: 90% 90%;
+	background-size: 100%  90%;
+	height: 200px;
 }
 .advanges{
 	background: url(/assets/solution_commu_scheme_blue.png) no-repeat;
 	background-size: 100% 100%;
+	height: 40px;
+	line-height: 30px;
+	text-align: center;
+	margin: 0 -17px;
 }
 .solution_line{
 	padding-bottom: 30px;
@@ -76,5 +95,14 @@ width: 100%;
 .solution_case{
 	font-weight: bold;
 	color: $color-blue-dark;
-	font-size: 20px;
+	font-size: 28px;
+}
+.solution_bline{
+	padding-top: 20px;
+}
+.teaching_base{
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 3;
+
 }
