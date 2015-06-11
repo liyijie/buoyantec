@@ -1,11 +1,8 @@
-<div class="container-fluid abouts_bg">
-  <%= image_tag "about_bg.png", width: "83%" %>
-</div>
-<div class="container-fluid gray-panel">
+<%= render partial: "about_bg" %>
   <div class="container cases_content">
+  <div class="row">
     <%= render partial: "us_left_nav" %>
     <div class="col-md-9">
-      <div class="col-md-12">
         <div class="panel panel-default">
           <div class="panel-heading cases_show_t">
             <h3 class="panel-title"><%= image_tag "news_nav_icon.png"%><span>当前位置：首页/关于我们/招聘信息</span></h3>
@@ -39,7 +36,6 @@
               </div>
             </div>
           </div>
-        </div>
       </div>
     </div>
   </div>
