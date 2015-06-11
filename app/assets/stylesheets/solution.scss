@@ -28,7 +28,12 @@ width: 100%;
 		margin-top: 20px ;
 		margin-bottom:30px;
 	}
+	.ict_abstract{
+		font-weight: bold;
+		line-height: 2;
+	}
 }
+
 
 // solution/commu.scss
 .solution_title{
@@ -54,6 +59,9 @@ width: 100%;
 	}
 	.thumbnail{
 		padding-top: 10px;
+		.advan_case{
+			font-size: 14px;
+		}
 	}
 }
 .solution_train{

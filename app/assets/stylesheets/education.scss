@@ -9,6 +9,18 @@
 	h3 {
 		padding: 30px;
 		text-align: center;
+		.title-hr {
+			border: 2px solid #6ca0f6;
+			width: 240px;
+			margin-top: 5px;
+			margin-bottom: 0px;
+		}
+		.title-hr-short {
+			border: 3px solid #6ca0f6;
+			width: 65px;
+			margin-top: 0px;
+			margin-bottom: 0px;
+		}
 	}
 	.education-platform {
 		background: $color-gray-bg;
