@@ -1,60 +1,80 @@
 <div class="container">
-	<div class="row">
-		<div class="col-md-3">
-			<div id="leftMenu" class="content text-center">
-				<div class="left-body">
-					<ul class="nav nav-stacked">
-					  <li role="presentation"><%= link_to "平台简介", "#"%></li>
-					  <hr class="divider">
-					  <li role="presentation"><%= link_to "平台背景", "#"%></li>
-					  <hr class="divider">
-					  <li role="presentation"><%= link_to "培训通知", "#"%></li>
-					  <hr class="divider">
-					  <li role="presentation"><%= link_to "培训报名", "#"%></li>
-					</ul>
+	<%= image_tag "news_banner.png", class:"img-responsive"%>
+</div>
+<br>
+<div class="bgc-gray">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<div id="leftMenu" class="content text-center">
+					<div class="left-head">新闻中心</div>
+					<div class="left-body">
+						<ul class="nav">
+							<li role="presentation"><%= link_to "公司新闻", "#"%></li>
+							<hr class="divider">
+							<li role="presentation" class="active"><%= link_to "行业动态", "#"%></li>
+							<hr class="divider">
+						</ul>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="col-md-9">
-			<div class="content">
-				<div class="right-body">
-					<ul class="nav nav-stacked notice-index">       
-						<li role="presentation">
-							<a href="#">
-								<div class="row notice-index">
-									<div class="col-xs-10"><span><%= image_tag "notice_index_icon.png"%></span>集团召开2015年一季度经济活动分析会</div>
-									<div class="col-xs-2 text-right">[2015-04-19]</div>
-								</div>
-							</a>
-						</li>
-						<hr class="divider">
-					</ul>
-					<br>
-					<nav class="text-center">
-						<ul class="pagination">
+			<div class="col-md-9">
+				<div class="content">
+					<div class="right-head">
+						<ul class="nav nav-pills">
 							<li>
-								<a href="#" aria-label="Previous">
-									<span aria-hidden="true">&laquo;</span>
-								</a>
+								<span><%= image_tag "news_nav_icon.png"%>&nbsp;&nbsp;当前位置:&nbsp;&nbsp;</span>
 							</li>
-							<li><a href="#">1</a></li>
-							<li><a href="#">2</a></li>
-							<li><a href="#">3</a></li>
-							<li><a href="#">4</a></li>
-							<li><a href="#">5</a></li>
 							<li>
-								<a href="#" aria-label="Next">
-									<span aria-hidden="true">&raquo;</span>
-								</a>
+								<ol class="breadcrumb">
+									<li><a href="#">首页</a></li>
+									<li class="active">新闻中心</li>
+								</ol>
 							</li>
+						</ul>					
+					</div>
+					<div class="right-body">
+						<ul class="nav nav-stacked reports-index">    
+							<% (0..10).each do |report| %>   
+								<li role="presentation">
+									<a href="#">
+										<div class="row reports-index">
+											<div class="col-xs-10">
+												<span><%= image_tag "news_li_dot.png"%>
+												</span>&nbsp;&nbsp;集团召开2015年一季度经济活动分析会
+											</div>
+											<div class="col-xs-2 text-right">[2015-04-19]</div>
+										</div>
+									</a>
+								</li>
+							<% end %>
 						</ul>
-					</nav>
+						<br>
+						<nav class="text-center">
+							<ul class="pagination">
+								<li>
+									<a href="#" aria-label="Previous">
+										<span aria-hidden="true">&laquo;</span>
+									</a>
+								</li>
+								<li><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#">5</a></li>
+								<li>
+									<a href="#" aria-label="Next">
+										<span aria-hidden="true">&raquo;</span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
-
 <script type="text/javascript">
 //   $(function(){
 //     $("#leftMenu a").removeClass("active");

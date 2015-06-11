@@ -5,73 +5,55 @@
 @import "bootstrap";
 
 .education{
-	.nav>li{
-		height: 56px;
+	padding-top: 10px;
+	h3 {
+		padding: 30px;
 		text-align: center;
 	}
-	.nav>li>a{
-		border-style: none;
-		padding: 16px 0px;
+	.education-platform {
+		background: $color-gray-bg;
 		font-size: 16px;
-		color: $color-black;
-	}
-	.nav > li > a:hover, .nav > li > a:focus, .nav-tabs > li.active > a,.nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
-		 border-style: none;
-		 border-radius: 0px;
-		 color: $color-blue;
-		 background-color: $color-white;
-	}
-	.edu-left{
-		background-color: $color-white;
-		.hr-l{
-			margin: 0px 15px;
-		}
-		.nav-tabs > li.active > a,.nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
-			border-left: 3px solid $color-blue;
-			border-right: 3px solid transparent;
-		}
-	}
-	.edu-right{
-		background-color: $color-white;
-		padding:0px 22.5px 22.5px 22.5px;
-		.nav>li>a{
-			color: $color-gray-border;
-			margin-left: 10px;
-		}
-		.nav>li>a:hover{
-			color: $color-black;
-		}
-		.nav-tabs > li.active > a,.nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
-			border-bottom:  3px solid $color-blue;
-			color: $color-black;
-		}
-		.top-title{
-			margin-top:10px;
-			color:$color-gray-border;
-			font-size:20px;
-		}
-		.hr-r{
-			margin: 0;
-			margin-top: 1px;
-		}
-		.img{
-			width: 100%;
-		}
-		.video-info{
-			height:82px;
-			padding: 10px;
-			background-color: $color-green-light;  
-			.video-title{
-				height: 47px;
-				overflow: hidden;				
+		.platform-content {
+			p {
+				line-height: 2.3;
+				text-indent: 2em;
 			}
-			.video-status{
-				font-size: 12px;
-				color: $color-gray;
-				.status-right{
-					float: right;
+		}
+		
+	}
+
+	.education-model {
+		background: $color-gray-ee;
+		padding-bottom: 40px;
+
+		.model-content {
+			height: 340px;
+			position: relative;
+
+			.model-head {
+				text-align: center;
+				width: 254px;
+				height: 52px;
+				background: image-url("platform_head.png");
+				position: absolute;
+				margin-left: 32px;
+				h4 {
+					color: #8b99cb;
+					line-height: 32px;
+				}
+			}
+
+			.model-body {
+				width: 316px;
+				height: 310px;
+				margin-top: 26px;
+				padding: 46px 10px;
+				background: image-url("platform_body.png");
+				p {
+					text-indent: 2em;
 				}
 			}
 		}
-	}	
+		
+	}
 }

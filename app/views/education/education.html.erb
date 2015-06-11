@@ -1,75 +1,46 @@
 <div class="container-fluid">
-	<%= image_tag "education_bj.png", width: "100%" %>
+	<%= image_tag "online_teach.png", width: "100%" %>
 </div>
-<div class="container-fluid gray-panel" style="margin-top:0;">
-	<div class="container">
-		<div class="row education">
-			<div class="col-md-3 my-col">
-				<div class="edu-left">
-					<ul class="nav nav-tabs nav-stacked">
-						<li class="active"><%=link_to "前端开发",education_index_path %></li>
-						<hr class="hr-l">
-						<li><%=link_to "后端开发",education_index_path %></li>
-						<hr class="hr-l">
-						<li><%=link_to "移动开发",education_index_path %></li>
-						<hr class="hr-l">
-						<li><%=link_to "网络优化",education_index_path %></li>
-					</ul>					
+<div class="container-fluid education">
+	<div class="education-platform">
+		<div class="container">
+			<div class="row">
+				<h3>大唐邦彦在线教育平台</h3>
+				<div class="col-md-7  platform-content">
+					<p>在线教育平台是不同于传统课堂面授教育的一种授课、学习方式，授课者发布教学课程、解答疑问、批改作业、学习者学习课程、提问、讨论、完成作业等均在此线上平台进行，交流方式则不限于已有的和可能出现的任何一种IT技术及外设。<p><br>
+					<p> 大唐邦彦在线教育平台是一个集在线学习、实习实训、项目管理和招聘信息于一体的大型教育及延伸服务综合性平台，服务的用户群体是：IT互联网相关专业的在校大学生。与众多在线互联网教育平台不同的是，邦彦教育不仅专注于IT互联网教育的内容挖掘和形式创新，还以毕业大学生的就业问题为出发点，提供多方向、全面而贴近市场的服务。满足了大学生掌握一门职业技能、获得项目经历的积累、适应企业工作节奏和管理的切实需求，为学生快速实现在校学生向社会人的成功转型提供一套系统科学的解决方案。</p>
+				</div>
+				<div class="col-md-5 text-center">
+					<%= image_tag "online_mof.png" %>
 				</div>
 			</div>
-			<div class="col-md-9 my-col">
-				<div class="edu-right">
-					<!--header-->
-					<div class="container-fluid">
-						<div class="col-xs-4 col-md-4 my-col">
-							<h3 class="top-title">前端开发</h3>	
-						</div>		
-						<div class="col-xs-8 col-md-8 my-col">
-							<ul class="nav nav-tabs pull-right" style="border:none;">
-								<li class="active"><%=link_to "最新上线",education_index_path %></li>
-								<li><%=link_to "最受欢迎",education_index_path %></li>
-								<li><%=link_to "",education_index_path, class:"glyphicon glyphicon-filter"%></li>
-							</ul>							
-						</div>
+		</div>
+	</div>
+
+	<div class="education-model">
+		<div class="container">
+			<div class="row">
+				<h3>邦彦在线教育平台的功能模块</h3>
+				<div class="col-sm-4 col-md-4 model-content">
+					<div class="model-head"><h4>在线学习</h4></div>
+					<div class="model-body">
+						<p>在线学习是在线教育平台的基础功能模块，该模块提供各类IT互联网领域的理论及应用技能精品课程，同时共享各高级合作院校的优质课程，极大的保证在线课程全、精、新、独家的特点。</p>
+     				<p>平台支持多种课件播放形式，满足不同课程、或同一课程的不同教学方式。同时支持教师用户上传、制作课程，开设自己的培训班、在线完成答疑、批改等。</p>
 					</div>
-					<hr class="hr-r">
-					<!--video-->
-					<div class="row">				
-						<% (0..2).each do |index|%>
-						<div class="col-md-4 col-sm-6 my-col">
-							<%=image_tag "education_html_css.png",class:"img"%>
-							<div class="video-info">
-								<div class="video-title">
-									<h4 class="text-center">HTML+CSS基础课程</h4>
-								</div>
-								<div class="video-status">4天前更新<span class="status-right">61913人学习</span>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6 my-col">
-							<%=image_tag "education_javascript.png",class:"img"%>
-							<div class="video-info">
-								<div class="video-title">
-									<p>做为一名web攻城狮的必备技术，让您从糊涂到明白，快速认识JavaScript。</p>
-								</div>
-								<div class="video-status">
-									共4章23节<span class="status-right">课程时长：1小时35分</span>
-								</div>
-							</div>	
-						</div>
-						<div class="col-md-4 col-sm-6 my-col">
-							<%=image_tag "education_jquery.png",class:"img"%>
-							<div class="video-info">
-								<div class="video-title">
-									<h4 class="text-center">jQuery基础课程</h4>
-								</div>
-								<div class="video-status">
-									2014-04-29更新<span class="status-right">28532人学习</span>
-								</div>
-							</div>	
-						</div>
-						<% end %>
-					</div>	
+				</div>
+				<div class="col-sm-4 col-md-4 model-content">
+					<div class="model-head"><h4>在线协同实训平台</h4></div>
+					<div class="model-body">
+						<p>在线协同平台是服务实训项目和创业项目的信息发布、团队组建、协同开发的平台。主要定位提高实训项目和创业项目实施过程中项目各成员、各任务间相互协同，特别适用于创业型或者学习型等中小型项目。</p>
+     				<p>在线协同平台以消除地域的阻碍、提高项目实施效率为目标，借鉴开源社区的优良基因，将敏捷项目管理知识与经验融入系统之中，通过互联网技术打破空间与时间的束缚，克服了传统项目团队成员需要同时同地工作的局限性。</p>
+					</div>
+				</div>
+				<div class="col-sm-4 col-md-4 model-content">
+					<div class="model-head"><h4>在线学习</h4></div>
+					<div class="model-body">
+						<p>大学生的就业问题近来越发突出的背景下，在校大学生的实习经历显得格外必要。但是大学生普遍缺乏获取实习机会的有效渠道，难以在步入社会之前得到一定的锻炼。</p>
+     				<p>邦彦在线教育平台开发出实习招聘模块，大学生可以在平台根据自己的专业查询到全国IT互联网行业的实习及招聘信息。另外，平台还为大学生用户提供个性定制的实习招聘信息推送功能，在WEB端和移动端都可实现，最大限度的方便大学生随时随地轻松找实习、找工作。</p>
+					</div>
 				</div>
 			</div>
 		</div>

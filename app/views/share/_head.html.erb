@@ -18,7 +18,7 @@
         <li class=<%= "active" if params[:controller] == "home" && params[:action] == "index" %>><%= link_to("首页", root_path) %></li>
         <li class=<%= "active" if params[:controller] == "trains" %>><%= link_to("新闻中心", trains_path) %></li>
         <li class=<%= "active" if params[:controller] == "education" %>><%= link_to("在线教育", education_index_path) %></li>
-        <li class=<%= "active" if params[:controller] == "" %>><%= link_to("解决方案", ) %></li>
+        <li class=<%= "active" if params[:controller] == "solution" %>><%= link_to("解决方案", solution_ict_path) %></li>
         <li class=<%= "active" if params[:controller] == "dtce" %>><%= link_to("大唐信息学院", dtce_index_path) %></li>
         <li class=<%= "active" if params[:controller] == "enterprise" %>><%= link_to("校企合作", enterprise_index_path) %></li>
         <li class=<%= "active" if params[:controller] == "" %>><%= link_to("成功案例", cases_edu_cases_path) %></li>
