@@ -33,7 +33,7 @@ Rails.application.routes.draw do
   
   get 'enterprise/index'
   get 'education/index'
-  get 'trains/index'
+  get 'reports/index'
   get 'dtce/index'
 
   mount Ckeditor::Engine => '/ckeditor'

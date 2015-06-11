@@ -4,9 +4,37 @@
     <%= render partial: "us_left_nav" %>
     <div class="col-md-9">
         <div class="panel panel-default">
+        <!-- <div class="right-head">
+            <ul class="nav nav-pills">
+              <li>
+                <span><%= image_tag "news_nav_icon.png"%>&nbsp;&nbsp;当前位置:&nbsp;&nbsp;</span>
+              </li>
+              <li>
+                <ol class="breadcrumb">
+                  <li><a href="#">首页</a></li>
+                  <li class="active">关于我们</li>
+                  <li class="active">公司简介</li>
+                </ol>
+              </li>
+            </ul>         
+          </div> -->
           <div class="panel-heading cases_show_t">
-            <h3 class="panel-title"><%= image_tag "news_nav_icon.png"%><span>当前位置：首页/关于我们/公司简介</span></h3>
-          </div>
+            <h3 class="panel-title">
+            <ul  class="nav nav-pills">
+            <li>
+            <%= image_tag "news_nav_icon.png"%>
+            <span>当前位置：</span>
+            </li>
+            <li>
+            <ol class="breadcrumb">
+                  <li><a href="#">首页</a></li>
+                  <li class="active">关于我们</li>
+                  <li class="active">公司简介</li>
+                </ol>
+                </li>
+                </ul>
+            </h3>
+          </div> 
           <div class="panel-body">
             <div class="company_logo">
               <%= image_tag "logo.png", width: "55%" %>
