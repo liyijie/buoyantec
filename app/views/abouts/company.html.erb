@@ -1,11 +1,8 @@
-<div class="container-fluid abouts_bg">
-  <%= image_tag "about_bg.png", width: "83%" %>
-</div>
-<div class="container-fluid gray-panel">
+<%= render partial: "about_bg" %>
   <div class="container cases_content">
+  <div class="row">
     <%= render partial: "us_left_nav" %>
     <div class="col-md-9">
-      <div class="col-md-12">
         <div class="panel panel-default">
           <div class="panel-heading cases_show_t">
             <h3 class="panel-title"><%= image_tag "news_nav_icon.png"%><span>当前位置：首页/关于我们/公司简介</span></h3>
@@ -19,7 +16,6 @@
               &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp大唐邦彦（上海）信息技术有限公司（简称大唐邦彦）是一家专注于移动互联网信息技术、大数据云平台、教育行业信息化、校企合作产教融合开发的高科技企业。集合大唐电信科技产业集团优势资源，依托集团研发实力和企业大学的教学经验，大唐邦彦与国内外多所知名教育研究机构、高校建立了战略伙伴关系，将校企合作由原来的共建产教融合基地、人才创新基地等扩展到专业领域的人才培养，进行专业学科建设的设计与实施、在线教育平台的综合应用，并自主开发集成了FIT系列实训室整体解决方案，实现产业需求与高校教育内容、教育过程的深度融合。
             </div>
           </div>
-        </div>
       </div>
     </div>
   </div>
