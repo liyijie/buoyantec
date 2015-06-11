@@ -1,5 +1,5 @@
 class CasesController < ApplicationController
-  def edu_cases
+  def edu
     @pic_text={
      "1"=>"多功能ICT展厅",
      "2"=>"移动通信实训室",
@@ -10,7 +10,10 @@ class CasesController < ApplicationController
      "7"=>"设备管理实训系统",
    }
  end
- def train_cases
+ def train
+   
+ end
+ def industry
   @pic_text={
    "8"=>"上海浦东气象局微信公众号开发",
    "9"=>"上海市气象局业务平台开发项目",

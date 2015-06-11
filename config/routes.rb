@@ -28,9 +28,9 @@ Rails.application.routes.draw do
     end
   end
   get 'colleges/index'
-  get 'cases/train_cases'
-  get 'cases/edu_cases'
-  
+  get 'cases/train'
+  get 'cases/edu'
+  get 'cases/industry'
   get 'enterprise/index'
   get 'education/index'
   get 'reports/index'
