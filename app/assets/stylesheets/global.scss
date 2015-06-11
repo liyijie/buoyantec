@@ -7,3 +7,10 @@
 .bgc-gray-dark{
 	background-color: $color-gray-bg-dark;
 }
+.m-row{
+	padding: 0 10px;
+	.m-col{
+		padding: 0 5px;
+		margin-bottom: 5px;
+	}
+}
