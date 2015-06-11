@@ -1,3 +1,40 @@
 // Place all the styles related to the reports controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "variables";
+.content{
+	border-radius: 5px;
+	.left-body{
+		border:1px solid $color-gray-border;
+		border-top: 0px;
+		border-radius:0px 0px 8px 8px;
+		padding: 5px 0;
+	}
+	.right-body{
+		border:1px solid $color-gray-border;
+		border-radius:0px 0px 8px 8px;
+		border-top: 0px;
+		padding: 20px 10px;
+		.notice-index > div{
+			overflow: hidden; 
+			text-overflow:ellipsis;
+			white-space:nowrap;
+		}
+		.table > thead:first-child > tr:first-child > th, .table-bordered > tbody > tr > td, .table-bordered > tbody > tr > th{
+			text-align: center;
+			vertical-align: middle;
+			.cell-width{
+				width: 35px;
+			}
+		}
+		.table > thead:first-child > tr:first-child > th{
+			color: $color-blue;
+		}
+	}
+	.divider{
+		margin: 0 10px 0 10px;
+		border-width: 1px 0px 0px;
+		border-style: dashed none none;
+		border-color: $color-gray-border;
+	}
+}
