@@ -1,14 +1,64 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Title:</strong>
-  <%= @report.title %>
-</p>
-
-<p>
-  <strong>Content:</strong>
-  <%= @report.content %>
-</p>
-
-<%= link_to 'Edit', edit_report_path(@report) %> |
-<%= link_to 'Back', reports_path %>
+<div class="container">
+	<%= image_tag "news_banner.png", class:"img-responsive"%>
+</div>
+<br>
+<div class="bgc-gray">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<div id="leftMenu" class="content text-center">
+					<div class="left-head">新闻中心</div>
+					<div class="left-body">
+						<ul class="nav">
+							<li role="presentation"><%= link_to "公司新闻", "#"%></li>
+							<hr class="divider">
+							<li role="presentation" class="active"><%= link_to "行业动态", "#"%></li>
+							<hr class="divider">
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-9">
+				<div class="content">
+					<div class="right-head">
+						<ul class="nav nav-pills">
+							<li>
+								<span><%= image_tag "news_nav_icon.png"%>&nbsp;&nbsp;当前位置:&nbsp;&nbsp;</span>
+							</li>
+							<li>
+								<ol class="breadcrumb">
+									<li><a href="#">首页</a></li>
+									<li class="active">新闻中心</li>
+								</ol>
+							</li>
+						</ul>					
+					</div>
+					<div class="right-body">
+						<div class="container-fluid text-center">
+							<h2><%= @report.title %></h2>
+						</div>
+						<hr class="divider">
+						<div class="text-justify news-content">
+							<ul class="nav-justified">
+								<li class="notice-info">发布时间: 2015-04-15</li>
+								<li class="notice-info">浏览次数: 8888次</li>
+								<li class="notice-info">来源: 大唐电信</li>
+								<li class="notice-info">
+									分享:
+									<a href="#"><%=image_tag "space.png"%></a>
+									<a href="#"><%=image_tag "weibo.png"%></a>
+									<a href="#"><%=image_tag "tencent.png"%></a>
+									<a href="#"><%=image_tag "renren.png"%></a>
+									<a href="#"><%=image_tag "red.png"%></a>	
+									<a href="#"><%=image_tag "orange.png"%></a>
+								</li>
+							</ul>
+							<br>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= @report.content %></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
