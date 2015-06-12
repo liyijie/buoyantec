@@ -7,9 +7,9 @@ gem 'rails', '4.2.0'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 gem 'mysql2'
-
-# Use SCSS for stylesheets
+# Use bootstrap for rails
 gem 'bootstrap-sass', '~> 3.3.4'
+# Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 
 # Use Uglifier as compressor for JavaScript assets
@@ -50,6 +50,8 @@ gem 'devise'
 gem 'active_skin', github: 'liyijie/active_skin'
 gem 'ckeditor', github: 'galetahub/ckeditor'
 gem 'paperclip'
+# A Scope & Engine based, clean, powerful, customizable and sophisticated paginator for modern web app frameworks and ORMs
+gem 'kaminari'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
