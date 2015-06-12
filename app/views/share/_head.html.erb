@@ -13,16 +13,49 @@
       </a>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div class="collapse navbar-collapse" id="menuContent">
       <ul class="nav navbar-nav">
-        <li class=<%= "active" if params[:controller] == "home" && params[:action] == "index" %>><%= link_to("首页", root_path) %></li>
-        <li class=<%= "active" if params[:controller] == "trains" %>><%= link_to("新闻中心", reports_path) %></li>
+        <li class=<%= "active" if params[:controller] == "home" && params[:action] == "index" %>>
+          <%= link_to("首页", root_path) %>
+        </li>
+        <li class=<%= "active" if params[:controller] == "trains" %>>
+          <%= link_to("新闻中心", reports_path) %>
+          <ul class="dropdown-menu" role="menu">
+            <li><%= link_to("公司新闻", "#") %></li>
+            <li><%= link_to("行业动态", "#") %></li>
+          </ul>
+        </li>
         <li class=<%= "active" if params[:controller] == "education" %>><%= link_to("在线教育", educations_path) %></li>
-        <li class=<%= "active" if params[:controller] == "solution" %>><%= link_to("解决方案", solution_ict_path) %></li>
+        <li class=<%= "active" if params[:controller] == "solution" %>>
+          <%= link_to("解决方案", solution_ict_path) %>
+          <ul class="dropdown-menu" role="menu">
+            <li><%= link_to("ICT综合智慧展厅", "#") %></li>
+            <li><%= link_to("移动通信实训中心", "#") %></li>
+            <li><%= link_to("移动互联网实训中心", "#") %></li>
+            <li><%= link_to("物联网实训中心", "#") %></li>
+            <li><%= link_to("未来教室融合", "#") %></li>
+            <li><%= link_to("dtce资格认证", "#") %></li>
+          </ul>
+        </li>
         <li class=<%= "active" if params[:controller] == "dtce" %>><%= link_to("大唐信息学院", colleges_path) %></li>
         <li class=<%= "active" if params[:controller] == "enterprise" %>><%= link_to("校企合作", enterprise_path) %></li>
-        <li class=<%= "active" if params[:controller] == "" %>><%= link_to("成功案例", cases_edu_path) %></li>
-        <li class=<%= "active" if params[:controller] == "home" && params[:action] == "about" %>><%= link_to("关于我们", company_abouts_path) %></li>
+        <li class=<%= "active" if params[:controller] == "" %>>
+          <%= link_to("成功案例", cases_edu_path) %>
+          <ul class="dropdown-menu" role="menu">
+            <li><%= link_to("教育合作案例", "#") %></li>
+            <li><%= link_to("培训案例", "#") %></li>
+            <li><%= link_to("行业信息化案例", "#") %></li>
+          </ul>
+        </li>
+        <li class=<%= "active" if params[:controller] == "home" && params[:action] == "about" %>>
+          <%= link_to("关于我们", company_abouts_path) %>
+          <ul class="dropdown-menu" role="menu">
+            <li><%= link_to("公司简介", "#") %></li>
+            <li><%= link_to("企业文化", "#") %></li>
+            <li><%= link_to("团队介绍", "#") %></li>
+            <li><%= link_to("招聘信息", "#") %></li>
+          </ul>
+        </li>
       </ul>
       <%= link_to "http://www.datanggroup.cn/" do %>
         <%= image_tag "datanggroup.png", class: "pull-right datanggroup"  %>
@@ -30,3 +63,15 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+<script type="text/javascript">
+  $(function(){
+    $("#menuContent ul li").mouseenter(function(){
+      $(this).addClass("open");
+      $(this).find("a").attr("aria-expanded",true)
+    });
+    $("#menuContent ul li").mouseleave(function(){
+      $(this).removeClass("open");
+      $(this).find("a").attr("aria-expanded",false)
+    });
+  });
+</script>

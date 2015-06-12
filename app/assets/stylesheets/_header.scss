@@ -1,0 +1,20 @@
+@import "variables";
+@import "bootstrap";
+
+#menuContent {
+  .dropdown-menu {
+    background: $color-blue;
+    li {
+      padding-top: 10px;
+      padding-bottom: 10px;
+
+      a {
+        color: #fff;
+      }
+
+      a:hover {
+        color: #f39800;
+      }
+    }
+  }
+}
