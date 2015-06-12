@@ -1,7 +1,5 @@
-# config/initializers/kaminari.rb
 Kaminari.configure do |config|
-  config.page_method_name = :per_page_kaminari
-    # config.default_per_page = 25
+  # config.default_per_page = 25
   # config.max_per_page = nil
   # config.window = 4
   # config.outer_window = 0

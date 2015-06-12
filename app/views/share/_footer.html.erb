@@ -17,9 +17,9 @@
 				<ul class="nav nav-justified">
 					<li>
 						新闻中心<br>
-						<small><%= link_to "新闻资讯", "#"%></small><br>
-						<small><%= link_to "行业动态", "#"%></small><br>
-						<small><%= link_to "合作支持", "#"%></small><br>
+						<small><%= link_to "新闻资讯", reports_path%></small><br>
+						<small><%= link_to "行业动态", reports_path(category: "industry")%></small><br>
+						<small><%= link_to "合作支持", enterprise_path %></small><br>
 					</li>
 				</ul>
 			</div>
@@ -28,7 +28,7 @@
 					<li>
 						联系我们<br>
 						<small><%= link_to "地图", "#"%></small><br>
-						<small><%= link_to "招聘", "#"%></small><br>
+						<small><%= link_to "招聘", %></small><br>
 						<small><%= link_to "意见反馈", "#"%></small><br>
 						<small><%= link_to "联系电话", "#"%></small>				
 					</li>
