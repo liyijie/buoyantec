@@ -8,5 +8,7 @@ zh_CN:
         content: 新闻描述
         image: 新闻主图
         category: 新闻类别
+        source: 新闻来源
+        view_count: 点击次数
         created_at: 创建时间
         updated_at: 更新时间

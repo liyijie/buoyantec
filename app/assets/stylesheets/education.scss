@@ -41,25 +41,26 @@
 		.model-content {
 			height: 340px;
 			position: relative;
-
 			.model-head {
 				text-align: center;
 				width: 254px;
 				height: 52px;
 				background: image-url("platform_head.png");
-				position: absolute;
-				margin-left: 32px;
+				margin: 0 auto -55px auto;
+				position: relative;
+				z-index: 999;
 				h4 {
 					color: #8b99cb;
-					line-height: 32px;
+					line-height: 52px;
 				}
 			}
 
 			.model-body {
 				width: 316px;
 				height: 310px;
-				margin-top: 26px;
-				padding: 46px 10px;
+				margin: 26px auto 0 auto;
+				padding: 46px 15px;
+				text-align: justify;
 				background: image-url("platform_body.png");
 				p {
 					text-indent: 2em;

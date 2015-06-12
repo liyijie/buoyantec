@@ -10,6 +10,7 @@ class ReportsController < ApplicationController
   # GET /reports/1
   # GET /reports/1.json
   def show
+    @report = Report.find(params[:id])
   end
 
   # GET /reports/new
@@ -69,6 +70,6 @@ class ReportsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def report_params
-      params.require(:report).permit(:title, :content)
+      params.require(:report).permit(:title, :content, :source, :view_count)
     end
 end

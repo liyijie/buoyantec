@@ -13,7 +13,7 @@ ActiveAdmin.register Report do
   #   permitted << :other if resource.something?
   #   permitted
   # end
-  permit_params :title, :content, :category,
+  permit_params :title, :content, :category, :source, :view_count,
     image_attributes: [:id, :desc, :photo, :_destroy]
 
   action_item :new, only: :show do
@@ -28,6 +28,8 @@ ActiveAdmin.register Report do
     column :category do |report|
       Report::ReportCategory[report.category.to_sym] rescue ''
     end
+    column :source 
+    column :view_count
     column :created_at
 
     actions
@@ -43,6 +45,7 @@ ActiveAdmin.register Report do
           : cf.template.link_to(image_tag(image.photo.url(:medium)), image.photo.url, target: "_blank")
       end
       f.input :category, as: :radio, collection: Report::ReportCategory.invert
+      f.input :source
     end
 
     f.input :content, as: :ckeditor
@@ -56,6 +59,8 @@ ActiveAdmin.register Report do
       row  :category do |report|
         Report::ReportCategory[report.category.to_sym] rescue ''
       end
+      row :source 
+      row :view_count
       row :content do
         report.content.html_safe if report.content
       end
@@ -69,8 +74,10 @@ ActiveAdmin.register Report do
   end
 
   filter :title
+  filter :source
   filter :content
   filter :category, as: :select, collection: [['公司新闻',1],['行业动态',2]]
+  filter :view_count
   filter :created_at
 
 

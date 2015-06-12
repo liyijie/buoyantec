@@ -41,9 +41,9 @@
 						<hr class="divider">
 						<div class="text-justify news-content">
 							<ul class="nav-justified">
-								<li class="notice-info">发布时间: 2015-04-15</li>
-								<li class="notice-info">浏览次数: 8888次</li>
-								<li class="notice-info">来源: 大唐电信</li>
+								<li class="notice-info">发布时间: <%= @report.created_at.strftime "%F"%></li>
+								<li class="notice-info">浏览次数: <%= @report.view_count %>次</li>
+								<li class="notice-info">来源: <%= @report.source %></li>
 								<li class="notice-info">
 									分享:
 									<a href="#"><%=image_tag "space.png"%></a>
@@ -54,8 +54,7 @@
 									<a href="#"><%=image_tag "orange.png"%></a>
 								</li>
 							</ul>
-							<br>
-							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= @report.content %></p>
+							<%= raw @report.content%>
 						</div>
 					</div>
 				</div>
