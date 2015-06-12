@@ -1,38 +1,38 @@
 <%= render partial: "cases_bg" %>
-  <div class="container cases_content">
+<div class="container cases_content">
   <div class="row">
     <%= render partial: "left_nav" %>
     <div class="col-md-9">
-        <div class="about-right-body">
+      <div class="about-right-body">
 
-<div class="right-head">
-            <ul  class="nav nav-pills">
+        <div class="right-head">
+          <ul  class="nav nav-pills">
             <li>
-            <%= image_tag "news_nav_icon.png"%>
-            <span>当前位置：</span>
+              <%= image_tag "news_nav_icon.png"%>
+              <span>当前位置：</span>
             </li>
             <li>
-            <ol class="breadcrumb">
-                  <li><a href="#">首页</a></li>
-                  <li class="#">成功案例</li>
-                  <li class="active">行业信息化案例</li>
-                </ol>
-                </li>
-                </ul>
-          </div> 
-          <div class="panel-body">
-            <div class="row">
-              <% (8..11) .each do |channel_index| %>
-              <div class="col-sm-6 col-md-6">
-                <div class="thumbnail cases_show_a">
-                  <%= image_tag "case#{channel_index}.png" %>
-                  <h4><%= @pic_text["#{channel_index}"] %></h4>
-                </div>  
-              </div>
-              <% end %>
+              <ol class="breadcrumb">
+                <li><%= link_to("首页", root_path) %></li>
+                <li ><%= link_to("成功案例", cases_edu_path) %></li>
+                <li class="active">行业信息化案例</li>
+              </ol>
+            </li>
+          </ul>
+        </div> 
+        <div class="panel-body">
+          <div class="row">
+            <% (8..11) .each do |channel_index| %>
+            <div class="col-sm-6 col-md-6">
+              <div class="thumbnail cases_show_a">
+                <%= image_tag "case#{channel_index}.png" %>
+                <h4><%= @pic_text["#{channel_index}"] %></h4>
+              </div>  
             </div>
+            <% end %>
           </div>
         </div>
+      </div>
     </div>
   </div>
 </div> 
