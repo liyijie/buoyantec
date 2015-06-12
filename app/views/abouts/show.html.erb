@@ -3,9 +3,22 @@
   <div class="row">
     <%= render partial: "us_left_nav" %>
     <div class="col-md-9">
-        <div class="panel panel-default">
-          <div class="panel-heading cases_show_t">
-            <h3 class="panel-title"><%= image_tag "news_nav_icon.png"%><span>当前位置：首页/关于我们/招聘信息</span></h3>
+        <div class="about-right-body">
+
+<div class="right-head">
+            <ul  class="nav nav-pills">
+            <li>
+            <%= image_tag "news_nav_icon.png"%>
+            <span>当前位置：</span>
+            </li>
+            <li>
+            <ol class="breadcrumb">
+                  <li><a href="#">首页</a></li>
+                  <li class="#">关于我们</li>
+                  <li class="active">招聘信息</li>
+                </ol>
+                </li>
+                </ul>
           </div>
           <div class="panel-body job_content">
             <div class="col-md-12">
