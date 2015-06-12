@@ -11,6 +11,7 @@ class ReportsController < ApplicationController
   # GET /reports/1.json
   def show
     @report = Report.find(params[:id])
+    @report.update(view_count: @report.view_count.present? ? (@report.view_count + 1) : 1)
   end
 
   # GET /reports/new

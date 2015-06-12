@@ -41,17 +41,11 @@
 						<hr class="divider">
 						<div class="text-justify news-content">
 							<ul class="nav-justified">
-								<li class="notice-info">发布时间: <%= @report.created_at.strftime "%F"%></li>
-								<li class="notice-info">浏览次数: <%= @report.view_count %>次</li>
-								<li class="notice-info">来源: <%= @report.source %></li>
-								<li class="notice-info">
-									分享:
-									<a href="#"><%=image_tag "space.png"%></a>
-									<a href="#"><%=image_tag "weibo.png"%></a>
-									<a href="#"><%=image_tag "tencent.png"%></a>
-									<a href="#"><%=image_tag "renren.png"%></a>
-									<a href="#"><%=image_tag "red.png"%></a>	
-									<a href="#"><%=image_tag "orange.png"%></a>
+								<li>发布时间: <%= @report.created_at.strftime "%F"%></li>
+								<li>浏览次数: <%= @report.view_count %>次</li>
+								<li>来源: <%= @report.source %></li>
+								<li>
+									<%= render "share/baidu_share" %>
 								</li>
 							</ul>
 							<%= raw @report.content%>
