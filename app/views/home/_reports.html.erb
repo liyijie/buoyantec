@@ -15,7 +15,7 @@
 					</td>
 					<td class="text-left">
 						<h4><%= link_to "#{report.title}", report_path(report) %></h4>
-						<div class="report-info"><%= raw report.content %></div>
+						<div class="report-info"><%= sanitize(report.content, attributes: %w(href)) %></div>
 					</td>
 				</tr>
 			<% end %>
