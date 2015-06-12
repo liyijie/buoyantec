@@ -1,0 +1,29 @@
+<%= render partial: "cases_bg" %>
+<div class="container cases_content">
+  <div class="row">
+    <%= render partial: "left_nav" %>
+    <div class="col-md-9">
+      <div class="about-right-body">
+
+        <div class="right-head">
+          <ul  class="nav nav-pills">
+            <li>
+              <%= image_tag "news_nav_icon.png"%>
+              <span>当前位置：</span>
+            </li>
+            <li>
+              <ol class="breadcrumb">
+                <li><%= link_to("首页", root_path) %></li>
+                <li ><%= link_to("成功案例", cases_edu_path) %></li>
+                <li class="active"> 培训案例</li>
+              </ol>
+            </li>
+          </ul>
+        </div> 
+        <div class="panel-body">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 
