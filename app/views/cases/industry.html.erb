@@ -26,7 +26,7 @@
             <div class="col-sm-6 col-md-6">
               <div class="thumbnail cases_show_a">
                 <%= image_tag "case#{channel_index}.png" %>
-                <h4><%= @pic_text["#{channel_index}"] %></h4>
+                <h4><%= link_to(@pic_text["#{channel_index}"], "#" ) %></h4>
               </div>  
             </div>
             <% end %>
