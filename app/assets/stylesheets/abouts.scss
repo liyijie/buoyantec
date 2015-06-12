@@ -3,6 +3,26 @@
 .abouts_bg {
   padding:3px 0 10px 0;
 }
+.about-right-body {
+ border:1px solid $color-gray;
+  .right-head {
+    img {
+      padding:0 10px 0 20px;
+    }
+    height:36px;
+    padding-top:5px;
+    border-bottom:1px solid $color-gray;
+    background:url('/assets/news_right_head_bg.png') left top repeat!important;
+  }
+}
+.job_info {
+  text-decoration:none;
+  color:#777;
+  border:1px;
+  line-height:30px;
+  border-bottom-style:dashed;
+  border-bottom-color:$color-gray;
+  }
 .company_logo {
   text-align:center;
 }

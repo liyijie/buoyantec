@@ -3,34 +3,14 @@
 .cases_pg {
   padding:3px 0 10px 0;
 }
-.nav_list {
-  ul {
-    list-style-type:none;
-    line-height:30px;
-    li {
-      font-size:16px;
-    }
-  }
   .divider {
     margin:10px;
     border-width: 1.5px 0px 0px;
     border-style: dashed none none;
     border-color: $color-gray;
   }
+  .cases_show_a {
+    text-align:center;
+    height:280px;
+    padding-top:8px!important;
   }
-.cases_show_t {
-  span {
-    color:#777;
-  }
-  img {
-    padding:0 10px 5px 0;
-  }
-}
-.cases_show_a {
-  border-radius:5px!important;
-  text-align:center;
-  img {
-    padding:8px 5px 0 5px;
-    height:230px!important;
-  }
-}
