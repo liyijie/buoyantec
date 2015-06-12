@@ -7,22 +7,10 @@
 .top-bg img{
 width: 100%;
 }
-
 .darkgray-bg{
 	background: rgba(0,0,0,0.06);
 	.row{
 		margin: 20px 0 40px 0;
-	}
-	.ict_line{
-		padding: 0 0;
-	}
-	.divided{
-		border:3px solid #1e7bcb;
-	}
-	.ict_show{
-		padding-top: 5px;
-		font-size: 20px !important;
-		font-weight: bold;
 	}
 	.ict_pic{
 		margin-top: 20px ;
@@ -33,7 +21,6 @@ width: 100%;
 		line-height: 2;
 	}
 }
-
 
 // solution/commu.scss
 .solution_title{
@@ -46,10 +33,6 @@ width: 100%;
 	.system_course{
  		color: #fff;
  		font-size: 20px;
-		.divided{
-			background: #fff;
-			margin: 0 !important;
-		}
  	}
 	.caption{
 		padding: 0 10px !important;
@@ -117,3 +100,9 @@ width: 100%;
 .bgray-bg{
 	background: rgba(0,0,0,0.1);
 }
+
+
+
+
+
+
