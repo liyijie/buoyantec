@@ -54,12 +54,12 @@ width: 100%;
 	color: #333;
 }
 .system_bg{
-	background: url(/assets/solution_commu_courses.png) no-repeat;
+	background: image-url("solution_commu_courses.png") no-repeat;
 	background-size: 100%  90%;
 	height: 200px;
 }
 .advanges{
-	background: url(/assets/solution_commu_scheme_blue.png) no-repeat;
+	background: image-url("solution_commu_scheme_blue.png") no-repeat;
 	background-size: 100% 100%;
 	height: 40px;
 	line-height: 30px;
@@ -81,7 +81,7 @@ width: 100%;
 // webthing.scss
 //futclass.scss
 .title_bg{
-	background: url(/assets/solution_title_bg.png) no-repeat;
+	background: image-url("solution_title_bg.png") no-repeat;
 	background-size: 100% 100%;
 	font-size: 25px;
 	font-weight: bold;
@@ -101,7 +101,7 @@ width: 100%;
 	background: rgba(0,0,0,0.1);
 }
 .dtce_title_bg{
-	background: url(/assets/dtce_title_bg.png) no-repeat;
+	background: image-url("dtce_title_bg.png") no-repeat;
 	background-size: 100% 100%;
 	font-size: 25px;
 	font-weight: bold;

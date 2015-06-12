@@ -17,7 +17,7 @@
 		border:1px solid $color-gray;
 		padding: 5px 0;
 		.active{
-			background: url(/assets/nav_icon.png) no-repeat;
+			background: image-url("nav_icon.png") no-repeat;
 			background-size: 40% 40%;
 			background-position: 30% 40%;
 		}
@@ -31,7 +31,7 @@
 		height:40px;
 		line-height: 40px;
 		padding: 0 20px;
-		background-image: url(/assets/news_right_head_bg.png);
+		background-image: image-url("news_right_head_bg.png");
 		background-size: 100% 100%;
 		border: 1px solid $color-gray;
 		border-bottom: none;
