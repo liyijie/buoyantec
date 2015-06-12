@@ -1,8 +1,12 @@
 <div class="col-md-3 nav_list">
-        <ul class="list-group">
-          <li class="cases_left_nav"><strong>成功案例</strong></li>
-          <li class="list_item <%= "active" if params[:controller] == "cases" && params[:action] == "edu" %>"><%= link_to  "教育合作案例",  cases_edu_path %></li> <hr class="divider">
-          <li class="list_item <%= "active" if params[:controller] == "cases" && params[:action] == "train" %>"><%= link_to  "培训案例",  cases_train_path %></li> <hr class="divider">
-          <li class="list_item <%= "active" if params[:controller] == "cases" && params[:action] == "industry" %>"><%= link_to  "行业信息化案例",  cases_industry_path %></li> <hr class="divider">
+    <div id="leftMenu" class="content text-center">
+      <div class="left-head"><strong>成功案例</strong></div>
+      <div class="left-body">
+        <ul class="nav">
+          <li role="presentation" class="<%= "active" if params[:controller] == "cases" && params[:action] == "edu" %>"><%= link_to  "教育合作案例",  cases_edu_path %></li> <hr class="divider">
+          <li role="presentation" class="<%= "active" if params[:controller] == "cases" && params[:action] == "train" %>"><%= link_to  "培训案例",  cases_train_path %></li> <hr class="divider">
+          <li role="presentation" class="<%= "active" if params[:controller] == "cases" && params[:action] == "industry" %>"><%= link_to  "行业信息化案例",  cases_industry_path %></li> <hr class="divider">
         </ul>
+      </div>
     </div>
+  </div>

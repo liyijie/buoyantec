@@ -14,20 +14,17 @@ Rails.application.routes.draw do
 
   get 'home/error'
   
-  resource :abouts do
+  resource :abouts ,only: [:show] do
     collection do 
       get :company
       get :dtby
       get :team
       get :job
-      get :job_1
-      get :job_2
-      get :job_3
-      get :job_4
-      get :job_5
     end
   end
+
   get '/college', to: "colleges#index", as: :colleges
+
   get 'cases/train'
   get 'cases', to: "cases#edu", as: :cases_edu
   get 'cases/industry'

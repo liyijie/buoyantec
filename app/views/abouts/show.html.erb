@@ -1,0 +1,24 @@
+<%= render partial: "about_bg" %>
+  <div class="container cases_content">
+  <div class="row">
+    <%= render partial: "us_left_nav" %>
+    <div class="col-md-9">
+        <div class="panel panel-default">
+          <div class="panel-heading cases_show_t">
+            <h3 class="panel-title"><%= image_tag "news_nav_icon.png"%><span>当前位置：首页/关于我们/招聘信息</span></h3>
+          </div>
+          <div class="panel-body job_content">
+            <div class="col-md-12">
+              <div class="job_text">
+                <strong>招聘职位：</strong><%= @recruit.position %><br/>
+                 <strong>发布时间：</strong> <%= Time.now.strftime "%F"%><br/>
+                <strong>招聘要求：</strong> 工作地点：<%= @recruit.address %><br/>
+                <div class="num" >招聘人数：<%= @recruit.quantity %>人</div><br/><br/>
+                <div class="job_content"><%= raw  @recruit.content %></div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div> 

@@ -1,47 +1,45 @@
 <%= render partial: "about_bg" %>
-  <div class="container cases_content">
+<div class="container cases_content">
   <div class="row">
     <%= render partial: "us_left_nav" %>
     <div class="col-md-9">
         <div class="panel panel-default">
           <div class="panel-heading cases_show_t">
-            <h3 class="panel-title"><%= image_tag "news_nav_icon.png"%><span>当前位置：首页/关于我们/招聘信息</span></h3>
-          </div>
-          <div class="panel-body job_content">
-            <table class="table table-hover job_list">
-            <tr>
-            <td><%= link_to "招聘职位：嵌入式工程师",job_5_abouts_path %></td>
-            <td>工作地点：上海</td>
-            <td>招聘人数：2人</td>
-            <td>发布时间：2015-6-3（每天都更新成当日的时间）</td>
-            </tr>
-            <tr>
-            <td><%= link_to "招聘职位： Android培训讲师",job_4_abouts_path %></td>
-            <td>工作地点：上海</td>
-            <td>招聘人数：2人</td>
-            <td>发布时间： 2015-6-3（每天都更新成当日的时间）</td>
-            </tr>
-            <tr>
-            <td><%= link_to "招聘职位： Web培训讲师",job_3_abouts_path %></td>
-            <td>工作地点：上海</td>
-            <td>招聘人数：2人</td>
-            <td>发布时间： 2015-6-3（每天都更新成当日的时间）</td>
-            </tr>
-            <tr>
-            <td><%= link_to "招聘职位：移动通信培训讲师",job_2_abouts_path %></td>
-            <td>工作地点：上海</td>
-            <td>招聘人数：2人</td>
-            <td>发布时间：2015-6-3（每天都更新成当日的时间）</td>
-            </tr>
-            <tr>
-            <td><%= link_to "招聘职位： 会计",job_1_abouts_path %></td>
-            <td>工作地点：上海</td>
-            <td>招聘人数：1人</td>
-            <td>发布时间： 2015-6-3（每天都更新成当日的时间）</td>
-            </tr>
-            </table>
-          </div>
+       
+        <ul  class="nav nav-pills">
+            <li>
+            <%= image_tag "news_nav_icon.png"%>
+            <span>当前位置：</span>
+            </li>
+            <li>
+            <ol class="breadcrumb">
+                  <li><a href="#">首页</a></li>
+                  <li ><a href="#">关于我们</a></li>
+                  <li class="active">招聘信息</li>
+                </ol>
+                </li>
+                </ul>
+            
+        </div>
+        <div class="panel-body job_content">
+            <div class="col-md-12 job_list">
+            <div class="row">
+                <% if  @recruits.blank? %>
+                    <div><strong>暂时没有招聘信息!</strong></div>
+                <% else %>
+                    <% @recruits.each do |recruit|%>
+                         <%= link_to abouts_path(id:recruit.id) do %>
+                            <div class="col-md-3"><div class="row">招聘职位：<%= recruit.position %></div></div>
+                            <div class="col-md-3"><div class="row">工作地点：<%= recruit.address %></div></div>
+                            <div class="col-md-3"><div class="row">招聘人数：<%= recruit.quantity %>人</div></div>
+                            <div class="col-md-3"><div class="row">发布时间：<%= Time.now.strftime "%F"%></div></div>
+                            <% end %>
+                    <% end %>
+                <% end %>
+            </div>
+            </div>
         </div>
     </div>
-  </div>
+</div>
+</div>
 </div> 
