@@ -7,7 +7,6 @@
   ul {
     list-style-type:none;
     line-height:30px;
-    border: 1px solid $color-gray;
     li {
       font-size:16px;
     }
@@ -18,26 +17,7 @@
     border-style: dashed none none;
     border-color: $color-gray;
   }
-  .cases_left_nav {
-    text-align:center;
-    margin-bottom:5px;
-    height:50px;
-    color:#fff;
-    line-height:50px;
-    font-size:18px;
-    background:#337AB7;
   }
-  .list_item {
-    padding-left:90px;
-    a{
-      text-decoration:none;
-      color:#777;
-    }
-    :hover {
-      color:#337AB7;
-    }
-  }
-}
 .cases_show_t {
   span {
     color:#777;

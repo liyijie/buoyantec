@@ -30,16 +30,11 @@
   padding-bottom:160px!important;
   .job_text {
     line-height:30px;
+    .num {
+      text-indent:80px;
+    }
   }
   .job_list {
-    border-bottom-style:dashed;
-    margin-top:-10px!important;
     color:#776;
-    td {
-      font-size:14px;
-      border:none;
-      border:1px;
-      border-bottom-style:dashed;
-    }
   }
 }

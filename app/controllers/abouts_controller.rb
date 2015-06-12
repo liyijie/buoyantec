@@ -11,6 +11,10 @@ class AboutsController < ApplicationController
     
   end
   def job
-    
+      @recruits = Recruit.all
   end
+
+  def  show
+    @recruit = Recruit.find params[:id]
+  end 
 end

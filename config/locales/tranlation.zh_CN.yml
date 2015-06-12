@@ -2,6 +2,7 @@ zh_CN:
   activerecord:
     models:
       report: 热点新闻
+      recruit:  招聘信息
     attributes:
       report:
         title: 新闻标题
@@ -12,3 +13,8 @@ zh_CN:
         view_count: 点击次数
         created_at: 创建时间
         updated_at: 更新时间
+      recruit:
+        position: 招聘职位
+        address: 工作地点
+        quantity: 招聘人数
+        created_at: 发布时间
