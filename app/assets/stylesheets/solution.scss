@@ -9,9 +9,6 @@ width: 100%;
 }
 .darkgray-bg{
 	background: rgba(0,0,0, 0.06);
-	.row{
-		margin: 20px 0 40px 0;
-	}
 	.ict_pic{
 		margin-top: 20px ;
 		margin-bottom:30px;
@@ -30,21 +27,6 @@ width: 100%;
 	padding-bottom: 20px;
 	font-weight: bold;
 	font-size: 16px;
-	.train_base img{
-		width: 100%;
-		position: relative;
-	}
-	.practical_base{
-		background: rgba(0,0,0,0.4);
-		text-align: center;
-		position: absolute;
-		bottom: 0;
-		right: 15px;
-		left: 15px;
-		width: 100%;
-		color: $color-white;
-		height: 30px;
-		}		
 	.system_course{
  		color: #fff;
  		font-size: 20px;
