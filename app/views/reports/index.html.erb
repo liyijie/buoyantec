@@ -33,7 +33,7 @@
 						<ul class="nav nav-stacked reports-index">    
 							<% @reports.each do |report| %>   
 								<li role="presentation">
-									<%= link_to report_path(report) do %>
+									<%= link_to report_path(report, category: params[:category]) do %>
 										<div class="row reports-index">
 											<div class="col-xs-10">
 												<span><%= image_tag "news_li_dot.png"%>
