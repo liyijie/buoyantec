@@ -7,7 +7,7 @@
 <% if controller.controller_path == 'solution' && controller.action_name == 'ict'%>
   <% active_solution_ict = true %>
 <% end %>
-<% if controller.controller_path == 'solution' && controller.action_name == 'comminu'%>
+<% if controller.controller_path == 'solution' && controller.action_name == 'mcc'%>
   <% active_solution_mobile = true %>
 <% end %>
 <% if controller.controller_path == 'solution' && controller.action_name == 'internet'%>
@@ -28,43 +28,45 @@
 </div>
 <div class="gray-bg">
 	<div class="container">
-		<div class="col-sm-12">
-		  <%= link_to solution_ict_path, class: "icon col-sm-2 text-center #{active_solution_ict ? 'active' : ''}" do %>
-				<span class="size ict"></span>
-				<p class="solution_pj">ICT综合智慧展厅</p>
-			  <span class="scheme">建设方案</span>
-			<% end %>
+		<div class="row">
+			<div class="col-sm-12">
+			  <%= link_to solution_ict_path, class: "icon col-sm-2 text-center #{active_solution_ict ? 'active' : ''}" do %>
+					<span class="size ict"></span>
+					<p class="solution_pj">ICT综合智慧展厅</p>
+				  <span class="scheme">建设方案</span>
+				<% end %>
 
-			<%= link_to solution_comminu_path, class: "icon col-sm-2 text-center #{active_solution_mobile ? 'active' : ''}" do %>
-				<span class="size mobile"></span>
-				<p class="solution_pj">移动通信实训中心</p>
-				<span class="scheme">建设方案</span>
-			<% end %>
+				<%= link_to solution_mcc_path, class: "icon col-sm-2 text-center #{active_solution_mobile ? 'active' : ''}" do %>
+					<span class="size mobile"></span>
+					<p class="solution_pj">移动通信实训中心</p>
+					<span class="scheme">建设方案</span>
+				<% end %>
 
-			<%= link_to solution_internet_path, class: "icon col-sm-2 text-center #{active_solution_web ? 'active' : ''}" do %>
-				<span class="size web"></span>
-				<p class="solution_pj">移动互联网实训中心</p>
-				<span class="scheme">建设方案</span>
-			<% end %>
+				<%= link_to solution_internet_path, class: "icon col-sm-2 text-center #{active_solution_web ? 'active' : ''}" do %>
+					<span class="size web"></span>
+					<p class="solution_pj">移动互联网实训中心</p>
+					<span class="scheme">建设方案</span>
+				<% end %>
 
-			<%= link_to solution_webthing_path, class: "icon col-sm-2 text-center #{active_solution_thing ? 'active' : ''}" do %>
-				<span class="size thing"></span>
-				<p class="solution_pj">物联网实训中心</p >
-				<span class="scheme">建设方案</span>
-			<% end %>
+				<%= link_to solution_webthing_path, class: "icon col-sm-2 text-center #{active_solution_thing ? 'active' : ''}" do %>
+					<span class="size thing"></span>
+					<p class="solution_pj">物联网实训中心</p >
+					<span class="scheme">建设方案</span>
+				<% end %>
 
-			<%= link_to solution_futclass_path, class: "icon col-sm-2 text-center #{active_solution_future ? 'active' : ''}" do %>
-				<span class="size future"></span>
-				<p class="solution_pj">未来教师融合</p >
-				<span class="scheme">建设方案</span>
-			<% end %>
+				<%= link_to solution_futclass_path, class: "icon col-sm-2 text-center #{active_solution_future ? 'active' : ''}" do %>
+					<span class="size future"></span>
+					<p class="solution_pj">未来教师融合</p >
+					<span class="scheme">建设方案</span>
+				<% end %>
 
-      <%= link_to solution_dtce_path, class: "icon col-sm-2 text-center #{active_solution_dtce ? 'active' : ''}" do %>
-				<span class="size dtce"></span>
-				<p class="solution_pj">DTCE资格认证</p >
-				<span class="scheme">建设方案</span>
-			<% end %>
+	      <%= link_to solution_dtce_path, class: "icon col-sm-2 text-center #{active_solution_dtce ? 'active' : ''}" do %>
+					<span class="size dtce"></span>
+					<p class="solution_pj">DTCE资格认证</p >
+					<span class="scheme">建设方案</span>
+				<% end %>
 
+			</div>
 		</div>
 	</div>
 </div>

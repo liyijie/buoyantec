@@ -4,7 +4,11 @@ class ReportsController < ApplicationController
   # GET /reports
   # GET /reports.json
   def index
-    @reports = Report.all
+    if  params[:category].blank?
+      @reports = Report.all
+    else
+      @reports = Report.where(category: Report.categories[params[:category]])
+    end
   end
 
   # GET /reports/1

@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   get 'solution/ict'
 
-  get 'solution/comminu' 
+  get 'solution/mcc' 
 
   get 'solution/internet'
 

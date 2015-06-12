@@ -2,7 +2,7 @@ class SolutionController < ApplicationController
   def ict
   end
 
-  def comminu
+  def mcc
   end
 
   def internet
