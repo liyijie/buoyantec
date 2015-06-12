@@ -11,7 +11,7 @@
 						<span><%= report.created_at.strftime "%Y-%m"%></span>
 					</td>
 					<td class="report-img text-left">
-						<%= image_tag "index-reports1.jpg"%>
+						<%= image_tag( report.image .present? ? report.image.photo(:news) : "index-reports1.jpg")%>
 					</td>
 					<td class="text-left">
 						<h4><%= link_to "#{report.title}", report_path(report) %></h4>
@@ -30,34 +30,3 @@
 		<%= image_tag "home_ad.png", width:"100%"%>
 	</div>
 </div>
-
-
-<!-- <div class="container report">
-	<div class="row">
-		<div class="col-md-2 col-md-offset-5 h-line">
-			新闻资讯
-			<span class="caret"></span>
-		</div>
-	</div>
-	<div class="row report-row">
-		<div class="col-md-6 report-image">
-			<%#= image_tag(@active_report.image.photo(:product)) if @active_report.image %>
-		</div>
-		<div class="col-md-6 report-list">
-			<div class="list-group">
-				<%#= link_to(raw(active_head_content(@active_report)), "#", class: "list-group-item hover") %>
-				<small class="text-muted">
-					<%#= truncate_html raw(@active_report.content), length: 150, word_boundary: false %>
-				</small>
-				<% @reports.each do |report| %>
-					<%#= link_to(raw(head_content(report)), "#", class: "list-group-item") %>
-				<% end %>
-			</div>
-		</div>
-	</div>
-	<div class="row">
-		<div class="rol-md-12 more">
-			<%= link_to("更多新闻", reports_path) %>
-		</div>
-	</div>
-</div> -->

@@ -1,7 +1,4 @@
-<div class="container">
-	<%= image_tag "news_banner.png", width:"100%"%>
-</div>
-<br>
+<%= image_tag "news_banner.png", width:"100%"%>
 <div class="bgc-gray">
 	<div class="container">
 		<div class="row">
@@ -13,7 +10,6 @@
 							<li role="presentation" class="<%= "active" if params[:category] == "company"%>"><%= link_to "公司新闻", reports_path(category: "company") %></li>
 							<hr class="divider">
 							<li role="presentation" class="<%= "active" if params[:category] == "industry"%>"><%= link_to "行业动态", reports_path(category: "industry")%></li>
-							<hr class="divider">
 						</ul>
 					</div>
 				</div>
