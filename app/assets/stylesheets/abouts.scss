@@ -47,14 +47,17 @@
   }
 }
 .job_content {
-  padding-bottom:30px!important;
   .job_text {
     line-height:30px;
+    padding-bottom:30px!important;
     .num {
       text-indent:80px;
     }
   }
   .job_list {
     color:#776;
+    .paging {
+      padding-top:30px;
+    }
   }
 }

@@ -10,10 +10,9 @@
 					<div class="left-head">新闻中心</div>
 					<div class="left-body">
 						<ul class="nav">
-							<li role="presentation"><%= link_to "公司新闻", "#"%></li>
+							<li role="presentation" class="<%= "active" if params[:category] == "company"%>"><%= link_to "公司新闻", reports_path(category: "company") %></li>
 							<hr class="divider">
-							<li role="presentation" class="active"><%= link_to "行业动态", "#"%></li>
-							<hr class="divider">
+							<li role="presentation" class="<%= "active" if params[:category] == "industry"%>"><%= link_to "行业动态", reports_path(category: "industry")%></li>
 						</ul>
 					</div>
 				</div>
