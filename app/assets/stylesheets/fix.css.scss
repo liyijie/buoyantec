@@ -5,6 +5,9 @@
 		text-decoration: none;
 	}
 	a {
+		border: solid #eee 1px;
+		background: #fff;
+		opacity: 0.3;
 		span.scheme {
 			color: #7b7b7b;
 			line-height: 28px;
@@ -25,6 +28,7 @@
 			display: block;
 			&.size {
 				height: 126px;
+				margin: 5px 0;
 			}
 			&.ict {
 				background: image-url("solution-list-bg.png") no-repeat 8px 0;
@@ -47,19 +51,21 @@
 		}
 	}
 	a.active {
+		background: #f8f8f8;
+		opacity: 1;
 		span.scheme {
-			color: #ff010d;
+			color: #383d4d;
 			line-height: 28px;
 			width: 60px;
       margin: 0 auto;
-			border-top: solid #383e4c 2px;
+			border-top: solid #383d4d 2px;
 		}
 		p.solution_pj {
 			font-size: 16px;
 			line-height: 16px;
 			margin-top: 20px;
 			font-weight: bold;
-			color: #ff010d;
+			color: #383d4d;
 		}
 
 		span {
@@ -67,6 +73,7 @@
 			text-align: center;
 			display: block;
 			&.size {
+				margin: 5px 0;
 				height: 168px;
 			}
 			&.ict {
