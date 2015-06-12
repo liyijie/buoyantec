@@ -5,11 +5,9 @@
   .dropdown-menu {
     background: $color-blue;
     li {
-      padding-top: 10px;
-      padding-bottom: 10px;
-
       a {
         color: #fff;
+        line-height: 2.5;
       }
 
       a:hover {
