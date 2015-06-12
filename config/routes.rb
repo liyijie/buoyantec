@@ -27,13 +27,13 @@ Rails.application.routes.draw do
       get :job_5
     end
   end
-  get '/colleges', to: "colleges#index"
+  get '/college', to: "colleges#index", as: :colleges
   get 'cases/train'
-  get 'cases/edu'
+  get 'cases', to: "cases#edu", as: :cases_edu
   get 'cases/industry'
 
-  get 'enterprise/index'
-  get 'education/index'
+  get '/enterprise', to: "enterprise#index", as: :enterprise
+  get '/education', to: "education#index", as: :educations
   get 'dtce/index'
 
   mount Ckeditor::Engine => '/ckeditor'
