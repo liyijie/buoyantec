@@ -2,7 +2,19 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "variables";
-
+.home-title{
+	margin: 20px auto;
+	padding: 1px;
+	width: 260px;
+	border-bottom: 1px solid $color-gray;
+	position: relative;
+	.home-title-icon{
+		width: 16px;
+		position: absolute;
+		bottom: -3px;
+		left: 122px;
+	}
+}
 //index
 .reports{
 	font-size: 13px;

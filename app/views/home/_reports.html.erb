@@ -1,7 +1,8 @@
 <div class="container reports">
-	<br>
-	<h4>新闻资讯</h4>
-	<hr>
+	<div class="home-title text-center">
+		<h4>新闻咨询</h4>
+		<%= image_tag "home_page_2.png", class:"home-title-icon"%>
+	</div>
 	<table class="table table-hover">			
 		<tbody>
 			<% @reports.each do |report|%>
@@ -23,7 +24,9 @@
 	</table>
 	<div class="bgc-gray text-center">
 		<%= link_to reports_path do %>
-			<h5 class="report-more">查看更多<span>>>></span></h5>
+			<h5 class="report-more">
+				查看更多 <span><%= image_tag "home_page_3.png"%></span>
+			</h5>
 		<% end %>
 	</div>
 	<div class="home-ad">
