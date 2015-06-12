@@ -11,7 +11,7 @@ class AboutsController < ApplicationController
     
   end
   def job
-      @recruits = Recruit.all
+      @recruits = Recruit.all.per_page_kaminari(params[:page]).per(1)
   end
 
   def  show

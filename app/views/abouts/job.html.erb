@@ -4,7 +4,7 @@
     <%= render partial: "us_left_nav" %>
     <div class="col-md-9">
         <div class="about-right-body">
-<div class="right-head">
+        <div class="right-head">
             <ul  class="nav nav-pills">
             <li>
             <%= image_tag "news_nav_icon.png"%>
@@ -36,6 +36,7 @@
                 <% end %>
             </div>
             </div>
+            <div class="paginate text-center"><%= paginate @recruits %></div>
         </div>
     </div>
 </div>
