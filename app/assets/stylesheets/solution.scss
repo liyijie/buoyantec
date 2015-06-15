@@ -30,20 +30,18 @@ width: 100%;
  		color: #fff;
  		font-size: 20px;
  	}
-	.caption{
-		margin-top: 5px;
-		padding: 0 10px !important;
-		p{
-			text-align: justify;
-		}
-	}
 	.thumbnail{
 		padding-top: 10px;
 		.advan_case{
 			font-size: 14px;
 		}
 		.caption{
-			height: 300px;
+		height: 300px;
+		margin-top: 5px;
+		padding: 0 10px !important;
+			p{
+				text-align: justify;
+			}
 		}
 	}
 }
