@@ -1,44 +1,50 @@
 <%= render partial: "about_bg" %>
 <div class="container cases_content">
-  <div class="row">
-    <%= render partial: "us_left_nav" %>
-    <div class="col-md-9">
-        <div class="about-right-body">
-        <div class="right-head">
-            <ul  class="nav nav-pills">
-            <li>
-            <%= image_tag "news_nav_icon.png"%>
-            <span>当前位置：</span>
-            </li>
-            <li>
-            <ol class="breadcrumb">
-                  <li><%= link_to("首页", root_path) %></li>
-                  <li ><%= link_to("关于我们", company_abouts_path) %></li>
-                  <li class="active">招聘信息</li>
-                </ol>
-                </li>
-                </ul>
-          </div> 
-        <div class="panel-body job_content">
-            <div class="col-md-12 job_list">
-            <div class="row">
-                <% if  @recruits.blank? %>
-                    <div><strong>暂时没有招聘信息!</strong></div>
-                <% else %>
-                    <% @recruits.each do |recruit|%>
-                         <%= link_to abouts_path(id:recruit.id) do %>
-                            <div class="col-md-3 "><div class="row job_info">招聘职位：<%= recruit.position %></div></div>
-                            <div class="col-md-3 "><div class="row job_info">工作地点：<%= recruit.address %></div></div>
-                            <div class="col-md-3 "><div class="row job_info">招聘人数：<%= recruit.quantity %>人</div></div>
-                            <div class="col-md-3 "><div class="row job_info">发布时间：<%= Time.now.strftime "%F"%></div></div>
-                            <% end %>
-                    <% end %>
-                <% end %>
-            </div>
-             <div class="paginate text-center paging"><%= paginate @recruits %></div>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
+	<div class="row">
+		<%= render partial: "us_left_nav" %>
+		<div class="col-md-9 content">
+			<div class="right-head">
+				<ul  class="nav nav-pills">
+					<li>
+						<%= image_tag "news_nav_icon.png"%>
+						<span>当前位置：</span>
+					</li>
+					<li>
+						<ol class="breadcrumb">
+							<li><%= link_to("首页", root_path) %></li>
+							<li ><%= link_to("关于我们", company_abouts_path) %></li>
+							<li class="active">招聘信息</li>
+						</ol>
+					</li>
+				</ul>
+			</div> 
+			<div class="right-body job_content">
+				<div class="row job_list">
+					<% if  @recruits.blank? %>
+					<strong>暂时没有招聘信息!</strong>
+					<% else %>
+						<% @recruits.each do |recruit|%>
+							<%= link_to abouts_path(id:recruit.id) do %>
+								<div class="col-md-12">
+									<div class="col-md-3 ">
+										<div class="job_info">招聘职位：<%= recruit.position %></div>
+									</div>
+									<div class="col-md-3 ">
+										<div class="job_info">工作地点：<%= recruit.address %></div>
+									</div>
+									<div class="col-md-3 ">
+										<div class="job_info">招聘人数：<%= recruit.quantity %>人</div>
+									</div>
+									<div class="col-md-3 ">
+										<div class="job_info">发布时间：<%= Time.now.strftime "%F"%></div>
+									</div>
+								</div>
+							<% end %>
+						<% end %>
+					<% end %>
+					<div class="paginate text-center paging"><%= paginate @recruits %></div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div> 

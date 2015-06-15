@@ -1,53 +1,51 @@
 <%= image_tag "news_banner.png", width:"100%"%>
-<div class="bgc-gray">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-3">
-				<div id="leftMenu" class="content text-center">
-					<div class="left-head">新闻中心</div>
-					<div class="left-body">
-						<ul class="nav">
-							<li role="presentation" class="<%= "active" if params[:category] == "company"%>"><%= link_to "公司新闻", reports_path(category: "company") %></li>
-							<hr class="divider">
-							<li role="presentation" class="<%= "active" if params[:category] == "industry"%>"><%= link_to "行业动态", reports_path(category: "industry")%></li>
-						</ul>
-					</div>
+<div class="container">
+	<div class="row">
+		<div class="col-md-3">
+			<div id="leftMenu" class="content text-center">
+				<div class="left-head">新闻中心</div>
+				<div class="left-body">
+					<ul class="nav">
+						<li role="presentation" class="<%= "active" if params[:category] == "company"%>"><%= link_to "公司新闻", reports_path(category: "company") %></li>
+						<hr class="divider">
+						<li role="presentation" class="<%= "active" if params[:category] == "industry"%>"><%= link_to "行业动态", reports_path(category: "industry")%></li>
+					</ul>
 				</div>
 			</div>
-			<div class="col-md-9">
-				<div class="content">
-					<div class="right-head">
-						<ul class="nav nav-pills">
-							<li>
-								<span><%= image_tag "news_nav_icon.png"%>&nbsp;&nbsp;当前位置:&nbsp;&nbsp;</span>
-							</li>
-							<li>
-								<ol class="breadcrumb">
-									<li><%= link_to "首页", home_index_path %></li>
-									<li class="active">新闻中心</li>
-								</ol>
-							</li>
-						</ul>					
-					</div>
-					<div class="right-body">
-						<ul class="nav nav-stacked reports-index">    
-							<% @reports.each do |report| %>   
-								<li role="presentation">
-									<%= link_to report_path(report, category: params[:category]) do %>
-										<div class="row reports-index">
-											<div class="col-xs-10">
-												<span><%= image_tag "news_li_dot.png"%>
-												</span>&nbsp;&nbsp;<%= report.title %>
-											</div>
-											<div class="col-xs-2 text-right">[<%= report.created_at.strftime "%F"%>]</div>
+		</div>
+		<div class="col-md-9">
+			<div class="content">
+				<div class="right-head">
+					<ul class="nav nav-pills">
+						<li>
+							<span><%= image_tag "news_nav_icon.png"%>&nbsp;&nbsp;当前位置:&nbsp;&nbsp;</span>
+						</li>
+						<li>
+							<ol class="breadcrumb">
+								<li><%= link_to "首页", home_index_path %></li>
+								<li class="active">新闻中心</li>
+							</ol>
+						</li>
+					</ul>					
+				</div>
+				<div class="right-body">
+					<ul class="nav nav-stacked reports-index">    
+						<% @reports.each do |report| %>   
+							<li role="presentation">
+								<%= link_to report_path(report, category: params[:category]) do %>
+									<div class="row reports-index">
+										<div class="col-xs-10">
+											<span><%= image_tag "news_li_dot.png"%>
+											</span>&nbsp;&nbsp;<%= report.title %>
 										</div>
-									<% end %>
-								</li>
-							<% end %>
-						</ul>
-						<br>
-						<div class="paginate text-center"><%= paginate @reports, category: params[:category] %></div>
-					</div>
+										<div class="col-xs-2 text-right">[<%= report.created_at.strftime "%F"%>]</div>
+									</div>
+								<% end %>
+							</li>
+						<% end %>
+					</ul>
+					<br>
+					<div class="paginate text-center"><%= paginate @reports, category: params[:category] %></div>
 				</div>
 			</div>
 		</div>

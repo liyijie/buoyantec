@@ -4,9 +4,6 @@
 @import "variables";
 
 // solution/ict.scss
-.top-bg img{
-width: 100%;
-}
 .darkgray-bg{
 	background: rgba(0,0,0, 0.06);
 	.ict_pic{
@@ -20,7 +17,7 @@ width: 100%;
 }
 // solution/commu.scss
 .solution_title{
-	padding: 30px 0;
+	padding: 40px 0;
 }
 .solution_engineer{
 	//padding-bottom: 20px;
@@ -82,9 +79,6 @@ width: 100%;
 	font-size: 25px;
 	font-weight: bold;
 	padding-bottom: 5px;
-}
-.futclass{
-	padding: 15px 0;
 }
 // dtce.scss
 .certifi_sample{

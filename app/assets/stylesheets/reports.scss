@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "variables";
 .content{
-	background-color: #fff;
+	padding: 10px 0;
 	a{
 		color: $color-gray-a3;
 	}
@@ -42,7 +42,7 @@
 	.right-body{
 		border:1px solid $color-gray;
 		border-top:none;
-		padding: 10px;
+		padding: 10px 20px;
 		.reports-index > div{
 			overflow: hidden; 
 			text-overflow:ellipsis;

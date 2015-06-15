@@ -1,35 +1,18 @@
 @import "variables";
 @import "bootstrap";
-.abouts_bg {
-  padding:3px 0 10px 0;
-}
-.about-right-body {
- border:1px solid $color-gray;
-  .right-head {
-    img {
-      padding:0 10px 0 20px;
-    }
-    height:36px;
-    padding-top:7px;
-    border-bottom:1px solid $color-gray;
-    background:image-url('news_right_head_bg.png') left top repeat!important;
-  }
-}
 .job_info {
   text-decoration:none;
   color:#777;
-  border:1px;
   line-height:30px;
-  border-bottom-style:dashed;
-  border-bottom-color:$color-gray;
-  }
-.company_logo {
-  text-align:center;
 }
-.company_text {
+.company_logo{
+  width: 400px;
+  margin: 0 auto;
+}
+.company_text > p{
   color:#777;
   line-height:35px;
-  padding-bottom:20px;
+  text-indent: 28px;
 }
 .dtby_slo {
   padding:20px 0 40px 0;
@@ -49,13 +32,12 @@
 .job_content {
   .job_text {
     line-height:30px;
-    padding-bottom:30px!important;
-    .num {
-      text-indent:80px;
-    }
+    padding:10px;
   }
   .job_list {
+    margin: 0px;
     color:#776;
+    border-bottom:1px dashed $color-gray;
     .paging {
       padding-top:30px;
     }

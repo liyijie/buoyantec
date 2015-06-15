@@ -1,29 +1,27 @@
 <%= render partial: "about_bg" %>
-  <div class="container cases_content">
+<div class="container cases_content">
   <div class="row">
     <%= render partial: "us_left_nav" %>
-    <div class="col-md-9">
-        <div class="about-right-body">
+    <div class="col-md-9 content">
 
-<div class="right-head">
-            <ul  class="nav nav-pills">
-            <li>
+      <div class="right-head">
+        <ul  class="nav nav-pills">
+          <li>
             <%= image_tag "news_nav_icon.png"%>
             <span>当前位置：</span>
-            </li>
-            <li>
+          </li>
+          <li>
             <ol class="breadcrumb">
-                  <li><%= link_to("首页", root_path) %></li>
-                  <li><%= link_to("关于我们", company_abouts_path) %></li>
-                  <li class="active">团队介绍</li>
-                </ol>
-                </li>
-                </ul>
-          </div> 
-          <div class="panel-body">
-            
-          </div>
-        </div>
+              <li><%= link_to("首页", root_path) %></li>
+              <li><%= link_to("关于我们", company_abouts_path) %></li>
+              <li class="active">团队介绍</li>
+            </ol>
+          </li>
+        </ul>
+      </div> 
+      <div class="right-body">
+        
+      </div>
     </div>
   </div>
-  </div>
+</div>

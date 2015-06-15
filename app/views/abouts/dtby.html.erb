@@ -1,25 +1,25 @@
 <%= render partial: "about_bg" %>
-  <div class="container cases_content">
+<div class="container cases_content">
   <div class="row">
     <%= render partial: "us_left_nav" %>
-    <div class="col-md-9">
-<div class="about-right-body">
-<div class="right-head">
-            <ul  class="nav nav-pills">
+    <div class="col-md-9 content">
+
+        <div class="right-head">
+          <ul  class="nav nav-pills">
             <li>
-            <%= image_tag "news_nav_icon.png"%>
-            <span>当前位置：</span>
+              <%= image_tag "news_nav_icon.png"%>
+              <span>当前位置：</span>
             </li>
             <li>
-            <ol class="breadcrumb">
-                  <li><%= link_to("首页", root_path) %></li>
-                  <li ><%= link_to("关于我们", company_abouts_path) %></li>
-                  <li class="active">邦彦文化</li>
-                </ol>
-                </li>
-                </ul>
-          </div> 
-          <div class="panel-body">
+              <ol class="breadcrumb">
+                <li><%= link_to("首页", root_path) %></li>
+                <li ><%= link_to("关于我们", company_abouts_path) %></li>
+                <li class="active">邦彦文化</li>
+              </ol>
+            </li>
+          </ul>
+        </div> 
+        <div class="right-body">
           <div class="dtby_slo">
             <button type="button" class="btn btn-lg btn-primary company_slogan">企业愿景</button><br/>
             <p>致力于人类信息的交互</p>
@@ -31,9 +31,9 @@
             <p>沟通——良好的沟通，是企业效率提升的纽带</p>
             <p>合作——团队的力量，是企业发展壮大的翅膀</p>
           </div>
-          </div>
         </div>
-        </div>
+
     </div>
   </div>
+</div>
 </div> 
