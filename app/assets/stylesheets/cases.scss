@@ -1,20 +1,17 @@
 @import "variables";
 @import "bootstrap";
-.cases_pg {
-  padding:3px 0 10px 0;
+.divider {
+  margin:10px;
+  border-width: 1.5px 0px 0px;
+  border-style: dashed none none;
+  border-color: $color-gray;
 }
-  .divider {
-    margin:10px;
-    border-width: 1.5px 0px 0px;
-    border-style: dashed none none;
-    border-color: $color-gray;
-  }
-  .cases_show_a {
-    text-align:center;
-    height:280px;
-    padding-top:8px!important;
+.cases_show_a {
+  text-align:center;
+  height:280px;
+  padding-top:8px!important;
 
-    h4 a {
-      color: #000;
-    }
+  h4 a {
+    color: #000;
   }
+}

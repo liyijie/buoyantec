@@ -3,7 +3,8 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "variables";
 .content{
-	padding: 10px 0;
+	border:1px solid $color-gray;
+	margin: 10px 0;
 	a{
 		color: $color-gray-a3;
 	}
@@ -14,7 +15,6 @@
 		color: #fff;
 	}
 	.left-body{
-		border:1px solid $color-gray;
 		padding: 5px 0;
 		.active{
 			background: image-url("nav_icon.png") no-repeat;
@@ -28,21 +28,20 @@
 		}
 	}
 	.right-head{
-		height:40px;
-		line-height: 40px;
 		padding: 0 20px;
 		background-image: image-url("news_right_head_bg.png");
 		background-size: 100% 100%;
-		border: 1px solid $color-gray;
-		border-bottom: none;
+		ul{
+			height:40px;
+			line-height: 40px;
+		}
 		img{
 			padding-bottom: 5px;
 		}
 	}
 	.right-body{
-		border:1px solid $color-gray;
-		border-top:none;
 		padding: 10px 20px;
+		clear: left;
 		.reports-index > div{
 			overflow: hidden; 
 			text-overflow:ellipsis;
@@ -52,7 +51,7 @@
 			padding-left: 0;
 		}
 		.news-content{
-			padding: 10px 30px;
+			padding: 10px 20px;
 			line-height: 2;
 		}
 		h2{

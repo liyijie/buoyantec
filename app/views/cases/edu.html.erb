@@ -2,8 +2,8 @@
 <div class="container cases_content">
   <div class="row">
     <%= render partial: "left_nav" %>
-    <div class="col-md-9 content">
-
+    <div class="col-md-9">
+      <div class="content">
         <div class="right-head">
           <ul  class="nav nav-pills">
             <li>
@@ -19,10 +19,11 @@
             </li>
           </ul>
         </div> 
-        <div class="panel-body">
+        <div class="right-body">
+
           <div class="row">
             <% (1..7) .each do |channel_index| %>
-            <div class="col-sm-6 col-md-6">
+            <div class="col-xs-6">
               <div class="thumbnail cases_show_a">
                 <%= image_tag "cases#{channel_index}.png" %>
                 <h4><%= link_to(@pic_text["#{channel_index}"], "#" ) %></h4>
@@ -31,7 +32,7 @@
             <% end %>
           </div>
         </div>
-
+      </div>
     </div>
   </div>
 </div> 
