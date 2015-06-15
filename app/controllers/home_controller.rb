@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
   def index
-    @firms = Report.where(category:1).last(2)
+    @firms = Report.where(category:1).last(3)
     @trades = Report.where(category:2).last(2)
   end
 

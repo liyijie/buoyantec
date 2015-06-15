@@ -26,25 +26,10 @@
 }
 .show_pc {
   padding:30px 50px 20px 50px!important;
-  text-align:center;
   img {
     padding:5px;
     background-color:#fff;
     border:1px solid $color-gray;
     border-radius:5px;
   }
-}        
-        #photo-list {
-
-             /* 3张图片的宽度（包含宽度、padding、border、图片间的留白）
-                 计算：3*(100+2*2+1*2+9) - 9
-                 之所以减去9是第三张图片的右边留白
-             */
-            width:100%;
-            /* 图片的宽度（包含高度、padding、border）
-                计算：100+2*2+1*2
-            */
-            height:200px;
-          overflow:hidden;
-        }
-        #photo-list ul { list-style:none;}
+}

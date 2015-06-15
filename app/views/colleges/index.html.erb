@@ -1,75 +1,25 @@
 <div class="container-fluid">
-	<%= image_tag "college_bg.png", width: "100%" %>
+  <%= image_tag "college_bg.png", width: "100%" %>
 </div>
 <div class="container">
-	<div class="row">
-		<div class="col-md-12 college_content">
-			<div class="col-md-4 college_b">
-				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-					<!-- Indicators -->
-					<ol class="carousel-indicators">
-						<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-						<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-						<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-					</ol>
-					<!-- Wrapper for slides -->
-					<div class="carousel-inner" role="listbox">
-						<div class="item active">
-							<%= image_tag "dtby-2.png", width: "100%"%>
-						</div>
-						<div class="item">
-							<%= image_tag "dtby-3.png", width: "100%"%>
-						</div>
-						<div class="item">
-							<%= image_tag "dtby-2.png", width: "100%"%>
-						</div>
-					</div>
-				</div>
-				<%= image_tag "dtby-3.png", width: "100%"%>
-			</div>
-			<div class="col-md-8 college_text">
-			<h4 class="college-tt"><strong>大唐信息技术学院</strong></h4>
-			 <p>2014年底，由大型高科技中央企业大唐电信科技产业集团、上海市经济与信息化委员会、上海市工商职业技术学院三方联合签署战略合作协议，与上海工商职业技术学院共同成立二级学院—大唐信息技术学院，由大唐邦彦（上海）信息技术有限公司进行运营管理。大唐信息技术学院在市教委、市经信委的指导下，依托行业领军中央企业先进技术与新兴产业优势，充分利用和促进上海工商职业技术学院计算机信息专业群建设，以培养面向战略新兴产业紧缺高技能人才为目标，深化校企合作、产教融合，以产业带动专业发展，以专业促进产业腾飞。</p><p>2015年5月，学院正式获批上海市首家移动互联网产教研协同基地建设项目，获得上海市教委专项建设资金900万，同时学院自筹配套资金600万，计划在三年内建设成为上海市唯一、全国一流的移动互联网人才培养基地。目前学院下设计算机网络技术、计算机应用技术（移动互联网应用软件开发）、通信技术（移动通信）三个专业。按照规划2016年学院将新增设物联网应用技术、移动互联网应用技术专业两个专业。为ICT行业定向培养专业人才。</p>
-			</div>
-		</div>
-      <div class="col-md-12 show_pc" id="photo-list">
-      <ul id="scroll">
-      <li class="col-md-4"><%= image_tag "dtby-4.png", width: "100%",class:"showpc1"%></li>
-      <li class="col-md-4"><%= image_tag "dtby-5.png", width: "100%"%></li>
-      <li class="col-md-4"><%= image_tag "dtby-6.png", width: "100%"%></li>
-      </ul>
+  <div class="container">
+    <div class="row">
+    <div class="col-md-12 college_content">
+      <div class="col-md-4 college_b">
+        <%= image_tag "dtby-2.png", width: "100%"%>
+        <%= image_tag "dtby-3.png", width: "100%"%>
+      </div>
+      <div class="col-md-8 college_text">
+      <h4 class="college-tt"><strong>大唐信息技术学院</strong></h4>
+       <p>2014年底，由大型高科技中央企业大唐电信科技产业集团、上海市经济与信息化委员会、上海市工商职业技术学院三方联合签署战略合作协议，与上海工商职业技术学院共同成立二级学院—大唐信息技术学院，由大唐邦彦（上海）信息技术有限公司进行运营管理。大唐信息技术学院在市教委、市经信委的指导下，依托行业领军中央企业先进技术与新兴产业优势，充分利用和促进上海工商职业技术学院计算机信息专业群建设，以培养面向战略新兴产业紧缺高技能人才为目标，深化校企合作、产教融合，以产业带动专业发展，以专业促进产业腾飞。</p><p>2015年5月，学院正式获批上海市首家移动互联网产教研协同基地建设项目，获得上海市教委专项建设资金900万，同时学院自筹配套资金600万，计划在三年内建设成为上海市唯一、全国一流的移动互联网人才培养基地。目前学院下设计算机网络技术、计算机应用技术（移动互联网应用软件开发）、通信技术（移动通信）三个专业。按照规划2016年学院将新增设物联网应用技术、移动互联网应用技术专业两个专业。为ICT行业定向培养专业人才。</p>
+      </div>
+      </div>
+      <div class="col-md-12 show_pc">
+      <div class="col-md-4"><%= image_tag "dtby-4.png", width: "100%",class:"showpc1"%></div>
+      <div class="col-md-4"><%= image_tag "dtby-5.png", width: "100%"%></div>
+      <div class="col-md-4"><%= image_tag "dtby-6.png", width: "100%"%></div>
       </div>
     </div>
   </div>
 </div>
 
-<script type="text/javascript">
-    var id = function(el) {
-            return document.getElementById(el);
-        },
-        c = id('photo-list');
-    if(c) {
-        var ul = id('scroll'),
-            lis = ul.getElementsByTagName('li'),
-            itemCount = lis.length,
-            width = lis[0].offsetWidth, //获得每个img容器的宽度
-            marquee = function() {
-                c.scrollLeft += 3;
-                if(c.scrollLeft % width <= 1){  //当 c.scrollLeft 和 width 相等时，把第一个img追加到最后面
-                    ul.appendChild(ul.getElementsByTagName('li')[0]);
-                    c.scrollLeft = 0;
-                };
-            },
-            speed = 3000; //数值越大越慢
-
-        ul.style.width = width*itemCount + 'px'; //加载完后设置容器长度
-        
-        var timer = setInterval(marquee, speed);
-        c.onmouseover = function() {
-            clearInterval(timer);
-        };
-        c.onmouseout = function() {
-            timer = setInterval(marquee, speed);
-        };
-    };
-</script>
