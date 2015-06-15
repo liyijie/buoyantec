@@ -70,6 +70,9 @@
 }
 .solution_bline{
 	padding-top: 20px;
+	img{
+		width: 100%;
+	}
 }
 // webthing.scss
 //futclass.scss
@@ -78,7 +81,7 @@
 	background-size: 100% 100%;
 	font-size: 25px;
 	font-weight: bold;
-	padding-bottom: 5px;
+	padding: 10px 0;
 }
 // dtce.scss
 .certifi_sample{
