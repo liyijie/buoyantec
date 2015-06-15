@@ -1,6 +1,7 @@
 class HomeController < ApplicationController
   def index
-    @reports = Report.last(3)
+    @firms = Report.where(category:1).last(2)
+    @trades = Report.where(category:2).last(2)
   end
 
   def error

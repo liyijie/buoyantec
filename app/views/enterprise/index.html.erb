@@ -85,7 +85,7 @@
 	<div class="row">
 		<% @channel_infos.each do |channel_info|%>
 		<div class="col-md-4 col-sm-6 my-col ">
-			<%= link_to channel_info[:url]  do   %>
+			<%= link_to channel_info[:url], target: "_blank" do %>
 				<div class="channel-item">
 					<div class="col-xs-5 channel-logo">
 						<%= image_tag channel_info[:logo] %>					
