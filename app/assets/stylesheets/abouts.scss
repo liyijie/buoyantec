@@ -29,21 +29,24 @@
     padding-left:10%;
   }
 }
-.job_content {
-  .job_text {
-    line-height:30px;
-    padding:10px;
+.job_list {
+  margin: 0px;
+  color:#776;
+  border-bottom:1px dashed $color-gray;
+  
+  a {
+    text-decoration:none!important;
   }
-  .job_list {
-    margin: 0px;
-    color:#776;
-    border-bottom:1px dashed $color-gray;
-    .paging {
-      padding-top:30px;
+  .job-title {
+    color:#555!important;
+    :hover {
+      color:blue;
     }
   }
+  .paging {
+    padding-top:30px;
+  }
 }
-
 .company-info {
   p {text-indent: 3em;}
   dl dt {

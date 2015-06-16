@@ -14,7 +14,4 @@ class AboutsController < ApplicationController
       @recruits = Recruit.all.per_page_kaminari(params[:page]).per(10)
   end
 
-  def  show
-    @recruit = Recruit.find params[:id]
-  end 
 end
