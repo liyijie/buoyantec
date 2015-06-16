@@ -2,19 +2,11 @@
 @import "bootstrap";
 .college_content {
   padding:0 20px 0 20px;
-.college_b {
-  padding-top:40px;
-  padding-left:50px;
-  img {
-    padding:5px;
-    background-color:#fff;
-    margin-bottom:20px;
-    border:1px solid $color-gray;
-    border-radius:5px;
+  .video_win {
+    padding:20px 0;
   }
-}
 .college_text {
-  padding:30px 60px 10px 50px;
+  padding:30px 15px 10px 15px;
   p{
     line-height:30px;
     text-indent:30px;
