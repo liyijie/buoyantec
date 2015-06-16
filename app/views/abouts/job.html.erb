@@ -20,33 +20,58 @@
 					</ul>
 				</div> 
 				<div class="right-body job_content">
-					<div class="row job_list">
+					<div class="row job_list ">
 						<% if  @recruits.blank? %>
 						<strong>暂时没有招聘信息!</strong>
 						<% else %>
-						<% @recruits.each do |recruit|%>
-						<%= link_to abouts_path(id:recruit.id) do %>
-						<div class="col-md-12">
-							<div class="col-md-3 ">
-								<div class="job_info">招聘职位：<%= recruit.position %></div>
+
+						<div class="panel-group col-md-6" id="accordion" role="tablist" aria-multiselectable="true">
+							<% @recruits.each do |recruit|%>
+							<div class="panel panel-default">
+								<div class="panel-heading  job-title" role="tab" id="heading<%= recruit.id %>">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapse<%= recruit.id %>" aria-expanded="true" aria-controls="collapse<%= recruit.id %>">
+											<span><%= recruit.position %></span><span class="pull-right" >发布时间：<%= Time.now.strftime "%F"%></span>
+										</a>
+									</h4>
+								</div>
+								<div id="collapse<%= recruit.id %>" class="panel-collapse collapse" role="tabpanel" aria-expanded="false" aria-labelledby="heading<%= recruit.id %>">
+									<div class="panel-body">
+										<%= raw recruit.content %>
+									</div>
+								</div>
 							</div>
-							<div class="col-md-3 ">
-								<div class="job_info">工作地点：<%= recruit.address %></div>
-							</div>
-							<div class="col-md-3 ">
-								<div class="job_info">招聘人数：<%= recruit.quantity %>人</div>
-							</div>
-							<div class="col-md-3 ">
-								<div class="job_info">发布时间：<%= Time.now.strftime "%F"%></div>
-							</div>
+							<% end %>
 						</div>
-						<% end %>
-						<% end %>
+
+<!--
+						<div class="panel-group col-md-6" id="accordion" role="tablist" aria-multiselectable="true">
+							<% @recruits.each do |recruit|%>
+							<div class="panel panel-default">
+								<div class="panel-heading  job-title" role="tab" id="heading<%= recruit.id %>">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapse<%= recruit.id %>" aria-expanded="true" aria-controls="collapse<%= recruit.id %>">
+											<span><%= recruit.position %></span><span class="pull-right" >发布时间：<%= Time.now.strftime "%F"%></span>
+										</a>
+									</h4>
+								</div>
+								<div id="collapse<%= recruit.id %>" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading<%= recruit.id %>">
+									<div class="panel-body">
+										<%= raw recruit.content %>
+									</div>
+								</div>
+							</div>
+							<% end %>
+						</div>
+-->
+
 						<% end %>
 						<div class="paginate text-center paging"><%= paginate @recruits %></div>
+						
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </div> 
+</div>
