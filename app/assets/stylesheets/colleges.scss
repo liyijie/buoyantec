@@ -15,8 +15,10 @@
 }
 .college_text {
   padding:30px 60px 10px 50px;
-  line-height:30px;
-  text-indent:30px;
+  p{
+    line-height:30px;
+    text-indent:30px;
+  }
   .college-tt {
     padding-bottom:20px;
     text-align:center;
