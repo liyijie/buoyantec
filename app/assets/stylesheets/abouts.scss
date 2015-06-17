@@ -33,12 +33,16 @@
   margin: 0px;
   color:#776;  
   a {
-    text-decoration:none!important;
-    display:block;
+    text-decoration: none!important;
+    display: block;
+    line-height: 2.2;
   }
   .job_list_content {
-    border-radius:10px!important;
-    margin-bottom:20px!important;
+    border-radius: 10px!important;
+    margin-bottom: 20px!important;
+    .glyphicon {
+      color: #0960b6;
+    }
   }
   .job_list_text {
     border:none!important;
