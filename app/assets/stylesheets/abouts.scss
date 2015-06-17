@@ -36,6 +36,9 @@
     text-decoration: none!important;
     display: block;
     line-height: 2.2;
+    span {
+      line-height: 2.2;
+    }
   }
   .job_list_content {
     border-radius: 10px!important;
