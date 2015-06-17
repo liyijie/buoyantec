@@ -21,7 +21,7 @@
 				</div> 
 				<div class="right-body job_content">
 				<p class="job-content-title"><strong>给自己一个站在更大舞台的机会</strong></p>
-				<p class="job_content_text">我们一直在准备一个梦想，渴望将我们的专业能 力，渗透至品牌、平台，以及客服等关键环节。渴望有一天，能为成千上万的用户提供更大的学习平台。如你所见，我们愿与你携手，一起来追逐这个梦想。我们长在积极发展中，一直为优秀人才提供多元化的空间和在职培训，我们长期面向社会招募不同的专业人才。想加入我们吗？快把简历发给我们吧！我们在等你......</p>
+				<p class="job_content_text">我们一直在准备一个梦想，渴望将我们的专业能力，渗透至品牌、平台，以及客服等关键环节。渴望有一天，能为成千上万的用户提供更大的学习平台。如你所见，我们愿与你携手，一起来追逐这个梦想。我们长在积极发展中，一直为优秀人才提供多元化的空间和在职培训，我们长期面向社会招募不同的专业人才。想加入我们吗？快把简历发给我们吧！我们在等你......</p>
 					<div class="row job_list ">
 						<% if  @recruits.blank? %>
 						<strong>暂时没有招聘信息!</strong>
@@ -32,11 +32,11 @@
 									<% if index == 0%>
 										<div class="panel-group col-md-6" id="accordion" role="tablist" aria-multiselectable="true">
 									<% end %>
-										<div class="panel panel-default job_list_content">
+										<div class="panel panel-default job_list_content left-content">
 											<div class="panel-heading  job_list_title" role="tab" id="heading<%= recruit.id %>">
 												<h4 class="panel-title">
-													<a data-toggle="collapse" data-parent="#accordion" href="#collapse<%= recruit.id %>" aria-expanded="true" aria-controls="collapse<%= recruit.id %>">
-														<span><%= recruit.position %></span><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+													<a data-toggle="collapse" data-parent="#accordion" href="#collapse<%= recruit.id %>" aria-expanded="true" aria-controls="collapse<%= recruit.id %>" class="info-title">
+														<span><%= recruit.position %></span><span class="glyphicon glyphicon-menu-down pull-right" aria-hidden="true"></span>
 													</a>
 												</h4>
 											</div>
@@ -53,11 +53,11 @@
 									<% if index ==   (@recruits.size + 1)/2 %>
 										<div class="panel-group col-md-6" id="accordion2" role="tablist" aria-multiselectable="true">
 									<% end %>
-										<div class="panel panel-default  job_list_content">
+										<div class="panel panel-default  job_list_content right-content">
 											<div class="panel-heading  job_list_title" role="tab" id="heading2<%= recruit.id %>">
 												<h4 class="panel-title">
-													<a data-toggle="collapse" data-parent="#accordion2" href="#collapse2<%= recruit.id %>" aria-expanded="true" aria-controls="collapse2<%= recruit.id %>">
-														<span><%= recruit.position %></span><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+													<a data-toggle="collapse" data-parent="#accordion2" href="#collapse2<%= recruit.id %>" aria-expanded="true" aria-controls="collapse2<%= recruit.id %>" class="info-title">
+														<span><%= recruit.position %></span><span class="glyphicon glyphicon-menu-down pull-right" aria-hidden="true"></span>
 													</a>
 												</h4>
 											</div>
@@ -84,3 +84,27 @@
 	</div>
 </div> 
 </div>
+
+<script type="text/javascript">
+	$(function(){
+		$(".left-content a[class='info-title']").click(function(){
+			var index = $(this).find(".glyphicon").attr("class").indexOf("glyphicon-menu-down");
+			$(".left-content .glyphicon").removeClass("glyphicon-menu-up").addClass("glyphicon-menu-down");
+			if(index > -1){
+				$(this).find(".glyphicon").removeClass("glyphicon-menu-down").addClass("glyphicon-menu-up");
+			}else{
+				$(this).find(".glyphicon").removeClass("glyphicon-menu-up").addClass("glyphicon-menu-down");
+			}
+		});
+
+		$(".right-content a[class='info-title']").click(function(){
+			var index = $(this).find(".glyphicon").attr("class").indexOf("glyphicon-menu-down");
+			$(".right-content .glyphicon").removeClass("glyphicon-menu-up").addClass("glyphicon-menu-down");
+			if(index > -1){
+				$(this).find(".glyphicon").removeClass("glyphicon-menu-down").addClass("glyphicon-menu-up");
+			}else{
+				$(this).find(".glyphicon").removeClass("glyphicon-menu-up").addClass("glyphicon-menu-down");
+			}
+		});
+	});
+</script>

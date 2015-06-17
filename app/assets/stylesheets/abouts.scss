@@ -14,17 +14,27 @@
   line-height:35px;
   text-indent: 28px;
 }
+.right_dtby {
+  margin-left:30px;
+}
+.company_slogan {
+  float:left;
+      border:1px solid $color-gray!important;
+      border-radius:50%;
+      background:$color-gray-bg;
+      padding:16px 15px 16px 15px;
+      margin-top:20px;
+  }
 .dtby_slo {
   padding:20px 0 40px 0;
-  .company_slogan {
-    font-size:16px;
-    line-height:4px;
-    margin-bottom:10px;
-    background:#337aba!important;
-    border-radius:50px;
+  .slogan_line {
+    margin:10px;
+    width:120px;
+    margin-left:20px;
+  border: 1px solid #337ABA;
   }
   p {
-    font-size:18px;
+    font-size:16px;
     font-weight:500;
     padding-left:10%;
   }
@@ -33,12 +43,19 @@
   margin: 0px;
   color:#776;  
   a {
-    text-decoration:none!important;
-    display:block;
+    text-decoration: none!important;
+    display: block;
+    line-height: 2.2;
+    span {
+      line-height: 2.2;
+    }
   }
   .job_list_content {
-    border-radius:10px!important;
-    margin-bottom:20px!important;
+    border-radius: 10px!important;
+    margin-bottom: 20px!important;
+    .glyphicon {
+      color: #0960b6;
+    }
   }
   .job_list_text {
     border:none!important;
@@ -62,6 +79,7 @@
   text-indent:28px;
   color:#776;
   padding-bottom:30px;
+  line-height: 2.0;
 }
 .job_list_title {
   border-radius:10px!important;
