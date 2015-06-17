@@ -5,7 +5,7 @@
 		text-decoration: none;
 	}
 	a {
-		opacity: 0.3;
+		//opacity: 0.3;
 		span.scheme {
 			color: #7b7b7b;
 			line-height: 28px;
@@ -25,17 +25,17 @@
 			text-align: center;
 			display: block;
 			&.size {
-				height: 126px;
+				height: 132px;
 				margin: 5px 0;
 			}
 			&.ict {
 				background: image-url("solution-list-bg.png") no-repeat 8px 0;
 			}
 			&.mobile {
-				background: image-url("solution-list-bg.png") no-repeat -162px 0;
+				background: image-url("solution-list-bg.png") no-repeat -186px 0;
 			}
 			&.web {
-				background: image-url("solution-list-bg.png") no-repeat -356px 0;
+				background: image-url("solution-list-bg.png") no-repeat -366px 0;
 			}
 			&.thing {
 				background: image-url("solution-list-bg.png") no-repeat -574px 0;
