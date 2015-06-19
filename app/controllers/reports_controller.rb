@@ -5,9 +5,9 @@ class ReportsController < ApplicationController
   # GET /reports.json
   def index
     if  params[:category].blank?
-      @reports = Report.all.per_page_kaminari(params[:page]).per(15)
+      @reports = Report.all.order("created_at DESC").per_page_kaminari(params[:page]).per(15)
     else
-      @reports = Report.where(category: Report.categories[params[:category]]).per_page_kaminari(params[:page]).per(15)
+      @reports = Report.where(category: Report.categories[params[:category]]).order("created_at DESC").per_page_kaminari(params[:page]).per(15)
     end
   end
 
