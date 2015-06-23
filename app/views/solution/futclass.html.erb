@@ -1,36 +1,55 @@
 <%=render partial:"subhead"%>
 <!-- solution of futclass -->
-<div class="container" style="padding-bottom:15px">
+<div class="container" style="padding-bottom:30px">
 	<div class="text-center solution_title">
 		<span class="title_bg">&nbsp;&nbsp;未来教室解决方案&nbsp;&nbsp;</span>
 	</div>
 	<div class="row">
-		<div class="col-md-6">
+		<div class="col-md-12 paragraph ">
 			<p class="solution_train">
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;面向教育需求，针对学科特色，建设以“学生学为中心”的未来教室教学环境集成解决方案。着重强调教育内容、教学手段和教学方法的现代化，突出课堂教学设计和组织的作用，体现并适应教学个性化的需求，力求提高教师信息技术应用水平、更新教学观念，激发学生学习的兴趣和主动性，提高课堂教学的效率和效果，促进课堂教学的变革与创新。<br/>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;解决方案致力于构建未来教室教学环境，建设未来教室云服务平台、丰富的电子教材库，集成各类学科工具，提供共享优质教育资源、课堂交互、双轨教学等未来教室服务。把信息技术与学科教学有机的整合起来，从根本上转变传统教与学的观念以及相应的学习目标和方法。<br/>
-				根据使用目的不同，未来教室解决方案包括标准化常规教室（班级教室）、阶梯教室、远程同步教室、协同备课教室、专科教室（语音教室、理化生实验室、音乐教室等）。
+				面向教育需求，针对学科特色，建设以“学生学为中心”的未来教室教学环境集成解决方案。着重强调教育内容、教学手段和教学方法的现代化，突出课堂教学设计和组织的作用，体现并适应教学个性化的需求，力求提高教师信息技术应用水平、更新教学观念，激发学生学习的兴趣和主动性，提高课堂教学的效率和效果，促进课堂教学的变革与创新。
+			</p>
+			<p  class="solution_train">
+				解决方案致力于构建未来教室教学环境，建设未来教室云服务平台、丰富的电子教材库，集成各类学科工具，提供享优质教育资源、课堂交互、双轨教学等未来教室服务。把信息技术与学科教学有机的整合起来，从根本上转变传统教与学的观念以及相应的学习目标和方法。
 			</p>
 		</div>
-		<div class="col-md-6">
-			<%=image_tag "solution_futureclass_solve.png"%>
-		</div>
+	</div>
+	<div class="row">
+		<div class="solution_pc">
+		<%(0..5). each do |index|%>
+			<div class="col-md-6 solution_pc">
+				<div class="row">
+					<div class="col-md-3" >
+						<%=image_tag "#{@photo["#{index}"]}" %>
+					</div>
+					<div class="col-md-9 text-left" style="padding-left:0" >
+						<h3 class="futclass_advance"><%=@futclass_advance["#{index}"]%></h3>
+						<p><%=@advance1_introduce["#{index}"]%>
+						</p>
+					</div>
+				</div>
+				<p><%=raw @advance2_introduce["#{index}"]%></p>			
+			</div>
+			<%end%>
+		</div>	
+	</div>
+	<div class="col-md-12 paragraph">
+		<p  class="solution_train">
+		根据使用目的不同，未来教室解决方案包括标准化常规教室（班级教室）、阶梯教室、远程同步教室、协同备课教室、专科教室（语音教室、理化生实验室、音乐教室等）。
+		</p>
 	</div>
 </div>
 <!-- use case -->
-<div class="darkgray-bg solution_title">
+<div class="darkgray-bg solution_title paragraph ">
 	<div class="container">
 		<div class="text-center">
 			<span class="title_bg">&nbsp;&nbsp;应用案例&nbsp;&nbsp;</span>
 		</div>
-		<p class="solution_train solution_title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;目前，未来教室方案在全国包括湖北、湖南、广东、福建、贵州、云南、新疆、四川、陕西、江苏等 10 余个省市区进行使用，共构建云端一体化先进教室 5000 余间。其中包括：国家数字化学习工程技术研究中心、华中师范大学、成都石室小学、成华小学、苏州教师发展中心、深圳红岭中学。
+		<p class="solution_train solution_title">目前，未来教室方案在全国包括湖北、湖南、广东、福建、贵州、云南、新疆、四川、陕西、江苏等 10 余个省市区进行使用，共构建云端一体化先进教室 5000 余间。其中包括：国家数字化学习工程技术研究中心、华中师范大学、成都石室小学、成华小学、苏州教师发展中心、深圳红岭中学。
 		</p>
-		<div class="row">
-			<div class="col-md-6">
-				<%=image_tag "solution_futureclass_case1.png"%>
-			</div>
-			<div class="col-md-6 text-right">
-				<%=image_tag "solution_futureclass_case2.png"%>
+		<div class="row text-center">
+			<div class="col-md-12">
+				<%=image_tag "solution_futclass_case2.png"%>
 			</div>
 		</div>
 	</div>
