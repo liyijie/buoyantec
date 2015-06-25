@@ -16,3 +16,4 @@
 //= require turbolinks
 //= require jquery.turbolinks
 //= require mediaelement_rails
+//= require slider
