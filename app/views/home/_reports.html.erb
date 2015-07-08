@@ -16,7 +16,7 @@
 					</td>
 					<td class="text-left">
 						<h4><%= link_to "#{report.title}", report_path(report) %></h4>
-						<div class="report-info"><%= sanitize(report.content, attributes: %w(href)) %></div>
+						<div class="report-info"><%= sanitize(report.content, tags: %w(span), attributes: %w(href)) %></div>
 					</td>
 				</tr>
 			<% end %>
@@ -31,7 +31,7 @@
 					</td>
 					<td class="text-left">
 						<h4><%= link_to "#{report.title}", report_path(report) %></h4>
-						<div class="report-info"><%= sanitize(report.content, attributes: %w(href)) %></div>
+						<div class="report-info"><%= sanitize(report.content,tags: %w(span), attributes: %w(href)) %></div>
 					</td>
 				</tr>
 			<% end %>
