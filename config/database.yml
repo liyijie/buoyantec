@@ -49,5 +49,7 @@ test:
 #
 production:
   <<: *default
-  database: buoyantec
+  username: root
+  password: abcd.1234
+  database: buoyantec_production
 
