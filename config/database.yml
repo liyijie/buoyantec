@@ -21,9 +21,5 @@ test:
   database: db/test.sqlite3
 
 production:
-  adapter: sqlite3
-  encoding: utf8
-  database: buoyantec
-  pool: 5
-  username: 
-  password: 
+  <<: *default
+  database: db/production.sqlite3 
