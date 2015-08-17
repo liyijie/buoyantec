@@ -37,7 +37,7 @@
             <li><%= link_to("DTCE资格认证", "#{solution_dtce_path}#solutionContent") %></li>
           </ul>
         </li>
-        <li class=<%= "active" if params[:controller] == "colleges" %>><%= link_to("大唐信息技术学院", colleges_path) %></li>
+        <li class=<%= "active" if params[:controller] == "colleges" %>><%= link_to("大唐信息技术学院", colleges_path, data: { no_turbolink: true }) %></li>
         <li class=<%= "active" if params[:controller] == "enterprise" %>><%= link_to("校企合作", enterprise_path) %></li>
         <li class=<%= "active" if params[:controller] == "cases" %>>
           <%= link_to("成功案例", cases_edu_path) %>
