@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "variables";
-
+@import "bootstrap";
 .table {
 	border-bottom: 1px solid $table-border-color;
 	.bg_color {
