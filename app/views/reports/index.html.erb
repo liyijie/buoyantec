@@ -9,6 +9,8 @@
 						<li role="presentation" class="<%= "active" if params[:category] == "company"%>"><%= link_to "公司新闻", reports_path(category: "company") %></li>
 						<hr class="divider">
 						<li role="presentation" class="<%= "active" if params[:category] == "industry"%>"><%= link_to "行业动态", reports_path(category: "industry")%></li>
+						<hr class="divider">
+						<li role="presentation" class="<%= "active" if params[:category] == "train"%>"><%= link_to "培训通知", reports_path(category: "train")%></li>
 					</ul>
 				</div>
 			</div>
@@ -24,6 +26,13 @@
 							<ol class="breadcrumb">
 								<li><%= link_to "首页", home_index_path %></li>
 								<li class="active">新闻中心</li>
+								<% if params[:category] == "company" %>
+									<li class="active">公司新闻</li>
+								<% elsif params[:category] == "industry" %>
+									<li class="active">行业动态</li>
+								<% else %>
+									<li class="active">培训通知</li>
+								<% end %>
 							</ol>
 						</li>
 					</ul>					

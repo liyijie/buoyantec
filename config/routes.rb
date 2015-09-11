@@ -40,7 +40,7 @@ Rails.application.routes.draw do
   get 'home/index'
 
 
-  resources :reports
+  resources :reports, only: [:index, :show]
   resources :trains
 
   # The priority is based upon order of creation: first created -> highest priority.
