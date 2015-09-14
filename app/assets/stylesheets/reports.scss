@@ -53,6 +53,11 @@
 		.news-content{
 			padding: 10px 20px;
 			line-height: 2;
+			img{
+				display: block;
+				max-width: 100%;
+				height: auto;
+			}
 		}
 		h2{
 			color: $color-blue;
