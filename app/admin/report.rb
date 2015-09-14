@@ -76,7 +76,7 @@ ActiveAdmin.register Report do
   filter :title
   filter :source
   filter :content
-  filter :category, as: :select, collection: [['公司新闻', 1], ['行业动态', 2], ['培训通知', 3]]
+  filter :category, as: :select, collection: [['公司新闻', 1], ['行业动态', 2], ['最新活动', 3]]
   filter :view_count
   filter :created_at
 
