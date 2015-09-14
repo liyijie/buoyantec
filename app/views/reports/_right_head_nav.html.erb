@@ -1,0 +1,19 @@
+<ul class="nav nav-pills">
+	<li>
+		<span><%= image_tag "news_nav_icon.png"%>&nbsp;&nbsp;当前位置:&nbsp;&nbsp;</span>
+	</li>
+	<li>
+		<ol class="breadcrumb">
+			<li><%= link_to "首页", home_index_path %></li>
+			<li><%= link_to "新闻中心", reports_path %></li>
+			<% if params[:category].present? %>
+				<li><%= link_to Report::ReportCategory[params[:category].to_sym], reports_path(category: params[:category]) %></li>
+			<% end %>
+			<% if params[:id].present? %>
+				<li class="active">正文</li>
+			<% else %>
+				<li class="active">全部新闻</li>
+			<% end %>
+		</ol>
+	</li>
+</ul>	

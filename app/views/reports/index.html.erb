@@ -2,42 +2,12 @@
 <div class="container">
 	<div class="row">
 		<div class="col-md-3">
-			<div id="leftMenu" class="content text-center">
-				<div class="left-head">新闻中心</div>
-				<div class="left-body">
-					<ul class="nav">
-						<li role="presentation" class="<%= "active" if params[:category] == "company"%>"><%= link_to "公司新闻", reports_path(category: "company") %></li>
-						<hr class="divider">
-						<li role="presentation" class="<%= "active" if params[:category] == "industry"%>"><%= link_to "行业动态", reports_path(category: "industry")%></li>
-						<hr class="divider">
-						<li role="presentation" class="<%= "active" if params[:category] == "activity"%>"><%= link_to "最新活动", reports_path(category: "activity")%></li>
-					</ul>
-				</div>
-			</div>
+			<%= render "left_nav" %>
 		</div>
 		<div class="col-md-9">
 			<div class="content">
 				<div class="right-head">
-					<ul class="nav nav-pills">
-						<li>
-							<span><%= image_tag "news_nav_icon.png"%>&nbsp;&nbsp;当前位置:&nbsp;&nbsp;</span>
-						</li>
-						<li>
-							<ol class="breadcrumb">
-								<li><%= link_to "首页", home_index_path %></li>
-								<li><%= link_to "新闻中心", reports_path %></li>
-								<% if params[:category] == "company" %>
-									<li class="active">公司新闻</li>
-								<% elsif params[:category] == "industry" %>
-									<li class="active">行业动态</li>
-								<% elsif params[:category] == "activity" %>
-									<li class="active">最新活动</li>
-								<% else %>
-									<li class="active">全部新闻</li>
-								<% end %>
-							</ol>
-						</li>
-					</ul>					
+					<%= render "right_head_nav" %>				
 				</div>
 				<div class="right-body">
 					<ul class="nav nav-stacked reports-index">    
