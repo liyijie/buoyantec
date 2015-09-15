@@ -1,6 +1,6 @@
 <%= image_tag "news_banner.jpg", width:"100%", class:"banner-margin"%>
 <div class="container">
-	<div class="row">
+	<div class="row" id="news">
 		<div class="col-md-3">
 			<%= render "left_nav" %>
 		</div>
@@ -13,7 +13,7 @@
 					<ul class="nav nav-stacked reports-index">    
 						<% @reports.each do |report| %>   
 							<li role="presentation">
-								<%= link_to report_path(report, category: params[:category]) do %>
+								<%= link_to "#{report_path(report, category: params[:category])}#news" do %>
 									<div class="row reports-index">
 										<div class="col-xs-10">
 											<span><%= image_tag "news_li_dot.png"%>

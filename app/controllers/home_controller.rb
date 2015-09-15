@@ -1,5 +1,6 @@
 class HomeController < ApplicationController
   def index
+    @banners = Banner.all.order(:number)
     company_news = Report.where(category:1).order("created_at DESC")
     if company_news.count < 5
       @firms = company_news.limit(company_news.count)
@@ -11,10 +12,8 @@ class HomeController < ApplicationController
   end
 
   def error
-    
   end
 
   def about
- 
   end
 end

@@ -2,11 +2,11 @@
 	<div class="left-head">新闻中心</div>
 	<div class="left-body">
 		<ul class="nav">
-			<li role="presentation" class="<%= "active" if params[:category] == "company"%>"><%= link_to "公司新闻", reports_path(category: "company") %></li>
+			<li role="presentation" class="<%= "active" if params[:category] == "company"%>"><%= link_to "公司新闻", "#{reports_path(category: "company")}#news" %></li>
 			<hr class="divider">
-			<li role="presentation" class="<%= "active" if params[:category] == "industry"%>"><%= link_to "行业动态", reports_path(category: "industry")%></li>
+			<li role="presentation" class="<%= "active" if params[:category] == "industry"%>"><%= link_to "行业动态", "#{reports_path(category: "industry")}#news" %></li>
 			<hr class="divider">
-			<li role="presentation" class="<%= "active" if params[:category] == "activity"%>"><%= link_to "最新活动", reports_path(category: "activity")%></li>
+			<li role="presentation" class="<%= "active" if params[:category] == "activity"%>"><%= link_to "最新活动", "#{reports_path(category: "activity")}#news" %></li>
 		</ul>
 	</div>
 </div>
