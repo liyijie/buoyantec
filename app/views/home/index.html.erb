@@ -7,7 +7,7 @@
 <style type="text/css">
 img{border:0;}
 </style>
-<SCRIPT type=text/javascript>
+<script type=text/javascript>
 function addEvent(obj,evtType,func,cap){
     cap=cap||false;
 if(obj.addEventListener){
@@ -144,19 +144,20 @@ function AdMove(id){
         obj.onmouseout=function(){interval=setInterval(obj.CustomMethod, delay);}
     }
 }
-</SCRIPT>
-<DIV id=ad1 style="Z-INDEX: 5">
+</script>
+<div id="ad1" style="Z-INDEX: 5">
 <!--首页漂浮：开始-->
 <%= link_to "http://www.buoyantec.com/reports/21#news" do |i| %>
-<%= image_tag("UAV.jpg")%>
+<!-- <span class="remove glyphicon glyphicon-remove" aria-hidden="true"></span> -->
+<%= image_tag "UAV.jpg", style: "width: 320px" %>
 <% end %>
 <!--首页漂浮：结束-->
-</DIV>
-<SCRIPT type=text/javascript><!--
+</div>
+<script type=text/javascript><!--
         var ad1=new AdMove("ad1");
         ad1.Run();
   //可兼容多组漂浮
   //var ad1=new AdMove("ad2");
         //ad2.Run();
     //-->
-</SCRIPT>
+</script>
