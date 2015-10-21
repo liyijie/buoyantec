@@ -147,17 +147,30 @@ function AdMove(id){
 </script>
 <div id="ad1" style="Z-INDEX: 5">
 <!--首页漂浮：开始-->
-<%= link_to "http://www.buoyantec.com/reports/21#news" do |i| %>
-<!-- <span class="remove glyphicon glyphicon-remove" aria-hidden="true"></span> -->
-<%= image_tag "UAV.jpg", style: "width: 320px" %>
-<% end %>
+    <div class="remove" type="button" onclick="change();">
+        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+    </div>
+    <%= link_to "http://www.buoyantec.com/reports/21#news" do |i| %>
+    <%= image_tag "UAV.jpg", style: "width: 320px" %>
+    <% end %>
 <!--首页漂浮：结束-->
 </div>
+<!-- <input type="button" onclick="change();"/>  -->
+<!--以下是js代码-->
 <script type=text/javascript><!--
-        var ad1=new AdMove("ad1");
-        ad1.Run();
+    var ad1=new AdMove("ad1");
+    ad1.Run();
   //可兼容多组漂浮
   //var ad1=new AdMove("ad2");
         //ad2.Run();
     //-->
+    function change(){
+        $("#ad1").attr("class","hide");//改变class
+    }
+
 </script>
+
+
+
+
+
