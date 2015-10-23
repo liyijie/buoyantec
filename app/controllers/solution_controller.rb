@@ -1,4 +1,5 @@
 class SolutionController < ApplicationController
+	before_action :redirect_error
 	def ict
 	end
 

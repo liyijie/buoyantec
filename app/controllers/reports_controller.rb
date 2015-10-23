@@ -1,4 +1,5 @@
 class ReportsController < ApplicationController
+  before_action :redirect_error
 
   # GET /reports
   def index

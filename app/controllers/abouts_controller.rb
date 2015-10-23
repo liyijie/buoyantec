@@ -1,4 +1,5 @@
 class AboutsController < ApplicationController
+  before_action :redirect_error
   def index
   end
   def company

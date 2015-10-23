@@ -1,4 +1,5 @@
 class CasesController < ApplicationController
+  before_action :redirect_error
   def edu
     @pic_text={
      "1"=>"多功能ICT展厅",

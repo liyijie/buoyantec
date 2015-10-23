@@ -1,4 +1,5 @@
 class EnterpriseController < ApplicationController
+  before_action :redirect_error
   def index
     @channel_infos = [
       {name: "大唐电信科技股份有限公司", logo: "logo_group.gif", url: "http://www.datang.com"},
