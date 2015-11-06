@@ -1,5 +1,4 @@
 class TrainsController < ApplicationController
-  before_action :redirect_error
   before_action :set_train, only: [:show, :edit, :update, :destroy]
 
   # GET /trains
