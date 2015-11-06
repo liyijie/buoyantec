@@ -1,5 +1,4 @@
 class HomeController < ApplicationController
-  before_action :redirect_error, except: :error
   def index
     @banners = Banner.all.order(:number)
     company_news = Report.where(category:1).order("created_at DESC")
