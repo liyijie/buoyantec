@@ -12,6 +12,8 @@ Rails.application.routes.draw do
 
   get 'solution/dtce'
 
+  get 'solution/key_manager'
+
   get 'home/error'
   
   resource :abouts ,only: [:show] do

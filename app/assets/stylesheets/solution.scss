@@ -108,3 +108,22 @@
 	color: #333;
 	line-height: 2;
 }
+
+/** 钥匙管理系统 **/
+.key-manager{
+	.col-md-6{
+		text-align: center;
+		.img-tips{
+			height: 40px;
+			line-height: 40px;
+		}
+		.key-intro{
+			text-align: justify;
+			text-indent: 40px;
+			line-height: 24px;
+		}
+	}
+	.key-line{
+		margin-top: 20px;
+	}
+}

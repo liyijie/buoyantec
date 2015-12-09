@@ -47,4 +47,8 @@ class SolutionController < ApplicationController
 	end
 	def dtce
 	end
+
+	def key_manager
+		
+	end
 end
