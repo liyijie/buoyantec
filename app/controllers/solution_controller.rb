@@ -51,4 +51,8 @@ class SolutionController < ApplicationController
 	def key_manager
 		
 	end
+
+	def things
+		
+	end
 end

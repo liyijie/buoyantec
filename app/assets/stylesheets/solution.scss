@@ -71,6 +71,8 @@
 	padding-top: 20px;
 	img{
 		width: 100%;
+		position: relative;
+		z-index: 1;
 	}
 }
 .solution_pc{
@@ -126,4 +128,54 @@
 	.key-line{
 		margin-top: 20px;
 	}
+}
+
+/** 物联网产品 **/
+.first-bg{
+	background-color: #f8f8f8;
+}
+.second-bg{
+	background-color: #fcfcfc;
+}
+.things-p{
+	font-weight: bold;
+	line-height: 2.5em;
+	font-weight: bolder;
+}
+.m-t-30{
+	 margin-top: 30px;
+}
+.solution-things-content{
+	border: 1px solid #d5d5d5;
+	background-color: #fff;
+	padding: 20px 15px;
+	margin-bottom: 30px;
+	.things-btn{
+		border-radius: 5px;
+		padding: 6px 20px;
+	}
+	p{
+		text-indent: 30px;
+	}
+}
+.text-primary img{
+	padding-bottom: 3px;
+}
+.p-0{
+	padding: 0 !important;
+}
+.hidden-part{
+	position: absolute;
+	top: 15px;
+	z-index: 1000;
+	height: 40px;
+	width: 65%;
+}
+.hidden-left-part{
+	@extend .hidden-part;
+	left: 0px;
+}
+.hidden-right-part{
+	@extend .hidden-part;
+	right: 0px;
 }

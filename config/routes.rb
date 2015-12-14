@@ -14,6 +14,8 @@ Rails.application.routes.draw do
 
   get 'solution/key_manager'
 
+  get 'solution/things'
+
   get 'home/error'
   
   resource :abouts ,only: [:show] do
@@ -30,6 +32,7 @@ Rails.application.routes.draw do
   get 'cases/train'
   get 'cases', to: "cases#edu", as: :cases_edu
   get 'cases/industry'
+  get 'cases/things'
 
   get '/enterprise', to: "enterprise#index", as: :enterprise
   get '/education', to: "education#index", as: :educations
