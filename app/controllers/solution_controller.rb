@@ -51,6 +51,15 @@ class SolutionController < ApplicationController
 	def key_manager
 		
 	end
+	def ViMediaNet
+		
+	end
+	def swsn
+		
+	end
+	def find
+		
+	end
 
 	def things
 		

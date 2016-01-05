@@ -10,6 +10,12 @@ Rails.application.routes.draw do
 
   get 'solution/futclass'
 
+  get 'solution/ViMediaNet'
+
+  get 'solution/swsn'
+
+  get 'solution/find'
+
   get 'solution/dtce'
 
   get 'solution/key_manager'

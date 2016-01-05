@@ -38,6 +38,9 @@
             <li><%= link_to("DTCE资格认证", "#{solution_dtce_path}#solutionContent") %></li>
             <li><%= link_to("钥匙管理系统", solution_key_manager_path) %></li>
             <li><%= link_to("物联网产品", solution_things_path) %></li>
+            <li><%= link_to("安防仿真平台", solution_ViMediaNet_path) %></li>
+            <li><%= link_to("环境感知系统", solution_swsn_path) %></li>
+            <li><%= link_to("设备查找系统", solution_find_path) %></li>
           </ul>
         </li>
         <li class=<%= "active" if params[:controller] == "colleges" %>><%= link_to("大唐信息技术学院", colleges_path, data: { no_turbolink: true }) %></li>
