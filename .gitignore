@@ -24,3 +24,7 @@
 /coverage/
 /spec/tmp
 /config/database.yml
+
+.DS_Store
+app/.DS_Store
+app/views/.DS_Store
