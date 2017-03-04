@@ -7,7 +7,9 @@
 #  content    :text
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
-#  category   :integer          default(1)
+#  category   :integer          default("company")
+#  source     :string
+#  view_count :integer
 #
 
 class Report < ActiveRecord::Base
