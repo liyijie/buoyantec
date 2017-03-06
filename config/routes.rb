@@ -30,6 +30,8 @@ Rails.application.routes.draw do
       get :dtby
       get :team
       get :job
+      get :organization
+      get :partner
     end
   end
 

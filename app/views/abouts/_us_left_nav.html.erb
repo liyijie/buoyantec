@@ -6,7 +6,9 @@
         <li role="presentation"class="<%= "active" if params[:controller] == "abouts" && params[:action] == "company" %>"><%= link_to  "公司简介",  company_abouts_path %></li> <hr class="divider">
         <li role="presentation" class="<%= "active" if params[:controller] == "abouts" && params[:action] == "dtby" %>"><%= link_to  "邦彦文化",  dtby_abouts_path %></li> <hr class="divider">
         <li role="presentation" class="<%= "active" if params[:controller] == "abouts" && params[:action] == "team" %>"><%= link_to  "团队介绍",  team_abouts_path %></li> <hr class="divider">
-        <li role="presentation" class="<%= "active" if params[:controller] == "abouts" && ( ["job","show"].include?(params[:action]))   %>"><%= link_to  "招聘信息",  job_abouts_path %></li> 
+        <li role="presentation" class="<%= "active" if params[:controller] == "abouts" && ( ["job","show"].include?(params[:action]))   %>"><%= link_to  "招聘信息",  job_abouts_path %></li> <hr class="divider">
+        <li role="presentation" class="<%= "active" if params[:controller] == "abouts" && params[:action] == "partner" %>"><%= link_to  "战略伙伴",  partner_abouts_path %></li> <hr class="divider">
+        <li role="presentation" class="<%= "active" if params[:controller] == "abouts" && params[:action] == "organization" %>"><%= link_to  "分支机构",  organization_abouts_path %></li> 
       </ul>
     </div>
   </div>
