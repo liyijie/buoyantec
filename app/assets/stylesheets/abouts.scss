@@ -140,3 +140,30 @@
     margin: 430px 20px 20px 20px;
     
 }
+
+
+.part_title {
+    p {
+        margin: -5px 0px 3px 10px;
+        color: gray;
+        font-size: 20px;
+    }
+    .part_line {
+        margin: 0px 0px 10px 10px;
+        width: 97%;
+        border: 0.1px solid gray;      
+    }
+}
+
+.part_show {
+  text-align:center;
+  width: auto;
+  height:100px;
+  padding-top:8px!important; 
+  margin: 0px;
+  padding: 0px;
+}
+.par_bor {
+    border: 0.1px solid #373a3c;
+    border-radius: 10px
+}

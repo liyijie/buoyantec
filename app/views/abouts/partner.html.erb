@@ -1,1 +1,54 @@
-partner.html.erb
+<%= render partial: "about_bg" %>
+<div class="container cases_content">
+  <div class="row">
+    <%= render partial: "us_left_nav" %>
+    <div class="col-md-9">
+      <div class="content">
+        <div class="right-head">
+          <ul  class="nav nav-pills">
+            <li>
+              <%= image_tag "news_nav_icon.png"%>
+              <span>当前位置：</span>
+            </li>
+            <li>
+              <ol class="breadcrumb">
+                <li><%= link_to("首页", root_path) %></li>
+                <li><%= link_to("成功案例", cases_edu_path) %></li>
+                <li class="active">战略合作</li>
+              </ol>
+            </li>
+          </ul>
+        </div> 
+        <div class="right-body">
+					<div class="part_title">
+						<p><strong>合作院校</strong></p>
+					  <hr class="part_line">
+					</div>
+					<div>
+						<% (0..24).each do |i| %>
+							<div class="col-xs-3">
+	              <div class="thumbnail part_show">
+	                <%= image_tag "par_#{i}.png" %>
+	              </div>  
+	            </div>
+	          <% end %>
+	          <br>
+					</div>
+					<div class="part_title">
+						<p><strong>合作伙伴</strong></p>
+					  <hr class="part_line">
+					</div>
+					<div>
+						<% (0..7).each do |i| %>
+							<div class="col-xs-3">
+	              <div class="thumbnail part_show">
+	                <%= image_tag "par1_#{i}.png" %>
+	              </div>  
+	            </div>
+	          <% end %>
+					</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 
