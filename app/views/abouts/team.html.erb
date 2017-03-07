@@ -3,7 +3,7 @@
   <div class="row">
     <%= render partial: "us_left_nav" %>
     <div class="col-md-9">
-      <div class="content">
+      <div class="content row">
         <div class="right-head">
           <ul  class="nav nav-pills">
             <li>
@@ -20,31 +20,25 @@
           </ul>
         </div> 
         <div class="right-body">
-          <dl>
-            <dd>
-              <div class="team_text" >
-                <p>公司拥有一支由高学历、高素质人才组成的创业团队。作为从事移动通信物联网行业的团队, 见证了移动通信物联网的
-                  快速发展, 积累了丰富的移动通信物联网的管理体系, 团队成员年轻而充满朝气, 具有创新意识并勇于迎接挑战, 具备良好的社会责任感, 愿为移动通信物联网行业, 贡献出一己之力。</p>
-              </div>
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="team_list">
-                    <%= image_tag "team_1.png", width: "90%" %>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="team_list">
-                    <%= image_tag "team_2.png", width: "90%" %>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="team_list">
-                    <%= image_tag "team_3.png", width: "90%" %>
-                  </div>
-                </div>
-              </div>
-            </dd>
-          </dl>
+          <div class="team_text col-md-12" >
+            <p>公司拥有一支由高学历、高素质人才组成的创业团队。作为从事移动通信物联网行业的团队, 见证了移动通信物联网的
+              快速发展, 积累了丰富的移动通信物联网的管理体系, 团队成员年轻而充满朝气, 具有创新意识并勇于迎接挑战, 具备良好的社会责任感, 愿为移动通信物联网行业, 贡献出一己之力。</p>
+          </div>
+          <div class="col-md-4">
+            <div class="team_list">
+              <%= image_tag "team_1.png", width: "90%" %>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="team_list">
+              <%= image_tag "team_2.png", width: "90%" %>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="team_list">
+              <%= image_tag "team_3.png", width: "90%" %>
+            </div>
+          </div>
         </div>
       </div>
     </div>

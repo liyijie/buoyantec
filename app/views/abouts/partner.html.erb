@@ -20,33 +20,32 @@
           </ul>
         </div> 
         <div class="right-body">
-					<div class="part_title">
-						<p><strong>合作院校</strong></p>
-					  <hr class="part_line">
-					</div>
-					<div>
-						<% (0..24).each do |i| %>
-							<div class="col-xs-3">
-	              <div class="thumbnail part_show">
-	                <%= image_tag "par_#{i}.png" %>
-	              </div>  
-	            </div>
-	          <% end %>
-	          <br>
-					</div>
-					<div class="part_title">
-						<p><strong>合作伙伴</strong></p>
-					  <hr class="part_line">
-					</div>
-					<div>
-						<% (0..7).each do |i| %>
-							<div class="col-xs-3">
-	              <div class="thumbnail part_show">
-	                <%= image_tag "par1_#{i}.png" %>
-	              </div>  
-	            </div>
-	          <% end %>
-					</div>
+			<div class="part_title">
+				<p><strong>合作院校</strong></p>
+			  <hr class="part_line">
+			</div>
+			<div class="row">
+				<% (0..24).each do |i| %>
+					<div class="col-xs-3">
+		              <div class="thumbnail part_show">
+		                <%= image_tag "par_#{i}.png" %>
+		              </div>  
+		            </div>
+		         <% end %>
+			</div>
+			<div class="part_title">
+				<p><strong>合作伙伴</strong></p>
+			  <hr class="part_line">
+			</div>
+			<div class="row">
+				<% (0..7).each do |i| %>
+					<div class="col-xs-3">
+		              <div class="thumbnail part_show">
+		                <%= image_tag "par1_#{i}.png" %>
+		              </div>  
+		            </div>
+		         <% end %>
+			</div>
         </div>
       </div>
     </div>

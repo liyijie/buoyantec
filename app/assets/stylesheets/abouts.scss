@@ -62,7 +62,7 @@
 }
 .team_list {
     width: 290px;
-    height: 120px;
+    /*height: 120px;*/
     margin: 0 auto;
     padding: 20px 0px 10px 0px;
 }
@@ -126,8 +126,7 @@
 }
 .organization_title {
     text-align: center;
-    color: #174a87;
-    font-weight: 500px;
+    color: #164a87;
 }
 .organization_log {
     width: 90%;
@@ -137,20 +136,19 @@
 }
 
 .organization_content {
-    margin: 430px 20px 20px 20px;
-    
+    margin: 330px 10px 30px 20px;
+    color: gray; 
+    font-size: 12px;
 }
-
 
 .part_title {
     p {
-        margin: -5px 0px 3px 10px;
         color: gray;
         font-size: 20px;
     }
     .part_line {
-        margin: 0px 0px 10px 10px;
-        width: 97%;
+        margin: -5px 0px 25px 0px;
+        width: 100%;
         border: 0.1px solid gray;      
     }
 }

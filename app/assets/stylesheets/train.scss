@@ -4,92 +4,93 @@
 @import "variables";
 @import "bootstrap";
 .train-title {
-	padding: 20px 0 20px 0;
-	text-align: center;
-	.title {
-		font-size: $font-size-h4;
-		font-weight: bold;
-		border-bottom: 3px solid $color-blue-dark;
-		padding-top: 7px;
-		padding-bottom: 5px;
-	}	
+    padding: 20px 0 20px 0;
+    text-align: center;
+    .title {
+        font-size: $font-size-h4;
+        font-weight: bold;
+        border-bottom: 3px solid $color-blue-dark;
+        padding-top: 7px;
+        padding-bottom: 5px;
+    }
 }
 
 .train-about {
-	p {
-		font-size: 12px;
-		line-height: 22px;
-	}
+    p {
+        font-size: 12px;
+        line-height: 22px;
+    }
 }
 
 .train-line {
-	padding-top: 10px;
-	padding-bottom: 10px;
-	.title {
-		line-height: 36px;
-		font-size: $font-size-h4;
-	}
+    padding-top: 10px;
+    padding-bottom: 10px;
+    .title {
+        line-height: 36px;
+        font-size: $font-size-h4;
+    }
 }
 
 .train-gray-panel {
-	margin-top: 20px;
-	background: $color-gray-bg;
-	padding-bottom: 15px;
-	.advantage {
-		padding: 15px;
-		.item {
-			padding: 10px 15px;
-			border: 3px solid $color-blue-dark;
-			.title {
-				font-size: $font-size-h2;
-				color: $color-blue-dark;
-				font-weight: bold;
-				text-align: center;
-				border-bottom: 1px solid $color-blue-dark;
-				padding-bottom: 20px;
-			}
-			.content {
-				padding: 20px 10px;
-				line-height: 22px;
-				font-size: 12px;
-				height: 150px;
-			}
-		}
-	}
+    margin-top: 20px;
+    background: $color-gray-bg;
+    padding-bottom: 15px;
+    .advantage {
+        padding: 15px;
+        .item {
+            padding: 10px 15px;
+            border: 3px solid $color-blue-dark;
+            .title {
+                font-size: $font-size-h2;
+                color: $color-blue-dark;
+                font-weight: bold;
+                text-align: center;
+                border-bottom: 1px solid $color-blue-dark;
+                padding-bottom: 20px;
+            }
+            .content {
+                padding: 20px 10px;
+                line-height: 22px;
+                font-size: 12px;
+                height: 150px;
+            }
+        }
+    }
 }
 
 .course-div {
-	> div {
-		padding-right: 0;
-		padding-left: 0;
-		background: $color-gray-bg;
-		height: 270px;
-	}
-	img {
-		height: 270px;
-		width: 100%;
-	}
-	.course {
-		padding: 35px 10px 0 50px;
-		.title {
-			font-size: $font-size-h2;
-			padding-bottom: 10px;
-			border-bottom: 1px solid $color-gray-line;
-		}
-		.content {
-			padding-top: 10px;
-			line-height: 22px;
-			font-size: 12px;
-		}
-	}
+    >div {
+        padding-right: 0;
+        padding-left: 0;
+        background: $color-gray-bg;
+        height: 270px;
+    }
+    img {
+        height: 270px;
+        width: 100%;
+    }
+    .course {
+        padding: 35px 10px 0 50px;
+        .title {
+            font-size: $font-size-h2;
+            padding-bottom: 10px;
+            border-bottom: 1px solid $color-gray-line;
+        }
+        .content {
+            padding-top: 10px;
+            line-height: 22px;
+            font-size: 12px;
+        }
+    }
 }
 
 .thumbnail {
-	padding: 0;
-	.caption {
-		padding: 20px;
-		line-height: 22px;
-		font-size: 12px;
-		height: 370px;
-	}
+    padding: 0;
+    .caption {
+        padding: 20px;
+        line-height: 22px;
+        font-size: 12px;
+        height: 370px;
+    }
+    border-radius: 10px;
 }
