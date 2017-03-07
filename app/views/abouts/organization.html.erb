@@ -1,1 +1,59 @@
-organization.html.erb
+<%= render partial: "about_bg" %>
+<div class="container cases_content">
+  <div class="row">
+    <%= render partial: "us_left_nav" %>
+    <div class="col-md-9">
+      <div class="content">
+        <div class="right-head">
+          <ul  class="nav nav-pills">
+            <li>
+              <%= image_tag "news_nav_icon.png"%>
+              <span>当前位置：</span>
+            </li>
+            <li>
+              <ol class="breadcrumb">
+                <li><%= link_to("首页", root_path) %></li>
+                <li><%= link_to("关于我们", company_abouts_path) %></li>
+                <li class="active">分支机构</li>
+              </ol>
+            </li>
+          </ul>
+        </div> 
+        <div class="right-body">
+          <dl>
+            <dd>
+              <div class="organization_title">
+              	<h3>大唐邦彦分支机构分布图</h3>
+              </div>
+	              <div class="organization_log">
+	                <%= image_tag "organization_log.png", width: "90%" %>
+	              </div>
+	            	<div class="organization_content">
+	            		<div lass="col-sm-6">
+	            		<p>大唐信息技术学院：上海市嘉定区岗峰公路68号<br>
+	            		邮箱：chengxixi@buoyantec.com</p><br>
+	            		<p>大唐电子信息工程学院：上海市奉贤区瓦洪公路3098号<br>
+	            		邮箱：chengxixi@buoyantec.com</p><br>
+	            		<p>四川子公司：四川省成都市顺城大道306号1楼<br>
+	            		邮箱：chenjian@buoyantec.com</p>
+	            	</div>
+	            	<div lass="col-sm-6">
+	            		<p>北京办事处：北京市海淀区学院路40号研一楼<br>
+	            		邮箱：zhaojian@buoyantec.com</p><br>
+	            		<p>上海办事处：上海市顾戴路2568号2号楼4楼<br>
+	            		邮箱：xuweixin@buoyantec.com</p><br>
+	            		<p>湖北办事处：湖北省武汉市光谷总部国际2期6栋6楼<br>
+	            		邮箱：zhangjing@buoyantec.com</p><br>
+	            		<p>河南办事处：河南省郑州市中州大道建业五栋大楼D座3楼<br>
+	            		邮箱：zhuzhongxi@buoyantec.com</p><br>
+	            		<p>广东办事处：广东省深圳市南山健幸科技大厦6楼<br>
+	            		邮箱：sam@buoyantec.com</p><br>
+	            	</div>
+	            	</div>
+            </dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
