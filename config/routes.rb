@@ -43,6 +43,9 @@ Rails.application.routes.draw do
   get 'cases/things'
 
   get '/enterprise', to: "enterprise#index", as: :enterprise
+  get '/techno_college', to: "enterprise#techno_college", as: :techno_college
+  get '/project_college', to: "enterprise#project_college", as: :project_college
+
   get '/education', to: "education#index", as: :educations
   get 'dtce/index'
 

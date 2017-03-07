@@ -19,10 +19,34 @@
 }
 .show_pc {
   padding:30px 50px 20px 50px!important;
+  ba
   img {
     padding:5px;
     background-color:#fff;
     border:1px solid $color-gray;
     border-radius:5px;
   }
+}
+
+.project_content {
+  padding:0 250px 0 250px;
+  margin: 0px 20px 50px 20px;
+  line-height: 50px;
+  .project_text {
+    padding: 0px 15px;
+    p{
+      text-indent:40px;
+    }
+    .project-tt {
+      padding-bottom:20px;
+      padding-top:50px;
+      text-align:center;
+      color:$color-blue;
+      font-size: 30px;
+    }
+  }
+}
+
+.project_pc {
+  padding:40px 5px 20px 5px!important;
 }

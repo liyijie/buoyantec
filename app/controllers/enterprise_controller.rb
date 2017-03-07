@@ -13,4 +13,13 @@ class EnterpriseController < ApplicationController
       {name: "腾讯创业基地(杭州)", logo: "logo_tx.png", url: "http://open.qq.com"},
     ]
   end
+
+  def techno_college
+    
+  end
+
+  def project_college
+    
+  end
 end
+
