@@ -7,59 +7,74 @@ class CredentialsController < ApplicationController
     @credentials = Credential.all
   end
 
-  # GET /credentials/1
-  # GET /credentials/1.json
-  def show
+# 证书简介
+  def cer_intro
+    
   end
 
-  # GET /credentials/new
-  def new
-    @credential = Credential.new
+# 证书样本
+  def cet_style
+    
   end
 
-  # GET /credentials/1/edit
-  def edit
+# 查询证书
+  def search
+    
   end
 
-  # POST /credentials
-  # POST /credentials.json
-  def create
-    @credential = Credential.new(credential_params)
+  # # GET /credentials/1
+  # # GET /credentials/1.json
+  # def show
+  # end
 
-    respond_to do |format|
-      if @credential.save
-        format.html { redirect_to @credential, notice: 'Credential was successfully created.' }
-        format.json { render :show, status: :created, location: @credential }
-      else
-        format.html { render :new }
-        format.json { render json: @credential.errors, status: :unprocessable_entity }
-      end
-    end
-  end
+  # # GET /credentials/new
+  # def new
+  #   @credential = Credential.new
+  # end
 
-  # PATCH/PUT /credentials/1
-  # PATCH/PUT /credentials/1.json
-  def update
-    respond_to do |format|
-      if @credential.update(credential_params)
-        format.html { redirect_to @credential, notice: 'Credential was successfully updated.' }
-        format.json { render :show, status: :ok, location: @credential }
-      else
-        format.html { render :edit }
-        format.json { render json: @credential.errors, status: :unprocessable_entity }
-      end
-    end
-  end
+  # # GET /credentials/1/edit
+  # def edit
+  # end
 
-  # DELETE /credentials/1
-  # DELETE /credentials/1.json
-  def destroy
-    @credential.destroy
-    respond_to do |format|
-      format.html { redirect_to credentials_url, notice: 'Credential was successfully destroyed.' }
-      format.json { head :no_content }
-    end
-  end
+  # # POST /credentials
+  # # POST /credentials.json
+  # def create
+  #   @credential = Credential.new(credential_params)
+
+  #   respond_to do |format|
+  #     if @credential.save
+  #       format.html { redirect_to @credential, notice: 'Credential was successfully created.' }
+  #       format.json { render :show, status: :created, location: @credential }
+  #     else
+  #       format.html { render :new }
+  #       format.json { render json: @credential.errors, status: :unprocessable_entity }
+  #     end
+  #   end
+  # end
+
+  # # PATCH/PUT /credentials/1
+  # # PATCH/PUT /credentials/1.json
+  # def update
+  #   respond_to do |format|
+  #     if @credential.update(credential_params)
+  #       format.html { redirect_to @credential, notice: 'Credential was successfully updated.' }
+  #       format.json { render :show, status: :ok, location: @credential }
+  #     else
+  #       format.html { render :edit }
+  #       format.json { render json: @credential.errors, status: :unprocessable_entity }
+  #     end
+  #   end
+  # end
+
+  # # DELETE /credentials/1
+  # # DELETE /credentials/1.json
+  # def destroy
+  #   @credential.destroy
+  #   respond_to do |format|
+  #     format.html { redirect_to credentials_url, notice: 'Credential was successfully destroyed.' }
+  #     format.json { head :no_content }
+  #   end
+  # end
 
   private
     # Use callbacks to share common setup or constraints between actions.

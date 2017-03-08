@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
 
-  resources :credentials
+  resources :credentials, only: [:index] do
+    collection do
+      get :cer_intro
+      get :cet_style
+      get :search
+    end
+  end
   get 'solution/ict'
 
   get 'solution/mcc' 

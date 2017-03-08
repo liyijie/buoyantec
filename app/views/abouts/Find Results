@@ -1,0 +1,130 @@
+Searching 5077 files for "breadcrumb"
+
+/Users/mc/tallty/buoyantec/app/assets/stylesheets/variables.scss:
+   21  $navbar-default-link-hover-color: #fff;
+   22  
+   23: // breadcrumb
+   24: $breadcrumb-bg: transparent;
+   25: $breadcrumb-padding-vertical: 0;
+   26: $breadcrumb-padding-horizontal: 0;
+   27  
+   28  $carousel-control-width: 5%;
+
+/Users/mc/tallty/buoyantec/app/views/abouts/company.html.erb:
+   12  						</li>
+   13  						<li>
+   14: 							<ol class="breadcrumb top_h">
+   15  								<li><%= link_to("首页", root_path) %></li>
+   16  								<li ><%= link_to("关于我们", company_abouts_path) %></li>
+
+/Users/mc/tallty/buoyantec/app/views/abouts/dtby.html.erb:
+   12  						</li>
+   13  						<li>
+   14: 							<ol class="breadcrumb">
+   15  								<li><%= link_to("首页", root_path) %></li>
+   16  								<li ><%= link_to("关于我们", company_abouts_path) %></li>
+
+/Users/mc/tallty/buoyantec/app/views/abouts/job.html.erb:
+   12  						</li>
+   13  						<li>
+   14: 							<ol class="breadcrumb">
+   15  								<li><%= link_to("首页", root_path) %></li>
+   16  								<li ><%= link_to("关于我们", company_abouts_path) %></li>
+
+/Users/mc/tallty/buoyantec/app/views/abouts/organization.html.erb:
+   12              </li>
+   13              <li>
+   14:               <ol class="breadcrumb">
+   15                  <li><%= link_to("首页", root_path) %></li>
+   16                  <li><%= link_to("关于我们", company_abouts_path) %></li>
+
+/Users/mc/tallty/buoyantec/app/views/abouts/partner.html.erb:
+   12              </li>
+   13              <li>
+   14:               <ol class="breadcrumb">
+   15                  <li><%= link_to("首页", root_path) %></li>
+   16                  <li><%= link_to("成功案例", cases_edu_path) %></li>
+
+/Users/mc/tallty/buoyantec/app/views/abouts/show.html.erb:
+   11  					</li>
+   12  					<li>
+   13: 						<ol class="breadcrumb top_h">
+   14  							<li><%= link_to("首页", root_path) %></li>
+   15  							<li><%= link_to("关于我们", company_abouts_path) %></li>
+
+/Users/mc/tallty/buoyantec/app/views/abouts/team.html.erb:
+   12              </li>
+   13              <li>
+   14:               <ol class="breadcrumb top_h">
+   15                  <li><%= link_to("首页", root_path) %></li>
+   16                  <li><%= link_to("关于我们", company_abouts_path) %></li>
+
+/Users/mc/tallty/buoyantec/app/views/cases/edu.html.erb:
+   12              </li>
+   13              <li>
+   14:               <ol class="breadcrumb top_h">
+   15                  <li><%= link_to("首页", root_path) %></li>
+   16                  <li><%= link_to("成功案例", cases_edu_path) %></li>
+
+/Users/mc/tallty/buoyantec/app/views/cases/industry.html.erb:
+   12              </li>
+   13              <li>
+   14:               <ol class="breadcrumb top_h">
+   15                  <li><%= link_to("首页", root_path) %></li>
+   16                  <li ><%= link_to("成功案例", cases_edu_path) %></li>
+
+/Users/mc/tallty/buoyantec/app/views/cases/things.html.erb:
+   12              </li>
+   13              <li>
+   14:               <ol class="breadcrumb top_h">
+   15                  <li><%= link_to("首页", root_path) %></li>
+   16                  <li ><%= link_to("成功案例", cases_edu_path) %></li>
+
+/Users/mc/tallty/buoyantec/app/views/cases/train.html.erb:
+   13              </li>
+   14              <li>
+   15:               <ol class="breadcrumb">
+   16                  <li><%= link_to("首页", root_path) %></li>
+   17                  <li ><%= link_to("成功案例", cases_edu_path) %></li>
+
+/Users/mc/tallty/buoyantec/app/views/credentials/cer_intro.html.erb:
+   12              </li>
+   13              <li>
+   14:               <ol class="breadcrumb top_h">
+   15                  <li><%= link_to("首页", root_path) %></li>
+   16                  <li><%= link_to("资格证书", company_abouts_path) %></li>
+
+/Users/mc/tallty/buoyantec/app/views/credentials/cet_style.html.erb:
+   12              </li>
+   13              <li>
+   14:               <ol class="breadcrumb top_h">
+   15                  <li><%= link_to("首页", root_path) %></li>
+   16                  <li><%= link_to("资格证书", company_abouts_path) %></li>
+
+/Users/mc/tallty/buoyantec/app/views/credentials/search.html.erb:
+   12              </li>
+   13              <li>
+   14:               <ol class="breadcrumb top_h">
+   15                  <li><%= link_to("首页", root_path) %></li>
+   16                  <li><%= link_to("资格证书", company_abouts_path) %></li>
+
+/Users/mc/tallty/buoyantec/app/views/reports/_right_head_nav.html.erb:
+    4  	</li>
+    5  	<li>
+    6: 		<ol class="breadcrumb">
+    7  			<li><%= link_to "首页", home_index_path %></li>
+    8  			<li><%= link_to "新闻中心", reports_path %></li>
+
+/Users/mc/tallty/buoyantec/config/initializers/active_admin.rb:
+  145    # config.favicon = '/assets/favicon.ico'
+  146  
+  147:   # == Removing Breadcrumbs
+  148    #
+  149:   # Breadcrumbs are enabled by default. You can customize them for individual
+  150    # resources or you can disable them globally from here.
+  151    #
+  152:   # config.breadcrumb = false
+  153  
+  154    # == Register Stylesheets & Javascripts
+
+22 matches across 17 files
