@@ -22,6 +22,17 @@
         </div> 
         <div class="right-body">
 
+          <div class="row">
+            <% (1..4) .each do |index| %>
+            <div class="col-sm-6 col-md-6">
+              <div class="thumbnail cases_show_a">
+                <%= image_tag "train_#{index}.png", width:"90%", height: "90%" %>
+                <h4><%= link_to(@train_text["#{index}"], "#" ) %></h4>
+              </div>  
+            </div>
+            <% end %>
+          </div>
+
         </div>
       </div>
     </div>

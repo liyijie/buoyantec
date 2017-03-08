@@ -12,6 +12,12 @@ class CasesController < ApplicationController
   end
 
   def train
+    @train_text={
+      "1"=>"移动互联网产教研协同基地培训班开班典礼",
+      "2"=>"领导致辞",
+      "3"=>"实习实训结业典礼",
+      "4"=>"安师大学生实训课程"
+    }
   end
 
   def industry
