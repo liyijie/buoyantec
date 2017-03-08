@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :credentials
   get 'solution/ict'
 
   get 'solution/mcc' 
