@@ -5,7 +5,7 @@ class SolutionController < ApplicationController
 	def mcc
 	end
 
-	def internet
+	def train_platform#实训平台
 	end
 
 	def webthing
@@ -45,7 +45,25 @@ class SolutionController < ApplicationController
 			"5"=>"仅满足人们能对它的功能需要，且消耗最小，对环境的影响最小。 "
 		}
 	end
+
+	def en_survey #工程勘察
+		
+	end
+
+	def network #网络优化
+		
+	end
+
+	def sys_equi #系统设备
+		
+	end
+	
+	def research_base#研究基地
+	end
+
+
 	def dtce
+		
 	end
 
 	def key_manager

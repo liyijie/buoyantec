@@ -15,11 +15,52 @@
 		line-height: 2;
 	}
 }
+// solution/en_.scss 
+.solution_en_title{
+	padding: 20px 0 10px;
+	background-color: #f7f8f9;
+	strong {
+		color: #809bcb;
+	}
+}
+.en_content {
+	padding: 10px 0px;
+    .en_img {
+    	margin: 20px 0px 10px 20px;
+    }
+}
+// solution/net_.scss 
+.net_img {
+	margin: 20px 0px 10px 5px;
+}
+// solution/sys_.scss 
+.sys_img {
+	margin: 5px 0px 10px 5px;
+}
+// solution/train_.scss 
+.train_cont {
+	margin: 0px 0px 0px 20px;
+	.t_cont {
+		padding-top: 10px;
+		line-height: 25px;
+		font-size: 12px;
+	}
+}
+.train_rt {
+	margin: 80px 0px 0px -20px;
+}
+// solution/reseach_.scss 
+.reseach_content {
+	img {
+		margin: 10px 0px;
+	}
+}
 // solution/commu.scss
 .solution_title{
 	padding: 40px 0;
-	background-color: #fff;
+	background-color: #f7f8f9;
 }
+
 .solution_engineer{
 	font-weight: bold;
 	font-size: 16px;
@@ -43,7 +84,7 @@
 	}
 }
 .solution_train{
-	line-height:35px;
+	line-height:30px;
 	font-weight: bold;
 	color: #333;
 }
@@ -83,7 +124,7 @@
 // webthing.scss
 //futclass.scss
 .title_bg{
-	/*background: image-url("solution_blue.png") no-repeat;*/
+	background: image-url("solution_title_bg.png") no-repeat;
 	background-size: 100% 100%;
 	background-color: #e7e7e7;
 	font-size: 25px;
@@ -95,6 +136,17 @@
 	}
 }
 /*ict*/
+.icts_bg{
+	background-size: 100% 100%;
+	background-color: #e7e7e7;
+	font-size: 25px;
+	font-weight: bold;
+	padding: 10px 0;
+	border-radius: 4px;
+	img {
+		margin: 0px 10px;
+	}
+}
 .ict_line {
 	margin: -16px 0px 10px 0px;
     width: 100%;

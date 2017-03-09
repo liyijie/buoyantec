@@ -11,7 +11,7 @@ Rails.application.routes.draw do
 
   get 'solution/mcc' 
 
-  get 'solution/internet'
+  get 'solution/train_platform'#实训平台
 
   get 'solution/webthing'
 
@@ -23,11 +23,18 @@ Rails.application.routes.draw do
 
   get 'solution/find'
 
-  get 'solution/dtce'
+  get 'solution/research_base'#研究基地
 
-  get 'solution/key_manager'
+  get 'solution/key_manager'#钥匙管理
 
   get 'solution/things'
+
+  get 'solution/en_survey' #工程勘察
+
+  get 'solution/network'#网络优化
+
+  get 'solution/sys_equi'#系统设备
+get 'solution/dtce'
 
   get 'home/error'
   
