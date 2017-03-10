@@ -6,6 +6,7 @@ zh_CN:
       report: 热点新闻
       recruit:  招聘信息
       comment: 评论
+      credential: DTCE证书
     attributes:
       report:
         title: 新闻标题
@@ -32,4 +33,11 @@ zh_CN:
         image: 轮播图片
         created_at: 创建时间
         updated_at: 更新时间
-
+      credential:
+        name: 姓名
+        cer_number: 证书编号
+        score: 分数
+        cer_type: 证书类型
+        start_date: 考证时间
+        end_date: 有效时间
+        identity_number: 身份证号
