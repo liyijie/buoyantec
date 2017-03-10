@@ -15,4 +15,5 @@
 #
 
 class Credential < ApplicationRecord
+	validates_uniqueness_of :cer_number, :message => "该证书已存在!"
 end

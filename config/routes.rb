@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  resources :credentials, only: [:index] do
+  resources :credentials, only: [:index, :show] do
     collection do
       get :cer_intro
       get :cet_style

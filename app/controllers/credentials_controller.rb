@@ -4,7 +4,9 @@ class CredentialsController < ApplicationController
   # GET /credentials
   # GET /credentials.json
   def index
-    @credentials = Credential.all
+    @credentials = Credential.all unless params[:cer_number].present? && params[:identity_number].present?
+    @credentials = Credential.all.where("cer_number = ?", params[:cer_number]) if params[:cer_number].present?
+    @credentials = Credential.all.where("identity_number = ?", params[:identity_number]) if params[:identity_number].present?
   end
 
 # 证书简介
@@ -19,17 +21,20 @@ class CredentialsController < ApplicationController
 
 # 查询证书
   def search
-    
+    @credential = Credential.all.first unless params[:cer_number].present? && params[:identity_number].present?
+    @credential = Credential.all.find_by_cer_number(params[:cer_number]) if params[:cer_number].present?
+    @credential = Credential.all.find_by_identity_number(params[:identity_number]) if params[:identity_number].present?  
   end
 
-  # # GET /credentials/1
-  # # GET /credentials/1.json
-  # def show
-  # end
+  # GET /credentials/1
+  # GET /credentials/1.json 
+  def show
+    @credential = Credential.find(params[:id])
+  end
 
   # # GET /credentials/new
-  # def new
-  #   @credential = Credential.new
+  # def new  #   @credential = Credential.new
+
   # end
 
   # # GET /credentials/1/edit
