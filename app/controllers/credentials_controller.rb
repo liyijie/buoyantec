@@ -21,7 +21,6 @@ class CredentialsController < ApplicationController
 
 # 查询证书
   def search
-    @credential = Credential.all.first unless params[:cer_number].present? && params[:identity_number].present?
     @credential = Credential.all.find_by_cer_number(params[:cer_number]) if params[:cer_number].present?
     @credential = Credential.all.find_by_identity_number(params[:identity_number]) if params[:identity_number].present?  
   end
